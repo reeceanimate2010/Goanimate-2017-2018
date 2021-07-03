@@ -210,11 +210,6 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
                         });
                 })();
             }
-            show_voice_ad = true;
-            $('#studio_container').append($('div.templates div.voice-vendor-ad').clone());
-            if (show_voice_ad) {
-                showVoiceAdWidget();
-            }
             $('div#studioBlock').css('height', '0px');
             $('#studio_holder').flash(studio_data);
             full_screen_studio();
@@ -227,34 +222,6 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
             if (show_voice_ad) {
                 $('#studio_container div.voice-vendor-ad').css('right', widget_right);
                 widget_right += $('#studio_container div.voice-vendor-ad').css('width');
-            }
-            if (show_worknote) {
-                $('#studio_container div.studio-worknote').css('right', widget_right);
-            }
-            ajust_studio();
-            return false;
-        }
-        function showVoiceAdWidget() {
-            show_voice_ad = true;
-            $('#studio_container div.voice-vendor-ad').css('display', 'block');
-            var widget_right = 0;
-            if (show_cc_ad) {
-                widget_right += $('div.studiotemplatebrowser').css('width');
-            }
-            $('#studio_container div.voice-vendor-ad').css('right', widget_right);
-            widget_right += $('#studio_container div.voice-vendor-ad').css('width');
-            if (show_worknote) {
-                $('#studio_container div.studio-worknote').css('right', widget_right);
-            }
-            ajust_studio();
-            return false;
-        }
-        function hideVoiceAdWidget() {
-            show_voice_ad = false;
-            $('#studio_container div.voice-vendor-ad').css('display', 'none');
-            var widget_right = 0;
-            if (show_cc_ad) {
-                widget_right += $('div.studiotemplatebrowser').css('width');
             }
             if (show_worknote) {
                 $('#studio_container div.studio-worknote').css('right', widget_right);

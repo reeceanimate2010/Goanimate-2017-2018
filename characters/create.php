@@ -28,9 +28,9 @@
 
 <main>
 
-<object data="http://localhost:6596/goapi/asset/animation/cc.swf" type="application/x-shockwave-flash" id="character_studio">
+<object data="https://josephcrosmanplays532.github.io/static/animation/cc.swf" type="application/x-shockwave-flash" id="character_studio">
 	<!-- The flashvars are a huge mess, have fun looking at them. :) -->
-	<param name="flashvars" value="apiserver=/&storePath=http://localhost:6596/goapi/asset/themes/<store>&clientThemePath=http://localhost:6596/goapi/asset/static/<client_theme>&themeId=<?php if (isset($_GET["theme"])) { echo $_GET["theme"]; } else { echo "family"; } ?>&bs=<?php if (isset($_GET["type"])) { echo $_GET["type"]; } else { echo "adam"; } ?>&ut=60&presaveId=<?php include_once("../goapi/function/characterId.php"); if (isset($_GET["characterId"])) { echo $_GET["characterId"]; } else { echo $id + 1; } ?>&appCode=go&page=&siteId=go&m_mode=school&isLogin=Y&isEmbed=1&ctc=go&tlang=en_US&nextUrl=%2Fcc_browser">
+	<param name="flashvars" value="apiserver=/&storePath=https://josephcrosmanplays532.github.io/static/store/<store>&clientThemePath=https://josephcrosmanplays532.github.io/static/<client_theme>&themeId=<?php if (isset($_GET["theme"])) { echo $_GET["theme"]; } else { echo "family"; } ?>&bs=<?php if (isset($_GET["type"])) { echo $_GET["type"]; } else { echo "adam"; } ?>&ut=60&presaveId=<?php include_once("../goapi/function/characterId.php"); if (isset($_GET["characterId"])) { echo $_GET["characterId"]; } else { echo $id + 1; } ?>&appCode=go&page=&siteId=go&m_mode=school&isLogin=Y&isEmbed=1&ctc=go&tlang=en_US&nextUrl=%2Fbrowse.php">
 	<param name="allowScriptAccess" value="always">
 </object>
 

@@ -197,7 +197,7 @@ function voiceBanner(bannerId) {
 <div style="display:none">
 </div>
     <script>
-        interactiveTutorial.isShowTutorial = false;
+        interactiveTutorial.isShowTutorial = true;
         var hideHTMLBox = function() {
             window.close();
         };

@@ -38,8 +38,8 @@
 		<h1 style="margin:0"><img id="logo" src="/pages/img/list_logo.svg" alt="PHPWrapper"/></h1>
 	</a>
 	<nav id="headbuttons">
-		<a class="button_small" id="back" onclick="creationType()" style="display: none">Back</a>
 		<a class="button_small" id="Studio_tutorial" href="/videomaker/full/tutorial">Studio Tutorial</a>
+		<a class="button_small" id="back" onclick="creationType()" style="display: none">Back</a>
 		
 	</nav>
 </header>

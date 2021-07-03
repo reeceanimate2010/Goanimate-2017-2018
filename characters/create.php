@@ -12,6 +12,7 @@
 <link rel="canonical" href="https://phpwrapper.herokuapp.com/videos/browse.php">
 <link href="/pages/css/modern-normalize.css" rel="stylesheet" type="text/css">
 <link href="/pages/css/global.css" rel="stylesheet" type="text/css">
+<link href="/pages/css/swfdark.css" rel="stylesheet" type="text/css">
 <link href="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/css/cc.css.gz.css" rel="stylesheet" type="text/css">
 <!--[if lt IE 9]>
 <style text="text/css">

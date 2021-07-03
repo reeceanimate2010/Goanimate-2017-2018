@@ -384,6 +384,7 @@
 		<span title="Wrapper: Offline vWRAPPER_VER, build WRAPPER_BLD">vWRAPPER_VER</span>
 		<a href="https://josephcrosmanplays532.github.io/faq.html">FAQ</a>
 		<a href="https://discord.gg/b7YSRkg">Wrapper Hub</a>
+		<a href="/videomaker/full/tutorial" id="studio_tutorial" style="display: none">Studio Tutorial</a>
 	</nav>
 
 	<nav id="foot-right">

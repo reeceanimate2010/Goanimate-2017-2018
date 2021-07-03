@@ -4,12 +4,12 @@
 <link rel="dns-prefetch" href="https://d2bm7x1jqouzel.cloudfront.net">
 <link rel="dns-prefetch" href="//d3v4eglovri8yt.cloudfront.net">
 
-<title>The Video Maker from Vyond - Make a Video for YouTube!</title>
+<title>The Video Maker from PHPWrapper - Make a Video for YouTube!</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="description" content="The Video Maker lets You make a video for YouTube for free! Drag &amp; drop or type &amp; go.  It's Fast, Fun, Easy and Free -  Vyond!">
-<meta property="og:site_name" content="Vyond">
+<meta name="description" content="The Video Maker lets You make a video for YouTube for free! Drag &amp; drop or type &amp; go.  It's Fast, Fun, Easy and Free -  PHPWrapper!">
+<meta property="og:site_name" content="PHPWrapper">
 <meta property="fb:app_id" content="177116303202">
 
 <meta name="google-site-verification" content="K_niiTfCVi72gwvxK00O4NjsVybMutMUnc-ZnN6HUuA">
@@ -779,7 +779,7 @@ ImporterFile.defaults.options.restricted_mime = ["font\/x-font-ttf","font\/vnd.m
 </div>
     <div id="studio_holder" style="width: 2108px;"><object data="https://josephcrosmanplays532.github.io/static/animation/go_full.swf" type="application/x-shockwave-flash" id="Studio" width="100%" height="100%">
 	<!-- The flashvars are a huge mess, have fun looking at them. :) -->
-	<param name="flashvars" value="apiserver=/&storePath=https://josephcrosmanplays532.github.io/static/store/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://josephcrosmanplays532.github.io/static/<client_theme>&themeId=custom&tlang=en_US&presaveId=<?php include_once("../goapi/function/videoId.php"); if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo $id + 1; } ?><?php if (isset($_GET["video"])) { echo "&movieId={$_GET["video"]}"; } ?>&goteam_draft_only=1&isWide=1&collab=0&nextUrl=./browse.php&tray=custom">
+	<param name="flashvars" value="apiserver=https://vyond2018.herokuapp.com/&storePath=https://josephcrosmanplays532.github.io/static/store/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://josephcrosmanplays532.github.io/static/<client_theme>&themeId=custom&tlang=en_US&presaveId=<?php include_once("../goapi/function/videoId.php"); if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo $id + 1; } ?><?php if (isset($_GET["video"])) { echo "&movieId={$_GET["video"]}"; } ?>&goteam_draft_only=1&isWide=1&collab=0&nextUrl=./browse.php&tray=custom">
 	<param name="allowScriptAccess" value="always">
 	<param name="allowFullScreen" value="true">
 </object></div>

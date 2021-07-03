@@ -4,6 +4,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <link rel="dns-prefetch" href="https://d2bm7x1jqouzel.cloudfront.net">
 <link rel="dns-prefetch" href="//d3v4eglovri8yt.cloudfront.net">
+<link rel="icon" href="/favicon.png" type="image/png">
 <title>Character List</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="The Character Creator from PHPWrapper - Create a character online with PHPWrapper.">

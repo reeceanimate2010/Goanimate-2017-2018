@@ -16,9 +16,9 @@
 		<h1 style="margin:0"><img id="logo" src="/pages/img/list_logo.svg" alt="PHPWrapper"></h1>
 	</a>
 	<nav id="headbuttons">
-		<a class="button_small" id="back" onclick="creationType()" style="display: none">BACK</a>
-		<a class="button_small" id="ccbrowser" href="/characters/browse.php">CREATE A CHARACTER</a>
-		<a class="button_small" id="Studio" href="/videos/create.php">MAKE A VIDEO</a>
+		<a class="button_small" id="back" onclick="creationType()" style="display: none">Back</a>
+		<a class="button_small" id="ccbrowser" href="/characters/browse.php">Create a Character</a>
+		<a class="button_small" id="Studio" href="/videos/create.php">Create</a>
 	</nav>
 </header>
 

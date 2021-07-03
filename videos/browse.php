@@ -18,7 +18,7 @@
 	<nav id="headbuttons">
 		<a class="button_small" id="back" onclick="creationType()" style="display: none">Back</a>
 		<a class="button_small" id="ccbrowser" href="/characters/browse.php">Create a Character</a>
-		<a class="button_big" id="Studio" href="/videos/create.php">Create</a>
+		<a class="button_big" id="videomaker" href="/create.php">Create</a>
 	</nav>
 </header>
 

@@ -385,13 +385,17 @@
 <footer>
 	<nav id="foot-left">
 		<a href="/videomaker/full/tutorial" id="studiotutorial" style="display: none">Studio Tutorial</a>
+		<a href="https://josephcrosmanplays532.github.io/faq.html" id="faq_left" style="display: block">FAQ</a>
+		<a href="https://discord.gg/b7YSRkg" id="wrapper_hub_left" style="display: block">Wrapper Hub</a>
+		<a href="https://josephcrosmanplays532.github.io" id="server_page_left" style="display: none">Server Page</a>
+		<a href="https://josephcrosmanplays532.github.io/caillou.html" id="caillou_left" style="display: none">Caillou</a>
 	</nav>
 
 	<nav id="foot-right">
-		<a href="https://josephcrosmanplays532.github.io/faq.html">FAQ</a>
-		<a href="https://discord.gg/b7YSRkg">Wrapper Hub</a>
-		<a href="https://josephcrosmanplays532.github.io">Server Page</a>
-		<a href="https://josephcrosmanplays532.github.io/caillou.html">Caillou</a>
+		<a href="https://josephcrosmanplays532.github.io/faq.html" id="faq_right" style="display: none">FAQ</a>
+		<a href="https://discord.gg/b7YSRkg" id="wrapper_hub_right" style="display: none">Wrapper Hub</a>
+		<a href="https://josephcrosmanplays532.github.io" id="server_page_right" style="display: block">Server Page</a>
+		<a href="https://josephcrosmanplays532.github.io/caillou.html" id="caillou_right" style="display: block">Caillou</a>
 	</nav>
 </footer>
 

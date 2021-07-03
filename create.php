@@ -75,19 +75,19 @@
 	<h2 id="standard-themes">Standard themes</h2>
 	<div id="column1">
 		<div class="theme">
-			<a href="/cc_browser?themeId=family">
+			<a href="/characters/browse.php?themeId=family">
 				<img src="/pages/img/themelist/Comedy_World.jpg" alt="Comedy World">
 				<p>Comedy World</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="/cc_browser?themeId=cc2">
+			<a href="/characters/browse.php?themeId=cc2">
 				<img src="/pages/img/themelist/lil_Peepz.jpg" alt="Lil' Peepz">
 				<p>Lil' Peepz</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="/cc_browser?themeId=anime">
+			<a href="/characters/browse.php?themeId=anime">
 				<img src="/pages/img/themelist/Anime.jpg" alt="Anime">
 				<p>Anime</p>
 			</a>
@@ -96,19 +96,19 @@
 
 	<div id="column3">
 		<div class="theme">
-			<a href="/cc_browser?themeId=ninjaanime">
+			<a href="/characters/browse.php?themeId=ninjaanime">
 				<img src="/pages/img/themelist/Ninja_Anime.jpg" alt="Ninja Anime">
 				<p>Ninja Anime</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="/cc_browser?themeId=spacecitizen">
+			<a href="/characters/browse.php?themeId=spacecitizen">
 				<img src="/pages/img/themelist/Space_Citizens.jpg" alt="Space Citizens">
 				<p>Space Citizens</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="/cc_browser?themeId=chibi">
+			<a href="/characters/browse.php?themeId=chibi">
 				<img src="/pages/img/themelist/Chibi_Peepz.jpg" alt="Chibi Peepz">
 				<p>Chibi Peepz</p>
 			</a>
@@ -117,19 +117,19 @@
 
 	<div id="column4">
 		<div class="theme">
-			<a href="/cc_browser?themeId=ninja">
+			<a href="/characters/browse.php?themeId=ninja">
 				<img src="/pages/img/themelist/Chibi_Ninjas.jpg" alt="Chibi Ninjas">
 				<p>Chibi Ninjas</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="/cc_browser?themeId=animal">
+			<a href="/characters/browse.php?themeId=animal">
 				<img src="/pages/img/themelist/Lil_Petz_World.jpg" alt="Lil' Petz World">
 				<p>Lil" Petz World</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="/cc_browser?themeId=space">
+			<a href="/characters/browse.php?themeId=space">
 				<img src="/pages/img/themelist/Space_Peepz.jpg" alt="Space Peepz">
 				<p>Space Peepz</p>
 			</a>
@@ -139,13 +139,13 @@
 	<h2 id="licensed-themes">Licensed themes</h2>
 	<div id="column8">
 		<div class="theme">
-			<a href="/cc_browser?themeId=botdf">
+			<a href="/characters/browse.php?themeId=botdf">
 				<img src="/pages/img/themelist/botdf.jpg" alt="Blood on the Dance Floor&#8482;">
 				<p>Blood on the Dance Floor&#8482;</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="/cc_browser?themeId=cctoonadv">
+			<a href="/characters/browse.php?themeId=cctoonadv">
 				<img src="/pages/img/themelist/Toon_Adventure.png" alt="Toon Adventure&#8482;">
 				<p>Toon Adventure&#8482;</p>
 			</a>

@@ -385,11 +385,11 @@
 <footer>
 	<nav id="foot-left">
 		<a href="/videomaker/full/tutorial" id="studiotutorial" style="display: none">Studio Tutorial</a>
-		<a href="https://josephcrosmanplays532.github.io/faq.html">FAQ</a>
-		<a href="https://discord.gg/b7YSRkg">Wrapper Hub</a>
 	</nav>
 
 	<nav id="foot-right">
+		<a href="https://josephcrosmanplays532.github.io/faq.html">FAQ</a>
+		<a href="https://discord.gg/b7YSRkg">Wrapper Hub</a>
 		<a href="https://josephcrosmanplays532.github.io">Server Page</a>
 		<a href="https://josephcrosmanplays532.github.io/caillou.html">Caillou</a>
 	</nav>

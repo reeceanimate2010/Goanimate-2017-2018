@@ -13,6 +13,7 @@
 			document.getElementById("creation_type").style.display = "none";
 			document.getElementById("character_themes").style.display = "block";
 			document.getElementById("back").style.display = "block";
+			document.getElementById("studio_tutorial").style.display = "none";
 		}
 		function movieThemes() {
 			document.getElementById("creation_type").style.display = "none";
@@ -40,7 +41,7 @@
 		<h1 style="margin:0"><img id="logo" src="/pages/img/list_logo.svg" alt="PHPWrapper"/></h1>
 	</a>
 	<nav id="headbuttons">
-		<a class="button_small" id="studio_tutorial" href="/videomaker/full/tutorial" style="display: block">Studio Tutorial</a>
+		<a class="button_small" id="studio_tutorial" href="/videomaker/full/tutorial" onclick="creationType()" style="display: block">Studio Tutorial</a>
 		<a class="button_small" id="back" onclick="creationType()" style="display: none">Back</a>
 		
 	</nav>

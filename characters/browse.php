@@ -121,7 +121,7 @@ if (self !== top) {
 	<a href="/create.php">Make a video</a>  >  <a class="active">Your Characters</a>
         </ul>
         <p>Browse characters already available in that theme and use them as a starting point to create new custom characters.</p>
-<div id="ccbrowser-container" align="center"><object data="https://josephcrosmanplays532.github.io/static/animation/cc_browser.swf" type="application/x-shockwave-flash" id="ccbrowser" width="100%" height="100%">
+<div id="ccbrowser-container" align="center"><object data="https://josephcrosmanplays532.github.io/static/animation/cc_browser.swf" type="application/x-shockwave-flash" id="ccbrowser" width="960" height="1200">
 	<!-- The flashvars are a huge mess, have fun looking at them. :) -->
 	<param name="flashvars" value="apiserver=/&storePath=https://josephcrosmanplays532.github.io/static/store/<store>&clientThemePath=https://josephcrosmanplays532.github.io/static/<client_theme>&themeId=<?php if (isset($_GET["theme"])) { echo $_GET["theme"]; } else { echo "family"; } ?>&bs=<?php if (isset($_GET["type"])) { echo $_GET["type"]; } else { echo "adam"; } ?>&ut=60&presaveId=<?php include_once("../goapi/function/characterId.php"); if (isset($_GET["characterId"])) { echo $_GET["characterId"]; } else { echo $id + 1; } ?>&appCode=go&page=&siteId=go&m_mode=school&isLogin=Y&isEmbed=1&ctc=go&tlang=en_US&nextUrl=%2Fbrowse.php">
 	<param name="allowScriptAccess" value="always">

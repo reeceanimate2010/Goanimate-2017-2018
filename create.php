@@ -75,19 +75,19 @@
 	<h2 id="standard-themes">Standard themes</h2>
 	<div id="column1">
 		<div class="theme">
-			<a href="http://localhost:4343/cc_browser?themeId=custom">
+			<a href="/cc_browser?themeId=family">
 				<img src="/pages/img/themelist/Comedy_World.jpg" alt="Comedy World">
 				<p>Comedy World</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/cc_browser?themeId=cc2">
+			<a href="/cc_browser?themeId=cc2">
 				<img src="/pages/img/themelist/lil_Peepz.jpg" alt="Lil' Peepz">
 				<p>Lil' Peepz</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/cc_browser?themeId=anime">
+			<a href="/cc_browser?themeId=anime">
 				<img src="/pages/img/themelist/Anime.jpg" alt="Anime">
 				<p>Anime</p>
 			</a>
@@ -96,19 +96,19 @@
 
 	<div id="column3">
 		<div class="theme">
-			<a href="http://localhost:4343/cc_browser?themeId=ninjaanime">
+			<a href="/cc_browser?themeId=ninjaanime">
 				<img src="/pages/img/themelist/Ninja_Anime.jpg" alt="Ninja Anime">
 				<p>Ninja Anime</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/cc_browser?themeId=spacecitizen">
+			<a href="/cc_browser?themeId=spacecitizen">
 				<img src="/pages/img/themelist/Space_Citizens.jpg" alt="Space Citizens">
 				<p>Space Citizens</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/cc_browser?themeId=custom">
+			<a href="/cc_browser?themeId=chibi">
 				<img src="/pages/img/themelist/Chibi_Peepz.jpg" alt="Chibi Peepz">
 				<p>Chibi Peepz</p>
 			</a>
@@ -117,19 +117,19 @@
 
 	<div id="column4">
 		<div class="theme">
-			<a href="http://localhost:4343/cc_browser?themeId=ninja">
+			<a href="/cc_browser?themeId=ninja">
 				<img src="/pages/img/themelist/Chibi_Ninjas.jpg" alt="Chibi Ninjas">
 				<p>Chibi Ninjas</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/cc_browser?themeId=animal">
-				<img src="/pages/img/themelist/Lil_Petz_World.jpg" alt="Lil" Petz World">
+			<a href="/cc_browser?themeId=animal">
+				<img src="/pages/img/themelist/Lil_Petz_World.jpg" alt="Lil' Petz World">
 				<p>Lil" Petz World</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/cc_browser?themeId=space">
+			<a href="/cc_browser?themeId=space">
 				<img src="/pages/img/themelist/Space_Peepz.jpg" alt="Space Peepz">
 				<p>Space Peepz</p>
 			</a>
@@ -139,13 +139,13 @@
 	<h2 id="licensed-themes">Licensed themes</h2>
 	<div id="column8">
 		<div class="theme">
-			<a href="http://localhost:4343/cc_browser?themeId=botdf">
+			<a href="/cc_browser?themeId=botdf">
 				<img src="/pages/img/themelist/botdf.jpg" alt="Blood on the Dance Floor&#8482;">
 				<p>Blood on the Dance Floor&#8482;</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/cc_browser?themeId=cctoonadv">
+			<a href="/cc_browser?themeId=cctoonadv">
 				<img src="/pages/img/themelist/Toon_Adventure.png" alt="Toon Adventure&#8482;">
 				<p>Toon Adventure&#8482;</p>
 			</a>
@@ -159,19 +159,19 @@
 	<h2 id="standard-themes">Standard themes</h2>
 	<div id="column1">
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=custom">
+			<a href="/videos/create.php?tray=custom">
 				<img src="/pages/img/themelist/Comedy_World.jpg" alt="Comedy World">
 				<p>Comedy World</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=action">
+			<a href="/videos/create.php?tray=action">
 				<img src="/pages/img/themelist/lil_Peepz.jpg" alt="Lil' Peepz">
 				<p>Lil' Peepz</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=retro">
+			<a href="/videos/create.php?tray=retro">
 				<img src="/pages/img/themelist/Cartoon_Classics.jpg" alt="Cartoon Classics">
 				<p>Cartoon Classics</p>
 			</a>
@@ -180,19 +180,19 @@
 
 	<div id="column2">
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=politic2">
+			<a href="/videos/create.php?tray=politic2">
 				<img src="/pages/img/themelist/Election_2012.jpg" alt="Election 2012">
 				<p>Election 2012</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=stick">
+			<a href="/videos/create.php?tray=stick">
 				<img src="/pages/img/themelist/Stick_Figure.jpg" alt="Stick Figure">
 				<p>Stick Figure</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=anime">
+			<a href="/videos/create.php?tray=anime">
 				<img src="/pages/img/themelist/Anime.jpg" alt="Anime">
 				<p>Anime</p>
 			</a>
@@ -201,19 +201,19 @@
 
 	<div id="column3">
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=ninjaanime">
+			<a href="/videos/create.php?tray=ninjaanime">
 				<img src="/pages/img/themelist/Ninja_Anime.jpg" alt="Ninja Anime">
 				<p>Ninja Anime</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=spacecitizen">
+			<a href="/videos/create.php?tray=spacecitizen">
 				<img src="/pages/img/themelist/Space_Citizens.jpg" alt="Space Citizens">
 				<p>Space Citizens</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=chibi">
+			<a href="/videos/create.php?tray=chibi">
 				<img src="/pages/img/themelist/Chibi_Peepz.jpg" alt="Chibi Peepz">
 				<p>Chibi Peepz</p>
 			</a>
@@ -222,19 +222,19 @@
 
 	<div id="column4">
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=ninja">
+			<a href="/videos/create.php?tray=ninja">
 				<img src="/pages/img/themelist/Chibi_Ninjas.jpg" alt="Chibi Ninjas">
 				<p>Chibi Ninjas</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=animal">
+			<a href="/videos/create.php?tray=animal">
 				<img src="/pages/img/themelist/Lil_Petz_World.jpg" alt="Lil' Petz World">
 				<p>Lil' Petz World</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=space">
+			<a href="/videos/create.php?tray=space">
 				<img src="/pages/img/themelist/Space_Peepz.jpg" alt="Space Peepz">
 				<p>Space Peepz</p>
 			</a>
@@ -243,13 +243,13 @@
 
 	<div id="column5">
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=fullenergy">
+			<a href="/videos/create.php?tray=fullenergy">
 				<img src="/pages/img/themelist/Full_Energy.png" alt="Full Energy">
 				<p>Full Energy</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=politic">
+			<a href="/videos/create.php?tray=politic">
 				<img src="/pages/img/themelist/Politics_and_Celebrity.png" alt="Politics & Celebrity">
 				<p>Politics & Celebrity</p>
 			</a>
@@ -259,13 +259,13 @@
 	<h2 id="seasonal-themes">Seasonal themes</h2>
 	<div id="column7">
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=christmas">
+			<a href="/videos/create.php?tray=christmas">
 				<img src="/pages/img/themelist/Holiday_and_Seasonal.png" alt="Holiday & Seasonal">
 				<p>Holiday & Seasonal</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=monstermsh">
+			<a href="/videos/create.php?tray=monstermsh">
 				<img src="/pages/img/themelist/Monsters_Mayhem.png" alt="Monsters Mayhem">
 				<p>Monsters Mayhem</p>
 			</a>
@@ -275,19 +275,19 @@
 	<h2 id="licensed-themes">Licensed themes</h2>
 	<div id="column8">
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=akon">
+			<a href="/videos/create.php?tray=akon">
 				<img src="/pages/img/themelist/Akon.jpg" alt="AKON&#8482;">
 				<p>AKON&#8482;</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=ben10">
+			<a href="/videos/create.php?tray=ben10">
 				<img src="/pages/img/themelist/Ben_10.png" alt="Ben 10&#8482;">
 				<p>Ben 10&#8482;</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=botdf">
+			<a href="/videos/create.php?tray=botdf">
 				<img src="/pages/img/themelist/botdf.jpg" alt="Blood on the Dance Floor&#8482;">
 				<p>Blood on the Dance Floor&#8482;</p>
 			</a>
@@ -296,19 +296,19 @@
 
 	<div id="column9">
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=bunny">
+			<a href="/videos/create.php?tray=bunny">
 				<img src="/pages/img/themelist/Happy_Bunny.png" alt="It's Happy Bunny&#8482;">
 				<p>It's Happy Bunny&#8482;</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=chowder">
+			<a href="/videos/create.php?tray=chowder">
 				<img src="/pages/img/themelist/Chowder.png" alt="Chowder&#8482;">
 				<p>Chowder&#8482;</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=domo">
+			<a href="/videos/create.php?tray=domo">
 				<img src="/pages/img/themelist/Domo.png" alt="Domo&#8482;">
 				<p>Domo&#8482;</p>
 			</a>
@@ -317,19 +317,19 @@
 
 	<div id="column10">
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=monkeytalk">
+			<a href="/videos/create.php?tray=monkeytalk">
 				<img src="/pages/img/themelist/SuperRica_&_Rashy.png" alt="SuperRica & Rashy&#8482;">
 				<p>SuperRica & Rashy&#8482;</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=sf">
+			<a href="/videos/create.php?tray=sf">
 				<img src="/pages/img/themelist/Street_Fighter.png" alt="Street Fighter&#8482;">
 				<p>Street Fighter&#8482;</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=startrek">
+			<a href="/videos/create.php?tray=startrek">
 				<img src="/pages/img/themelist/Star_Trek_Quags.JPG" alt="Star Trek&#8482; Quogs">
 				<p>Star Trek&#8482; Quogs</p>
 			</a>
@@ -338,19 +338,19 @@
 
 	<div id="column11">
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=toonadv">
+			<a href="/videos/create.php?tray=toonadv">
 				<img src="/pages/img/themelist/Toon_Adventure.png" alt="Toon Adventure&#8482;">
 				<p>Toon Adventure&#8482;</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=underdog">
+			<a href="/videos/create.php?tray=underdog">
 				<img src="/pages/img/themelist/UnderDog.png" alt="Underdog&#8482;">
 				<p>Underdog&#8482;</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=willie">
+			<a href="/videos/create.php?tray=willie">
 				<img src="/pages/img/themelist/Willie_Nelson.jpg" alt="Willie Nelson&#8482;">
 				<p>Willie Nelson&#8482;</p>
 			</a>
@@ -359,13 +359,13 @@
 
 	<h2 id="developer-themes">Developer themes</h2>
 	<div class="theme">
-		<a href="http://localhost:4343/go_full?tray=street">
+		<a href="/videos/create.php?tray=street">
 			<img src="/pages/img/themelist/Street.png" alt="Street">
 			<p>Street</p>
 		</a>
 	</div>
 	<div class="theme">
-		<a href="http://localhost:4343/go_full?tray=yme">
+		<a href="/videos/create.php?tray=yme">
 			<img src="/pages/img/themelist/yme.png" alt="yme babe theme">
 			<p>yme</p>
 		</a>
@@ -377,13 +377,13 @@
 <footer>
 	<nav id="foot-left">
 		<span title="Wrapper: Offline vWRAPPER_VER, build WRAPPER_BLD">vWRAPPER_VER</span>
-		<a href="https://localhost:4664/faq.html">FAQ</a>
+		<a href="https://josephcrosmanplays532.github.io/faq.html">FAQ</a>
 		<a href="https://discord.gg/b7YSRkg">Wrapper Hub</a>
 	</nav>
 
 	<nav id="foot-right">
-		<a href="https://localhost:4664">Server Page</a>
-		<a href="https://localhost:4664/caillou.html">Caillou</a>
+		<a href="https://josephcrosmanplays532.github.io">Server Page</a>
+		<a href="https://josephcrosmanplays532.github.io/caillou.html">Caillou</a>
 	</nav>
 </footer>
 

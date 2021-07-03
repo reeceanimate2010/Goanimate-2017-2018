@@ -39,6 +39,8 @@
 	</a>
 	<nav id="headbuttons">
 		<a class="button_small" id="back" onclick="creationType()" style="display: none">Back</a>
+		<a class="button_small" id="Studio_tutorial" href="/videomaker/full/tutorial">Studio Tutorial</a>
+		
 	</nav>
 </header>
 

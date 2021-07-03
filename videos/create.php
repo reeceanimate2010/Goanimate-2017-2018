@@ -32,7 +32,7 @@
 	<div id="preview_popup">
 		<h2 id="preview-video">Preview Video</h2>
 		<p class="close-button" onclick="hidePreviewer()">X</p>
-		<object data="https://josephcrosmanplays532.github.io/static/animation/player.swf" type="application/x-shockwave-flash" id="preview_player">
+		<object data="https://josephcrosmanplays532.github.io/static/animation/player.swf" type="application/x-shockwave-flash" id="playerdiv">
 			<!-- The flashvars are a huge mess, have fun looking at them. :) -->
 			<param name="flashvars" value="apiserver=/&storePath=https://josephcrosmanplays532.github.io/static/store/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://josephcrosmanplays532.github.io/static/<client_theme>&themeId=custom&tlang=en_US&isInitFromExternal=1&goteam_draft_only=1&isWide=1&collab=0&startFrame=previewStartFrame&autostart=1&nextUrl=../pages/html/list.html&tray=custom">
 			<param name="allowScriptAccess" value="always">
@@ -44,7 +44,7 @@
 <!-- Video Studio -->
 <main>
 
-<object data="https://josephcrosmanplays532.github.io/static/animation/go_full.swf" type="application/x-shockwave-flash" id="video_studio">
+<object data="https://josephcrosmanplays532.github.io/static/animation/go_full.swf" type="application/x-shockwave-flash" id="Studio" width="100%" height="100%">
 	<!-- The flashvars are a huge mess, have fun looking at them. :) -->
 	<param name="flashvars" value="apiserver=/&storePath=https://josephcrosmanplays532.github.io/static/store/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://josephcrosmanplays532.github.io/static/<client_theme>&themeId=custom&tlang=en_US&presaveId=<?php include_once("../goapi/function/videoId.php"); if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo $id + 1; } ?><?php if (isset($_GET["video"])) { echo "&movieId={$_GET["video"]}"; } ?>&goteam_draft_only=1&isWide=1&collab=0&nextUrl=./browse.php&tray=custom">
 	<param name="allowScriptAccess" value="always">

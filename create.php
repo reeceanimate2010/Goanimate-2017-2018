@@ -14,12 +14,14 @@
 			document.getElementById("character_themes").style.display = "block";
 			document.getElementById("back").style.display = "block";
 			document.getElementById("studio_tutorial").style.display = "none";
+			document.getElementById("studiotutorial").style.display = "block";
 		}
 		function movieThemes() {
 			document.getElementById("creation_type").style.display = "none";
 			document.getElementById("movie_themes").style.display = "block";
 			document.getElementById("back").style.display = "block";
 			document.getElementById("studio_tutorial").style.display = "none";
+			document.getElementById("studiotutorial").style.display = "block";
 		}
 		function creationType() {
 			document.getElementById("creation_type").style.display = "block";
@@ -27,6 +29,7 @@
 			document.getElementById("movie_themes").style.display = "none";
 			document.getElementById("back").style.display = "none";
 			document.getElementById("studio_tutorial").style.display = "block";
+			document.getElementById("studiotutorial").style.display = "none";
 		}
 		function showCredits() {
 			document.getElementById("credits").style.display="block";
@@ -384,7 +387,7 @@
 		<span title="Wrapper: Offline vWRAPPER_VER, build WRAPPER_BLD">vWRAPPER_VER</span>
 		<a href="https://josephcrosmanplays532.github.io/faq.html">FAQ</a>
 		<a href="https://discord.gg/b7YSRkg">Wrapper Hub</a>
-		<a href="/videomaker/full/tutorial" id="studio_tutorial" style="display: none">Studio Tutorial</a>
+		<a href="/videomaker/full/tutorial" id="studiotutorial" style="display: none">Studio Tutorial</a>
 	</nav>
 
 	<nav id="foot-right">

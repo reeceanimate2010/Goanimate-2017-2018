@@ -15,6 +15,7 @@
 			document.getElementById("back").style.display = "block";
 			document.getElementById("studio_tutorial").style.display = "none";
 			document.getElementById("studiotutorial").style.display = "block";
+			document.getElementById("wrapperversion").style.display = "none";
 		}
 		function movieThemes() {
 			document.getElementById("creation_type").style.display = "none";
@@ -22,6 +23,7 @@
 			document.getElementById("back").style.display = "block";
 			document.getElementById("studio_tutorial").style.display = "none";
 			document.getElementById("studiotutorial").style.display = "block";
+			document.getElementById("wrapperversion").style.display = "none";
 		}
 		function creationType() {
 			document.getElementById("creation_type").style.display = "block";
@@ -30,6 +32,7 @@
 			document.getElementById("back").style.display = "none";
 			document.getElementById("studio_tutorial").style.display = "block";
 			document.getElementById("studiotutorial").style.display = "none";
+			document.getElementById("wrapperversion").style.display = "block";
 		}
 		function showCredits() {
 			document.getElementById("credits").style.display="block";
@@ -384,6 +387,7 @@
 
 <footer>
 	<nav id="foot-left">
+		<span title="Wrapper: Offline vWRAPPER_VER, build WRAPPER_BLD" id="wrapperversion" style="display: block">vWRAPPER_VER</span>
 		<a href="/videomaker/full/tutorial" id="studiotutorial" style="display: none">Studio Tutorial</a>
 	</nav>
         

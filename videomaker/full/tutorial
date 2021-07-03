@@ -110,7 +110,7 @@ height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</
     </div>
 </div>
     <div class="templates" style="display: none;">
-    <div class="voice-vendor-ad" style="display: none;">
+    <div class="voice-vendor-ad" style="display: none">
         <div class="close"><a href="javascript:hideVoiceAdWidget()" onclick="javascript:return hideVoiceAdWidget()">×</a></div>
         <div id="studio-voice-vendor-container">
             <ul>
@@ -743,7 +743,7 @@ ImporterFile.defaults.options.restricted_mime = ["font\/x-font-ttf","font\/vnd.m
 	<param name="allowFullScreen" value="true">
 </object>
 </div>
-<div class="voice-vendor-ad" style="display: none;">
+<div class="voice-vendor-ad" style="display: none">
         <div class="close"><a href="javascript:hideVoiceAdWidget()" onclick="javascript:return hideVoiceAdWidget()">×</a></div>
         <div id="studio-voice-vendor-container">
             <ul>
@@ -755,7 +755,7 @@ ImporterFile.defaults.options.restricted_mime = ["font\/x-font-ttf","font\/vnd.m
                 </li>
             </ul>
         </div>
-    </div><div class="voice-vendor-ad" style="display: none;">
+    </div><div class="voice-vendor-ad" style="display: none">
         <div class="close"><a href="javascript:hideVoiceAdWidget()" onclick="javascript:return hideVoiceAdWidget()">×</a></div>
         <div id="studio-voice-vendor-container">
             <ul>

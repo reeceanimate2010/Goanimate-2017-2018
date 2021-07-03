@@ -47,7 +47,7 @@
 		<h1 style="margin:0"><img id="logo" src="/pages/img/list_logo.svg" alt="PHPWrapper"/></h1>
 	</a>
 	<nav id="headbuttons">
-		<a class="button_small" id="studio_tutorial" href="/videomaker/full/tutorial" onclick="creationType()" style="display: block">Studio Tutorial</a>
+		<a class="button_small" id="studio_tutorial" href="/studiotutorial.php" onclick="creationType()" style="display: block">Studio Tutorial</a>
 		<a class="button_small" id="back" onclick="creationType()" style="display: none">Back</a>
 		
 	</nav>
@@ -388,7 +388,7 @@
 <footer>
 	<nav id="foot-left">
 		<span title="Wrapper: Offline vWRAPPER_VER, build WRAPPER_BLD" id="wrapperversion" style="display: block">vWRAPPER_VER</span>
-		<a href="/videomaker/full/tutorial" id="studiotutorial" style="display: none">Studio Tutorial</a>
+		<a href="/studiotutorial.php" id="studiotutorial" style="display: none">Studio Tutorial</a>
 	</nav>
         
 	<nav id="foot-middle">

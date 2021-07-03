@@ -7,7 +7,6 @@
 	<meta name="description" content="PHPWrapper's character browser">
 	<link rel="stylesheet" type="text/css" href="/pages/css/modern-normalize.css">
 	<link rel="stylesheet" type="text/css" href="/pages/css/global.css">
-	<link rel="stylesheet" type="text/css" href="/pages/css/swf.css">
 </head>
 <body>
 

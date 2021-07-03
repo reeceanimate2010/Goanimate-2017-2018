@@ -212,23 +212,6 @@ function voiceBanner(bannerId) {
             });
         }
         var enable_full_screen = true;
-        var studio_data = {
-            id: "Studio",
-            swf: "https://josephcrosmanplays532.github.io/static/animation/go_full.swf",
-            width: "100%",
-            height: "100%",
-            align: "middle",
-            allowScriptAccess: "always",
-            allowFullScreen: "true",
-            wmode: "window",
-            hasVersion: "10.3"
-        };
-        if (!enable_full_screen) {
-            studio_data.width  = 960;
-            studio_data.height  = 630;
-            resize_studio = false;
-        }
-        studio_data.flashvars = {"apiserver":"https://wrapper-online2.herokuapp.com/","storePath":"https://josephcrosmanplays532.github.io/static/store/<store>","isEmbed":1,"ctc":"go","ut":60,"bs":"default","appCode":"go","page":"","siteId":"go","lid":13,"isLogin":"Y","retut":1,"clientThemePath":"https://josephcrosmanplays532.github.io/static/<client_theme>","themeId":"business","tlang":"en_US","presaveId":"m-1","goteam_draft_only":1,"isWide":1,"nextUrl":"/pages/html/list.html","tray":"custom"};
         var _ccad = null;
         function proceedWithFullscreenStudio() {
             // These should be executed only when we are really ready to show the studio
@@ -448,101 +431,69 @@ function checkTheme(themeList) {
 function checkPreviewServer() {
     return previewPlayer._connectionState === PreviewPlayerConstants.STATE_READY;
 }
-function loadH5Preview() {
-    if (filmXmlStr === null) {
-        return;
-    }
-    $('#h5-playerdiv').data('previewPlayerControl').reset();
-    previewPlayer.preview(filmXmlStr, previewStartFrame);
-    $('#previewPlayer').addClass('using-h5');
-}
-function loadLegacyPreview() {
-    if (movieDataXmlStr === null) {
-        return;
-    }
-    pauseH5PreviewPlayer();
-    savePreviewData(movieDataXmlStr);
-    createPreviewPlayer("playerdiv", {
-        height: 360,
-        width: 640,
-        player_url: "https://josephcrosmanplays532.github.io/static/animation/player.swf",
-        quality: "medium"
-    }, {
-        movieOwner: "", movieOwnerId: "", movieId: "", ut: "-1",
-        movieLid: "8", movieTitle: "", movieDesc: "", userId: "", username: "", uemail: "",
-        apiserver: "https://wrapper-online2.herokuapp.com/", thumbnailURL: "", copyable: "0", isPublished: "0", ctc: "go", tlang: "en_US", is_private_shared: "0",
-        autostart: "1", appCode: "go", is_slideshow: "0", originalId: "0", is_emessage: "0", isEmbed: "0", refuser: "",
-        utm_source: "", uid: "", isTemplate: "1", showButtons: "0", chain_mids: "", showshare: "0", averageRating: "",
-                    s3base: "https://s3.amazonaws.com/fs.goanimate.com/,https://assets.vyond.com/",
-                ratingCount: "", fb_app_url: "/", numContact: 0, isInitFromExternal: 1, storePath: "https://josephcrosmanplays532.github.io/static/store/<store>", clientThemePath: "https://josephcrosmanplays532.github.io/static/<client_theme>", animationPath: "https://josephcrosmanplays532.github.io/static/animation/",
-        startFrame: previewStartFrame
-    });
-    $('#previewPlayer').removeClass('using-h5');
-}
-function initPreviewPlayer(dataXmlStr, startFrame, containsChapter, themeList) {
-    movieDataXmlStr = dataXmlStr;
-    previewStartFrame = startFrame;
-    filmXmlStr = dataXmlStr.split("<filmxml>")[1].split("</filmxml>")[0];
-    if (typeof startFrame == 'undefined') {
-        startFrame = 1;
-    } else {
-        startFrame = Math.max(1, parseInt(startFrame));
-    }
-    if (containsChapter) {
-        $("#preview-alert-block").show();
-    } else {
-        $("#preview-alert-block").hide();
-    }
-    previewSceen();
-    $("#previewPlayerContainer").show();
-    var isThemeSupport = checkTheme(themeList);
-    if (checkBrowser() && isThemeSupport && checkPreviewServer()) { // Preview with next
-        loadH5Preview();
-    } else {
-        // fallback to legacy preview
-        loadLegacyPreview();
-        if (!checkPreviewServer() && (previewPlayerRetryCount > 0)) { // Retry on WebSocket connection problem
-            previewPlayer.connect();
-            previewPlayerRetryCount--;
-        }
-    }
-}
-function pauseH5PreviewPlayer() {
-    $("#h5-preview-player").get(0).pause();
-}
-function switchBackToStudio() {
-    try {
-        ($("#previewPlayerContainer #Player").get(0) || {pause:function(){}}).pause();
-    } catch (err) {};
-    pauseH5PreviewPlayer();
-    $("#previewPlayerContainer").hide();
-    restoreStudio();
-    document.getElementById("Studio").onExternalPreviewPlayerCancel();
-}
-function publishStudio() {
-    try {
-        ($("#previewPlayerContainer #Player").get(0) || {pause:function(){}}).pause();
-    } catch (err) {};
-    pauseH5PreviewPlayer();
-    $("#previewPlayerContainer").hide();
-    restoreStudio();
-    document.getElementById("Studio").onExternalPreviewPlayerPublish();
-}
-function exitStudio(share) {
-    loadedFullscreenStudio = false;
-}
-function studioUpsellUpgrade() {
-    $('#upsell-modal').modal('hide');
-    restoreStudio();
-    document.getElementById("Studio").onUpsellUpgrade();
-}
-function customFontBanner() {
-    var plansAndPricingUrl = 'https://www.vyond.com/pricing';
-    window.open(plansAndPricingUrl, '_blank');
-}
-window.addEventListener(PreviewPlayerEvent.ANIMATION_INCOMPATIBLE, function() {
-    loadLegacyPreview();
-});
+	////
+	//// This JS contains important Video Studio stuff
+	////
+	
+	///
+	/// Variables
+	///
+	var previewPlayerTempData = "";
+	const fu = document.getElementById('fileupload'),
+		sub = document.getElementById('submit');
+
+	///
+	/// Previewer
+	///
+	function initPreviewPlayer(dataXmlStr, startFrame, containsChapter, themeList) {
+		// New variable to be used by loadPreviewer()
+		movieDataXmlStr = dataXmlStr;
+		// Movie XML
+		filmXmlStr = dataXmlStr.split("<filmxml>")[1].split("</filmxml>")[0];
+		// Show preview popup
+		document.getElementById("preview_popup_container").style.display = "block";
+		// Load the Video Previewer
+		loadPreviewer();
+	}
+	function loadPreviewer() {
+		// I think this is in case of an error??
+		if (movieDataXmlStr === null) {
+			return;
+		}
+		// I don't know
+		savePreviewData(movieDataXmlStr);
+	}
+	function savePreviewData(a) {
+		// Set temp data variable
+		previewPlayerTempData = a
+	}
+	function retrievePreviewPlayerData() {
+		// Store in separate variable
+		var recentPreviewPlayerTempData = previewPlayerTempData;
+		// Clear original variable
+		previewPlayerTempData = "";
+		// Return recent temp data
+		return recentPreviewPlayerTempData;
+	}
+
+	///
+	/// Importing
+	///
+	// Show upload window
+	function showImporter() {
+		document.getElementById("import_popup_container").style.display = "block";
+	};
+
+	///
+	/// Other stuff
+	///
+	// Redirect to Video Browser on Video Studio exit
+	function exitStudio() {
+		window.location = "/videos/browse.php";
+	}
+function showImporter() {
+		document.getElementById("import_popup_container").style.display = "block";
+	};
 VideoTutorial.tutorials.composition = {
     title: 'Composition Tutorial',
     wistiaId: 'nuy96pslyp',
@@ -551,6 +502,13 @@ VideoTutorial.tutorials.enterexit = {
     title: 'Enter and Exit Effects Tutorial',
     wistiaId: 'fvjsa3jnzc',
 }
+function hidePreviewer() {
+		document.getElementById("preview_popup_container").style.display = "none";
+	}
+	// Hide Asset Importer popup
+	function hideImporter() {
+		document.getElementById("import_popup_container").style.display = "none";
+	}
 </script>
 <script id="importer-share-asset-tmpl" type="text/x-jquery-tmpl">
 <li class="share-asset clearfix">
@@ -672,72 +630,31 @@ ImporterFile.defaults.options.restricted_mime = ["font\/x-font-ttf","font\/vnd.m
     }
 </script>
 <!-- FOOTER -->
-<div id="studio_container" style="top: 0px; width: 2238px; height: 1586px;"><div class="ga-importer">
-    <div class="ga-importer-header">
-        <form class="ga-importer-base-form" action="/upload_asset" method="post">
-            <a class="ga-importer-collapse" href="#" title="Collapse" onclick="hideImporter(); return false;">×</a>
-            <div class="fileinputs">
-                <div class="importer-button file-trigger">SELECT FILES</div>
-                <input class="ga-importer-file-input" type="file" name="file" multiple="">
-            </div>
-            <span class="hints">
-                <i class="glyph-pro glyph-circle-question_mark"></i>
-                <div class="tooltip in" style="display:none;">
-                    <div class="tooltip-arrow"></div>
-                    <div class="tooltip-inner">
-                        <ul>
-                            <li>Maximum file size: 15MB</li>
-                            <li>Images: JPG, PNG<br>To cover the whole stage in a 1080p video, use an image at least 1920px x 1080px.</li>
-                            <li>Audio: MP3, WAV, M4A</li>
-                            <li>Video: MP4.</li>
-                            <li>Fonts: TTF, OTF (Professional only)</li>
-                        </ul>
-                    </div>
-                </div>
-            </span>
-            <input type="hidden" name="subtype" value="">
-        </form>
-    </div>
-    <div class="ga-importer-content" style="height: 1536px;">
-        <div class="ga-importer-start">
-            <div class="ga-importer-start-draghere">Drag files here</div>
-            <div class="ga-importer-instruction general">
-                <ul>
-                    <li><strong>Maximum file size:</strong> 15MB</li>
-                    <li><strong>Images:</strong> JPG, PNG<br>To cover the whole stage in a 1080p video, use an image at least 1920px x 1080px.</li>
-                    <li><strong>Audio:</strong> MP3, WAV, M4A</li>
-                    <li><strong>Video:</strong> MP4.</li>
-                    <li><strong>Fonts:</strong> TTF, OTF (Professional only)</li>
-                </ul>
-            </div>
-        </div>
-        <div class="ga-importer-results">
-            <div class="ga-importer-notice clearfix">
-                <div class="ga-importer-notice-count">
-                    Files added. <a class="open-your-library">View Library</a>
-                </div>
-            </div>
-            <ul class="ga-importer-files"></ul>
-        </div>
-        <div class="ga-importer-queue-message">
-            Assign a category to start importing
-            <span class="hints pull-right">
-                <i class="i-help"></i>
-                <div class="tooltip in" style="display:none;">
-                    <div class="tooltip-arrow"></div>
-                    <div class="tooltip-inner">
-                        <p>Imported files are categorized to simplify browsing.</p>
-                        <p>Use the "IMPORT AS" drop down to see the available categories based on the format of the file you import.</p>
-                    </div>
-                </div>
-            </span>
-        </div>
-        <ul class="ga-importer-queue"></ul>
-    </div>
-    <div class="ga-import-dnd-hint">
-        Release to start uploading    </div>
+<div id="studio_container" style="top: 0px; width: 2238px; height: 1586px;"><div id="import_popup_container" style="display:none">
+	<div id="import_popup">
+		<h2 id="import-an-asset">Import an Asset</h2>
+		<p class="close-button" onclick="hideImporter()">X</p>
+		<!-- Import form -->
+		<div id="import_image">
+			<form id="uploadbanner" enctype="multipart/form-data" method="post" action="/goapi/uploadAsset" target="dummy">
+				<input id="fileupload" name="import" type="file" accept=".mp3,.wav,.png,.jpg">
+				<h3 id="import-as">Import As:</h3>
+				<input type="radio" value="prop" name="subtype"> Prop</input>
+				<br />
+				<input type="radio" value="background" name="subtype"> Background</input>
+				<br />
+				<input type="submit" value="Import" onclick='document.getElementById("video_maker").importerUploadComplete("importerUploadComplete"); document.getElementById("import_popup_container").style.display = "none";' id="submit" class="button_import" />
+			</form>
+		</div>
+	</div>
 </div>
-    <div id="studio_holder" style="width: 2108px;"><object id="obj" data="https://josephcrosmanplays532.github.io/static/animation/go_full.swf" type="application/x-shockwave-flash" width="100%" height="100%"><param name="flashvars" value="apiserver=https%3A%2F%2Fwrapper-online2.herokuapp.com%2F&storePath=https%3A%2F%2Fjosephcrosmanplays532.github.io%2Fstatic%2Fstore%2F%3Cstore%3E&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https%3A%2F%2Fjosephcrosmanplays532.github.io%2Fstatic%2F%3Cclient_theme%3E&themeId=business&tlang=en_US&presaveId=m-1&goteam_draft_only=1&isWide=1&nextUrl=%2Fpages%2Fhtml%2Flist.html&tray=custom"> <param name="allowScriptAccess" value="always"></object></div>
+    <div id="studio_holder" style="width: 2108px;"><object data="https://josephcrosmanplays532.github.io/static/animation/go_full.swf" type="application/x-shockwave-flash" id="Studio" width="100%" height="100%">
+	<!-- The flashvars are a huge mess, have fun looking at them. :) -->
+	<param name="flashvars" value="apiserver=https://vyond2018.herokuapp.com/&storePath=https://josephcrosmanplays532.github.io/static/store/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://josephcrosmanplays532.github.io/static/<client_theme>&themeId=custom&tlang=en_US&presaveId=<?php include_once("../goapi/function/videoId.php"); if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo $id + 1; } ?><?php if (isset($_GET["video"])) { echo "&movieId={$_GET["video"]}"; } ?>&goteam_draft_only=1&isWide=1&collab=0&nextUrl=./browse.php&tray=custom">
+	<param name="allowScriptAccess" value="always">
+	<param name="allowFullScreen" value="true">
+</object>
+</div>
 <div class="voice-vendor-ad" style="display: none;">
         <div class="close"><a href="javascript:hideVoiceAdWidget()" onclick="javascript:return hideVoiceAdWidget()">×</a></div>
         <div id="studio-voice-vendor-container">

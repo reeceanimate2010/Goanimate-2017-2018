@@ -15,14 +15,6 @@
 			document.getElementById("back").style.display = "block";
 			document.getElementById("studio_tutorial").style.display = "none";
 			document.getElementById("studiotutorial").style.display = "block";
-			document.getElementById("faq_left").style.display = "none";
-			document.getElementById("faq_right").style.display = "block";
-			document.getElementById("wrapper_hub_left").style.display = "none";
-			document.getElementById("wrapper_hub_right").style.display = "block";
-			document.getElementById("server_page_left").style.display = "block";
-			document.getElementById("server_page_right").style.display = "none";
-			document.getElementById("caillou_left").style.display = "block";
-			document.getElementById("caillou_right").style.display = "none";
 		}
 		function movieThemes() {
 			document.getElementById("creation_type").style.display = "none";
@@ -30,14 +22,6 @@
 			document.getElementById("back").style.display = "block";
 			document.getElementById("studio_tutorial").style.display = "none";
 			document.getElementById("studiotutorial").style.display = "block";
-			document.getElementById("faq_left").style.display = "none";
-			document.getElementById("faq_right").style.display = "block";
-			document.getElementById("wrapper_hub_left").style.display = "none";
-			document.getElementById("wrapper_hub_right").style.display = "block";
-			document.getElementById("server_page_left").style.display = "block";
-			document.getElementById("server_page_right").style.display = "none";
-			document.getElementById("caillou_left").style.display = "block";
-			document.getElementById("caillou_right").style.display = "none";
 		}
 		function creationType() {
 			document.getElementById("creation_type").style.display = "block";
@@ -46,14 +30,6 @@
 			document.getElementById("back").style.display = "none";
 			document.getElementById("studio_tutorial").style.display = "block";
 			document.getElementById("studiotutorial").style.display = "none";
-			document.getElementById("faq_left").style.display = "block";
-			document.getElementById("faq_right").style.display = "none";
-			document.getElementById("wrapper_hub_left").style.display = "block";
-			document.getElementById("wrapper_hub_right").style.display = "none";
-			document.getElementById("server_page_left").style.display = "none";
-			document.getElementById("server_page_right").style.display = "block";
-			document.getElementById("caillou_left").style.display = "none";
-			document.getElementById("caillou_right").style.display = "block";
 		}
 		function showCredits() {
 			document.getElementById("credits").style.display="block";
@@ -409,17 +385,16 @@
 <footer>
 	<nav id="foot-left">
 		<a href="/videomaker/full/tutorial" id="studiotutorial" style="display: none">Studio Tutorial</a>
-		<a href="https://josephcrosmanplays532.github.io/faq.html" id="faq_left" style="display: block">FAQ</a>
-		<a href="https://discord.gg/b7YSRkg" id="wrapper_hub_left" style="display: block">Wrapper Hub</a>
-		<a href="https://josephcrosmanplays532.github.io" id="server_page_left" style="display: none">Server Page</a>
-		<a href="https://josephcrosmanplays532.github.io/caillou.html" id="caillou_left" style="display: none">Caillou</a>
 	</nav>
-
+        
+	<nav id="foot-middle">
+		<a href="https://josephcrosmanplays532.github.io/faq.html">FAQ</a>
+		<a href="https://discord.gg/b7YSRkg">Wrapper Hub</a>
+	</nav>
+	
 	<nav id="foot-right">
-		<a href="https://josephcrosmanplays532.github.io/faq.html" id="faq_right" style="display: none">FAQ</a>
-		<a href="https://discord.gg/b7YSRkg" id="wrapper_hub_right" style="display: none">Wrapper Hub</a>
-		<a href="https://josephcrosmanplays532.github.io" id="server_page_right" style="display: block">Server Page</a>
-		<a href="https://josephcrosmanplays532.github.io/caillou.html" id="caillou_right" style="display: block">Caillou</a>
+		<a href="https://josephcrosmanplays532.github.io">Server Page</a>
+		<a href="https://josephcrosmanplays532.github.io/caillou.html">Caillou</a>
 	</nav>
 </footer>
 

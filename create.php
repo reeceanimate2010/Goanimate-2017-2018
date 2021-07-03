@@ -18,12 +18,14 @@
 			document.getElementById("creation_type").style.display = "none";
 			document.getElementById("movie_themes").style.display = "block";
 			document.getElementById("back").style.display = "block";
+			document.getElementById("studio_tutorial").style.display = "none";
 		}
 		function creationType() {
 			document.getElementById("creation_type").style.display = "block";
 			document.getElementById("character_themes").style.display = "none";
 			document.getElementById("movie_themes").style.display = "none";
 			document.getElementById("back").style.display = "none";
+			document.getElementById("studio_tutorial").style.display = "none";
 		}
 		function showCredits() {
 			document.getElementById("credits").style.display="block";
@@ -38,7 +40,7 @@
 		<h1 style="margin:0"><img id="logo" src="/pages/img/list_logo.svg" alt="PHPWrapper"/></h1>
 	</a>
 	<nav id="headbuttons">
-		<a class="button_small" id="Studio_tutorial" href="/videomaker/full/tutorial">Studio Tutorial</a>
+		<a class="button_small" id="studio_tutorial" href="/videomaker/full/tutorial" style="display: block">Studio Tutorial</a>
 		<a class="button_small" id="back" onclick="creationType()" style="display: none">Back</a>
 		
 	</nav>

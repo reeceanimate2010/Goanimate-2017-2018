@@ -15,14 +15,14 @@
 <meta name="google-site-verification" content="K_niiTfCVi72gwvxK00O4NjsVybMutMUnc-ZnN6HUuA">
 
 
-<link href="https://d2bm7x1jqouzel.cloudfront.net/fonts/1/sailec.css" rel="stylesheet" type="text/css">
-<link href="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/css/common_combined.css.gz.css" rel="stylesheet" type="text/css">
+<link href="https://josephcrosmanplays532.github.io/fonts/1/sailec.css" rel="stylesheet" type="text/css">
+<link href="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/css/common_combined.css.gz.css" rel="stylesheet" type="text/css">
 
-<link href="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/css/studio.css.gz.css" rel="stylesheet" type="text/css">
-<link href="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/css/video_voice_vendor.css.gz.css" rel="stylesheet" type="text/css">
-<link href="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/css/worknote.css.gz.css" rel="stylesheet" type="text/css">
-<link href="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/css/importer.css.gz.css" rel="stylesheet" type="text/css">
-<link href="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/css/importer_share.css.gz.css" rel="stylesheet" type="text/css">
+<link href="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/css/studio.css.gz.css" rel="stylesheet" type="text/css">
+<link href="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/css/video_voice_vendor.css.gz.css" rel="stylesheet" type="text/css">
+<link href="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/css/worknote.css.gz.css" rel="stylesheet" type="text/css">
+<link href="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/css/importer.css.gz.css" rel="stylesheet" type="text/css">
+<link href="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/css/importer_share.css.gz.css" rel="stylesheet" type="text/css">
 <!--[if lt IE 9]>
 <style text="text/css">
 .top-nav.collapse {height: auto;overflow: visible;}
@@ -34,32 +34,32 @@ var srv_tz_os = -5, view_name = "go", user_cookie_name = "u_info";
 var user_role = 9;
 </script>
 
-<script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/jquery/jquery-1.11.0.min.js.gz.js"></script>
-<script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/bootstrap3/bootstrap.min.js.gz.js"></script>
-<script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/bootstrap3/bootstrap-switch.min.js.gz.js"></script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/jquery/jquery-1.11.0.min.js.gz.js"></script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/bootstrap3/bootstrap.min.js.gz.js"></script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/bootstrap3/bootstrap-switch.min.js.gz.js"></script>
 
-<script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/go2.js.gz.js"></script>
-<script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/jquery/jquery.swfobject.min.js.gz.js"></script>
-<script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/jquery/jquery.blockUI-2.66.0.js.gz.js"></script>
-<script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/jquery/jquery.scrollTo.min.js.gz.js"></script>
-<script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/app.js.gz.js"></script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/go2.js.gz.js"></script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/jquery/jquery.swfobject.min.js.gz.js"></script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/jquery/jquery.blockUI-2.66.0.js.gz.js"></script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/jquery/jquery.scrollTo.min.js.gz.js"></script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/app.js.gz.js"></script>
 
-<script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/cookie.js.gz.js"></script>
-<script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/Gettext.js.gz.js"></script>
-<script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/email.js.gz.js"></script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/cookie.js.gz.js"></script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/Gettext.js.gz.js"></script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/email.js.gz.js"></script>
 
-<script type="text/javascript" src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/../po/goserver_js-en_US.json.gz.json"></script>
+<script type="text/javascript" src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/../po/goserver_js-en_US.json.gz.json"></script>
 <script type="text/javascript">
 var I18N_LANG = 'en_US';
 var GT = new Gettext({'locale_data': json_locale_data});
 </script>
 
-<script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/movie.js.gz.js"></script>
-<script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/cookie.js.gz.js"></script>
-<script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/studio.js.gz.js"></script>
-<script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/jquery/jquery.tmpl.min.js.gz.js"></script>
-<script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/lib/pako.min.js.gz.js"></script>
-<script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/amplitude/go_amp.js.gz.js"></script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/movie.js.gz.js"></script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/cookie.js.gz.js"></script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/studio.js.gz.js"></script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/jquery/jquery.tmpl.min.js.gz.js"></script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/lib/pako.min.js.gz.js"></script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/amplitude/go_amp.js.gz.js"></script>
 
 <!-- Vyond Cookie Consent -->
 <script>(function(v,y,o,n){v[n]=v[n]||[];
@@ -86,8 +86,8 @@ dataLayer.push({"userId":"0cf4CMw1ZNCk"});
 </script>
 
 
-        <script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/h5preview/media-controller.js.gz.js"></script>
-        <script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/h5preview/preview-player.js.gz.js"></script>
+        <script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/h5preview/media-controller.js.gz.js"></script>
+        <script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/h5preview/preview-player.js.gz.js"></script>
 
 <script type="text/javascript" async="" src="//munchkin.marketo.net/munchkin.js"></script><script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/956549168/?random=1576454337808&amp;cv=9&amp;fst=1576454337808&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=900&amp;u_w=1600&amp;u_ah=870&amp;u_aw=1600&amp;u_cd=24&amp;u_his=7&amp;u_tz=-360&amp;u_java=false&amp;u_nplug=4&amp;u_nmime=6&amp;gtm=2wgc61&amp;sendb=1&amp;ig=1&amp;frm=0&amp;url=https%3A%2F%2Fga.vyond.com%2Fvideomaker%2Ffull%2Fbusiness-friendly&amp;ref=https%3A%2F%2Fga.vyond.com%2Fvideomaker&amp;tiba=The%20Video%20Maker%20from%20Vyond%20-%20Make%20a%20Video%20for%20YouTube!&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script><script type="text/javascript" async="" src="//munchkin.marketo.net/munchkin.js"></script></head>
 <body class="en_US has-user full_screen_studio studio-locked" style="">
@@ -217,28 +217,6 @@ function voiceBanner(bannerId) {
         }
 
         var enable_full_screen = true;
-
-        var studio_data = {
-            id: "Studio",
-            swf: "https://josephcrosmanplays532.github.io/static/animation/go_full.swf",
-            width: "100%",
-            height: "100%",
-
-            align: "middle",
-            allowScriptAccess: "always",
-            allowFullScreen: "true",
-            wmode: "window",
-
-            hasVersion: "10.3"
-        };
-
-        if (!enable_full_screen) {
-            studio_data.width  = 960;
-            studio_data.height  = 630;
-            resize_studio = false;
-        }
-
-        studio_data.flashvars = {"apiserver":"https://vyond2018.herokuapp.com/","storePath":"https://josephcrosmanplays532.github.io/static/store/<store>","isEmbed":"1","ctc":"go","ut":"60","bs":"default","appCode":"go","page":"","siteId":"go","lid":"13","isLogin":"Y","retut":"1","clientThemePath":"https://josephcrosmanplays532.github.io/static/<client_theme>","themeId":"custom","tlang":"en_US","presaveId":"<?php include_once("../goapi/function/videoId.php"); if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo $id + 1; } ?><?php if (isset($_GET["video"])) { echo "&movieId={$_GET["video"]}"; } ?>","goteam_draft_only":"1","isWide":"1","nextUrl":"/videos/browse.php","collab":"0","tray":"custom"};
 
         var _ccad = null;
 
@@ -659,11 +637,11 @@ VideoTutorial.tutorials.enterexit = {
 </ul>
 </div>
 </script>
-<script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/importer_share.js.gz.js"></script>
-<script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/importer.js.gz.js"></script>
-<script>window.searchTermsDataUrl = 'https://d3v4eglovri8yt.cloudfront.net/store/3a981f5cb2739137/common/terms.json';</script>
-<script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/search-suggestion.js.gz.js"></script>
-<script src="https://d3v4eglovri8yt.cloudfront.net/static/019b83797158fc0c/go/js/preview-player-control.js.gz.js"></script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/importer_share.js.gz.js"></script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/importer.js.gz.js"></script>
+<script>window.searchTermsDataUrl = 'https://josephcrosmanplays532.github.io/store/3a981f5cb2739137/common/terms.json';</script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/search-suggestion.js.gz.js"></script>
+<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/preview-player-control.js.gz.js"></script>
 <script>
 ImporterFile.defaults.options.accept_mime = ["image\/png","image\/jpeg","image\/gif","image\/bmp","audio\/mpeg","audio\/wav","audio\/x-wav","audio\/vnd.wave","audio\/wave","audio\/mp3","audio\/mp4","audio\/ogg","audio\/vorbis","audio\/aac","audio\/m4a","audio\/x-m4a","video\/mp4","video\/mpeg4","video\/x-flv","video\/x-ms-wmv","application\/mp4"];
 ImporterFile.defaults.options.restricted_mime = ["font\/x-font-ttf","font\/vnd.ms-opentype"];
@@ -800,7 +778,7 @@ ImporterFile.defaults.options.restricted_mime = ["font\/x-font-ttf","font\/vnd.m
         Release to start uploading    </div>
 </div>
     <div id="studio_holder" style="width: 2108px;"><object data="https://d3v4eglovri8yt.cloudfront.net/animation/66453a3ba2cc5e1b/go_full.swf" type="application/x-shockwave-flash" id="Studio" width="100%" height="100%"><param name="align" value="middle"><param name="allowScriptAccess" value="always"><param name="allowFullScreen" value="true"><param name="wmode" value="window"><param name="flashvars" value="movieId=&amp;loadas=0&amp;asId=&amp;originalId=&amp;apiserver=https%3A%2F%2Fga.vyond.com%2F&amp;storePath=https%3A%2F%2Fd3v4eglovri8yt.cloudfront.net%2Fstore%2F3a981f5cb2739137%2F%3Cstore%3E&amp;clientThemePath=https%3A%2F%2Fd3v4eglovri8yt.cloudfront.net%2Fstatic%2F019b83797158fc0c%2F%3Cclient_theme%3E&amp;animationPath=https%3A%2F%2Fd3v4eglovri8yt.cloudfront.net%2Fanimation%2F66453a3ba2cc5e1b%2F&amp;userId=0cf4CMw1ZNCk&amp;username=bakeryb40488&amp;uemail=bakeryb40488%40gmail.com&amp;numContact=0&amp;ut=23&amp;ve=false&amp;isEmbed=0&amp;nextUrl=%2Fgo%2FsavedMovie%2F%3CmovieId%3E%2F0%2F1&amp;bgload=https%3A%2F%2Fd3v4eglovri8yt.cloudfront.net%2Fanimation%2F66453a3ba2cc5e1b%2Fgo_full.swf&amp;lid=0&amp;ctc=go&amp;themeColor=silver&amp;tlang=en_US&amp;siteId=13&amp;templateshow=false&amp;forceshow=false&amp;appCode=go&amp;lang=en&amp;tmcc=4048901&amp;fb_app_url=https%3A%2F%2Fga.vyond.com%2F&amp;is_published=0&amp;is_private_shared=1&amp;is_password_protected=false&amp;upl=1&amp;hb=1&amp;pts=1&amp;msg_index=&amp;ad=0&amp;has_asset_bg=1&amp;has_asset_char=0&amp;initcb=studioLoaded&amp;retut=0&amp;&amp;s3base=https%3A%2F%2Fs3.amazonaws.com%2Ffs.goanimate.com%2F%2Chttps%3A%2F%2Fassets.vyond.com%2F&amp;st=&amp;uisa=0&amp;u_info=OjI6elg5SnZCOUEyTHZiY2lhZGRXTm9Nd0ljVWhNbEpGaXJFdkpEdkltdEp6RWhrQ0VIbXZIVTBjRTlhUGZKMjJoVHVTUE5vZk1XYnFtSE1vZG5TeldyQVJNcDFmUFB2NDVtR0FTSlZZ&amp;tm=FIN&amp;tray=business&amp;isWide=1&amp;newusr=1&amp;goteam_draft_only=0"><param name="movie" value="https://d3v4eglovri8yt.cloudfront.net/animation/66453a3ba2cc5e1b/go_full.swf"></object></div>
-<div class="voice-vendor-ad" style="display: block; right: 0px;">
+<div class="voice-vendor-ad" style="display: none;">
         <div class="close"><a href="javascript:hideVoiceAdWidget()" onclick="javascript:return hideVoiceAdWidget()">×</a></div>
         <div id="studio-voice-vendor-container">
             <ul>
@@ -812,7 +790,7 @@ ImporterFile.defaults.options.restricted_mime = ["font\/x-font-ttf","font\/vnd.m
                 </li>
             </ul>
         </div>
-    </div><div class="voice-vendor-ad" style="display: block; right: 0px;">
+    </div><div class="voice-vendor-ad" style="display: none;">
         <div class="close"><a href="javascript:hideVoiceAdWidget()" onclick="javascript:return hideVoiceAdWidget()">×</a></div>
         <div id="studio-voice-vendor-container">
             <ul>

@@ -25,7 +25,7 @@
 			document.getElementById("character_themes").style.display = "none";
 			document.getElementById("movie_themes").style.display = "none";
 			document.getElementById("back").style.display = "none";
-			document.getElementById("studio_tutorial").style.display = "none";
+			document.getElementById("studio_tutorial").style.display = "block";
 		}
 		function showCredits() {
 			document.getElementById("credits").style.display="block";

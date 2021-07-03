@@ -15,6 +15,14 @@
 			document.getElementById("back").style.display = "block";
 			document.getElementById("studio_tutorial").style.display = "none";
 			document.getElementById("studiotutorial").style.display = "block";
+			document.getElementById("faq_left").style.display = "none";
+			document.getElementById("faq_right").style.display = "block";
+			document.getElementById("wrapper_hub_left").style.display = "none";
+			document.getElementById("wrapper_hub_right").style.display = "block";
+			document.getElementById("server_page_left").style.display = "block";
+			document.getElementById("server_page_right").style.display = "none";
+			document.getElementById("caillou_left").style.display = "block";
+			document.getElementById("caillou_right").style.display = "none";
 		}
 		function movieThemes() {
 			document.getElementById("creation_type").style.display = "none";
@@ -22,6 +30,14 @@
 			document.getElementById("back").style.display = "block";
 			document.getElementById("studio_tutorial").style.display = "none";
 			document.getElementById("studiotutorial").style.display = "block";
+			document.getElementById("faq_left").style.display = "none";
+			document.getElementById("faq_right").style.display = "block";
+			document.getElementById("wrapper_hub_left").style.display = "none";
+			document.getElementById("wrapper_hub_right").style.display = "block";
+			document.getElementById("server_page_left").style.display = "block";
+			document.getElementById("server_page_right").style.display = "none";
+			document.getElementById("caillou_left").style.display = "block";
+			document.getElementById("caillou_right").style.display = "none";
 		}
 		function creationType() {
 			document.getElementById("creation_type").style.display = "block";
@@ -30,6 +46,14 @@
 			document.getElementById("back").style.display = "none";
 			document.getElementById("studio_tutorial").style.display = "block";
 			document.getElementById("studiotutorial").style.display = "none";
+			document.getElementById("faq_left").style.display = "block";
+			document.getElementById("faq_right").style.display = "none";
+			document.getElementById("wrapper_hub_left").style.display = "block";
+			document.getElementById("wrapper_hub_right").style.display = "none";
+			document.getElementById("server_page_left").style.display = "none";
+			document.getElementById("server_page_right").style.display = "block";
+			document.getElementById("caillou_left").style.display = "none";
+			document.getElementById("caillou_right").style.display = "block";
 		}
 		function showCredits() {
 			document.getElementById("credits").style.display="block";

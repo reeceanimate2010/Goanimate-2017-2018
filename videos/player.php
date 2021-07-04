@@ -314,7 +314,7 @@ if (self !== top) {
                     <span class="icon-bar"></span>
                   </button>
                 <a class="navbar-brand" href="/" title="PHPWrapper">
-                    <img alt="Make a Video Online with GoAnimate.com" src="logo.png">
+                    <img alt="Make a Video Online with Phpwrapper.tk" src="/logo.png">
                 </a>
             </div>
 

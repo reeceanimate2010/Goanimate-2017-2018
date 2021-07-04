@@ -524,7 +524,7 @@ function logAmplitudeEvent(eventName, eventProperties) {
 </form>
 <footer class="site-footer">
     <div class="container">
-	        <p>PHPWrapper is a trademark of © <?php echo date("Y");?> GoAnimate Wrapper Inc.</p> |
+	        PHPWrapper is a trademark of © <?php echo date("Y");?> GoAnimate Wrapper Inc |
 		<a>v1.2.3½</a>
 		<a href="https://josephcrosmanplays532.github.io/faq.html">FAQ</a>
 		<a href="https://discord.gg/yhGAetN">Wrapper Hub</a>

@@ -309,7 +309,12 @@ if (self !== top) {
         </li>
     </ul>
 </li>
-	<a class="btn btn-small" href="./player.php?video=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>&videowidth=0">Watch your video in the old style</a>
+	<li>
+		<a class="btn btn-small" href="./player.php?video=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>&videowidth=0">Watch your video in the old style</a>
+	</li>
+	<li>
+		<button class="btn btn-link" data-remote="/ajax/embedMovie/?video=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>" data-action="video-share">Embed Your Video</button>
+	</li>
                     <li>
                         <a class="hidden-sm hidden-md hidden-lg" href="/videomaker">Make a Video</a>
                         <span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="/videomaker">Make a Video</a></span>

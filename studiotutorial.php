@@ -573,15 +573,9 @@ function checkPreviewServer() {
     return previewPlayer._connectionState === PreviewPlayerConstants.STATE_READY;
 }
 
-function loadH5Preview() {
-    if (filmXmlStr === null) {
-        return;
-    }
-
-    $('#h5-playerdiv').data('previewPlayerControl').reset();
-    previewPlayer.preview(filmXmlStr, previewStartFrame);
-    $('#previewPlayer').addClass('using-h5');
-}
+var previewPlayerTempData = "";
+	const fu = document.getElementById('fileupload'),
+		sub = document.getElementById('submit');
 
 function initPreviewPlayer(dataXmlStr, startFrame, containsChapter, themeList) {
 		// New variable to be used by loadPreviewer()

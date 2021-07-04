@@ -294,7 +294,7 @@ if (self !== top) {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="./browse.php" title="PHPWrapper">
+                  <a class="navbar-brand" href="browse.php" title="PHPWrapper">
                       <img alt="Vyond" src="/pages/img/list_logo.svg">
                   </a>
             </div>
@@ -309,6 +309,7 @@ if (self !== top) {
         </li>
     </ul>
 </li>
+	<a class="btn btn-small" href="./player.php?video=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>&videowidth=<?php if (isset($_GET["videowidth"])) { echo $_GET["videowidth"]; } else { echo "1"; } ?>">Watch your video in the old style</a>
                     <li>
                         <a class="hidden-sm hidden-md hidden-lg" href="/videomaker">Make a Video</a>
                         <span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="/videomaker">Make a Video</a></span>
@@ -406,7 +407,7 @@ jQuery('#playerdiv').flash({
     allowFullScreen: "true",
     wmode: "opaque",
     hasVersion: "10.3",
-    flashvars: {"apiserver":"/","storePath":"https://josephcrosmanplays532.github.io/store/3a981f5cb2739137/<store>","ut":60,"autostart":1,"isWide":1,"clientThemePath":"https://josephcrosmanplays532.github.io/static/ad44370a650793d9/<client_theme>","movieId":"<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>"}});
+    flashvars: {"apiserver":"/","storePath":"https://josephcrosmanplays532.github.io/store/3a981f5cb2739137/<store>","ut":60,"autostart":1,"isWide":"<?php if (isset($_GET["videowidth"])) { echo $_GET["videowidth"]; } else { echo "1"; } ?>","clientThemePath":"https://josephcrosmanplays532.github.io/static/ad44370a650793d9/<client_theme>","movieId":"<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>"}});
 jQuery('#player-overlay-dismiss').click(function() {
     jQuery('#player-overlay').hide();
 });

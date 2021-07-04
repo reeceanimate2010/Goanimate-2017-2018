@@ -129,68 +129,17 @@ if (self !== top) {
     <div id="playerBlock"></div>
 </div>
 
-    <div id="previewPlayerContainer" style="display: none;">
-        <div class="preview-player" id="previewPlayer">
-            <h2>Preview Video</h2>
-            
-            <div id="playerdiv"><object data="https://josephcrosmanplays532.github.io/static/animation/player.swf" type="application/x-shockwave-flash" id="Player" width="640" height="360"><param name="quality" value="high"/><param name="scale" value="exactfit"/><param name="allowScriptAccess" value="always"/><param name="allowFullScreen" value="true"/><param name="wmode" value="window"/><param name="flashvars" value="movieOwner=&amp;movieOwnerId=&amp;movieId=&amp;ut=-1&amp;movieLid=8&amp;movieTitle=&amp;movieDesc=&amp;userId=&amp;username=&amp;uemail=&amp;apiserver=https%3A%2F%2Fgoanimate4schools.herokuapp.com%2F&amp;thumbnailURL=&amp;copyable=0&amp;isPublished=0&amp;ctc=go&amp;tlang=en_US&amp;is_private_shared=0&amp;autostart=1&amp;appCode=go&amp;is_slideshow=0&amp;originalId=0&amp;is_emessage=0&amp;isEmbed=0&amp;refuser=&amp;utm_source=&amp;uid=&amp;isTemplate=1&amp;showButtons=0&amp;chain_mids=&amp;showshare=0&amp;averageRating=&amp;s3base=https%3A%2F%2Fs3.amazonaws.com%2Ffs.goanimate.com%2F%2Chttps%3A%2F%2Fassets.vyond.com%2F&amp;ratingCount=&amp;fb_app_url=https%3A%2F%2Fgoanimate4schools.herokuapp.com%2F&amp;numContact=0&amp;isInitFromExternal=1&amp;storePath=https%3A%2F%2Fjosephcrosmanplays532.github.io%2Fstore%2F3a981f5cb2739137%2F%3Cstore%3E&amp;clientThemePath=https%3A%2F%2Fjosephcrosmanplays532.github.io%2Fstatic%2F55910a7cd204c37c%2F%3Cclient_theme%3E&amp;animationPath=https%3A%2F%2Fjosephcrosmanplays532.github.io%2Fanimation%2F66453a3ba2cc5e1b%2F&amp;startFrame=1"/><param name="movie" value="https://josephcrosmanplays532.github.io/static/animation/player.swf"/></object></div>
-            <div id="h5-playerdiv">
-                <video class="hidden" id="h5-preview-player" width="100%" height="100%"></video>
-                <div class="player-overlay loading">
-                    <div class="loading-icon">
-                        <div class="loading-message"></div>
-                    </div>
-                    <div class="replay-button"></div>
-                </div>
-                <div class="video-controls">
-                    <div class="playback-button">
-                        <div class="icon-image"></div>
-                    </div>
-                    <div class="seek-bar">
-                        <div class="value-bar total-bar"></div>
-                        <div class="value-bar buffered-bar"></div>
-                        <div class="value-bar played-bar"></div>
-                        <div class="slider-thumb"></div>
-                        <div class="time-tooltip">00:00</div>
-                    </div>
-                    <div class="time-display">
-                        <div class="text">00:00 / 00:00</div>
-                    </div>
-                    <div class="volume-control">
-                        <div class="volume-icon">
-                            <div class="icon-image"></div>
-                        </div>
-                        <div class="volume-slider">
-                            <div class="slider-track">
-                                <div class="track-value-bar"></div>
-                            </div>
-                            <div class="slider-thumb"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="preview-alert-block" class="preview-alert-block clearfix" style="display: none;">Auto-pause at end of scenes is not supported in our web video player.<br/>The auto-pause feature is supported once you download the video as presentation in the &#34;Share/Export&#34; overlay.</div>
-            <div class="buttons clearfix">
-                <button class="preview-button edit" type="button" onclick="switchBackToStudio();">Continue Editing</button>
-                            </div>
-
-            <a class="close_btn" href="#" onclick="switchBackToStudio(); return false;">×</a>
-        </div>
-    </div>
-
-    <div class="video-tutorial" id="video-tutorial" style="display: none;">
-        <div class="video-tutorial-body">
-            <h2> </h2>
-            <div class="video-tutorial-player">
-                <div id="wistia_player" class="wistia_embed" style="width:860px;height:445px"> </div>
-            </div>
-            <a class="close_btn" href="#" onclick="return false;">×</a>
-        </div>
-        <div class="video-tutorial-footer clearfix">
-            <button class="tutorial-button" type="button">
-                Close            </button>
-        </div>
-    </div>
+    <div id="preview_popup_container" style="display:none">
+	<div id="preview_popup">
+		<h2 id="preview-video">Preview Video</h2>
+		<p class="close-button" onclick="hidePreviewer()">X</p>
+		<object data="https://josephcrosmanplays532.github.io/static/animation/player.swf" type="application/x-shockwave-flash" id="playerdiv">
+			<!-- The flashvars are a huge mess, have fun looking at them. :) -->
+			<param name="flashvars" value="apiserver=https://vyond2018.herokuapp.com/&storePath=https://josephcrosmanplays532.github.io/static/store/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://josephcrosmanplays532.github.io/static/<client_theme>&themeId=custom&tlang=en_US&isInitFromExternal=1&goteam_draft_only=1&isWide=1&collab=0&startFrame=previewStartFrame&autostart=1&nextUrl=../pages/html/list.html&tray=custom">
+			<param name="allowScriptAccess" value="always">
+			<param name="allowFullScreen" value="true">
+		</object>
+	</div>
 </div>
 
 <div style="display:none">

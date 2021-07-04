@@ -42,11 +42,10 @@
 		function goEmpty() {
 			document.getElementById("creation_type").style.display = "none";
 			document.getElementById("character_themes").style.display = "none";
-			document.getElementById("back").style.display = "block";
+			document.getElementById("back").style.display = "none";
 			document.getElementById("studio_tutorial").style.display = "none";
 			document.getElementById("studiotutorial").style.display = "none";
 			document.getElementById("wrapperversion").style.display = "none";
-			document.getElementById("goempty").style.display = "none";
 			document.getElementById("text").style.display = "block"
 		}
 		*/
@@ -91,7 +90,7 @@
 		</div>
 		<!-- if Yanny57 wants to make this go empty, this big button will be needed. 
 		<div class="theme pick_creation">
-			<div onclick="goempty()">
+			<div onclick="goEmpty()">
 				<img src="https://josephcrosmanplays532.github.io/img/empty.png" alt="Go Empty">
 				<div>
 					<p class="pick_creation_type">Go Empty</p>

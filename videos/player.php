@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<link rel="icon" href="/favicon.png" type="image/png">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <link rel="dns-prefetch" href="//josephcrosmanplays532.github.io/">
 <title>Video Player</title>

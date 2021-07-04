@@ -415,7 +415,7 @@ jQuery('#player-overlay-dismiss').click(function() {
             </div>
             <div class="video-actions">
                 <span class="divider">|</span>
-                <button class="btn btn-link" data-remote="/ajax/shareMovie" data-action="video-share"><span class="glyph-pro glyph-share-alt"></span> &nbsp; Share</button>
+                <button class="btn btn-link" data-remote="/ajax/shareMovie/" data-action="video-share"><span class="glyph-pro glyph-share-alt"></span> &nbsp; Share</button>
                 <span class="divider">|</span>
             </div>
             <input type="hidden" name="ct" value="b6g+xryOXfUISd24C+U5zQMowMIFfqBqCflgIjwtAY5DJfVBLDcqpqlaD2CgU9PQz9Zodxm5dqsQo6y8sv48crMDO3GJKFUPJ1QAIIOr6+xtroL4e4Ah0DhimbWbEDvB1+3AsiELrCE09kfNkL33iT4pggmRpDynOLALgqYDrkJ1HBXGQys41YivPhYFqnsmLgKL9aC0rVpPefvrIQZ_pO4FAT7UinOTe3o+4lmyKXoEppDvk="/>

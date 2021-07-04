@@ -120,7 +120,12 @@ if (self !== top) {
 		</nav>
 	</header>
 
+<div style="position:relative;">
+    <div id="studioBlock" style="height: 0px;"><!-- --></div>
 
+    <div id="playerBlock"></div>
+</div>
+	
 <!-- Asset Importer -->
 <div id="import_popup_container" style="display:none">
 	<div id="import_popup">

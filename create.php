@@ -423,6 +423,7 @@
 		<a href="https://josephcrosmanplays532.github.io/caillou.html">Caillou</a>
 	</nav>
 </footer>
+<!-- <!-- if Yanny57 wants to make this go empty, this text will be needed.
 <p id="text" style="display: none">Empty Go pointssssss!</p>
-
+-->
 </body></html>

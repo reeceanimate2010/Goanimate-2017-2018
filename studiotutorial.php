@@ -76,7 +76,7 @@ if (self !== top) {
                 <span class="icon-bar"></span>
               </button>
             <a class="navbar-brand" href="/" title="PHPWrapper">
-                <img alt="GoAnimate for Schools" src="/pages/img/list_logo.svg">
+                <img alt="GoAnimate for Schools" src="logo.png">
             </a>
         </div>
 

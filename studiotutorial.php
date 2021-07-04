@@ -120,7 +120,6 @@ if (self !== top) {
 			<a href="/create.php" class="button_big">Create</a>
 		</nav>
 	</header>
-<link href="/pages/css/modern-normalize.css" rel="stylesheet" type="text/css">
 
 
 <div style="position:relative;">

@@ -521,16 +521,14 @@ function logAmplitudeEvent(eventName, eventProperties) {
 <form enctype='multipart/form-data' action='/upload_character' method='post'>
 	<input id='file2' type="file" onchange="this.form.submit()" name='import' />
 </form>
-<footer>
-	<nav id="foot-left">
+<footer class="site-footer">
+    <div class="container">
 		<a>v1.2.3½</a>
-		<a href="https://localhost:4664/faq.html">FAQ</a>
+		<a href="https://josephcrosmanplays532.github.io/faq.html">FAQ</a>
 		<a href="https://discord.gg/yhGAetN">Wrapper Hub</a>
-	</nav>
-	<nav id="foot-right">
-		<a href="https://localhost:4664">Server Page</a>
-		<a href="https://localhost:4664/caillou.html">Caillou</a>
-	</nav>
+		<a href="https://josephcrosmanplays532.github.io">Server Page</a>
+		<a href="https://josephcrosmanplays532.github.io/caillou.html">Caillou</a>
+	</div>
 </footer>
 <div id="studio_container" style="display: none;">
     <div id="studio_holder"><!-- Full Screen Studio -->

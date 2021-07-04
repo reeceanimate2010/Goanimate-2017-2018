@@ -302,7 +302,7 @@ function initPreviewPlayer(dataXmlStr, startFrame) {
 	    id: "Player",
             height: 360,
             width: 640,
-            quality: "high",
+            quality: "medium",
 	    scale: "exactfit",
 	    allowScriptAccess: "always",
 	    allowFullScreen: "true",

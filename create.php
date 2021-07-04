@@ -38,6 +38,18 @@
 			document.getElementById("credits").style.display="block";
 			document.getElementById("credits_button").style.display="none";
 		}
+		/* if Yanny57 wants to make this go empty, this script will be needed.
+		function goEmpty() {
+			document.getElementById("creation_type").style.display = "none";
+			document.getElementById("character_themes").style.display = "none";
+			document.getElementById("back").style.display = "block";
+			document.getElementById("studio_tutorial").style.display = "none";
+			document.getElementById("studiotutorial").style.display = "none";
+			document.getElementById("wrapperversion").style.display = "none";
+			document.getElementById("goempty").style.display = "none";
+			document.getElementById("text").style.display = "block"
+		}
+		*/
 	</script>
 </head>
 <body>
@@ -77,7 +89,17 @@
 				</div>
 			</div>
 		</div>
-	</div>
+		<!-- if Yanny57 wants to make this go empty, this big button will be needed. 
+		<div class="theme pick_creation">
+			<div onclick="goempty()">
+				<img src="https://josephcrosmanplays532.github.io/img/empty.png" alt="Go Empty">
+				<div>
+					<p class="pick_creation_type">Go Empty</p>
+					<p class="pick_creation_description">If you click on this, it will make the screen blank! only do this if you want to for fun. after reloading this page, everything will go back to normal.</p>
+				</div>
+			</div>
+		</div>
+	</div>  -->
 </div>
 
 <div id="character_themes" style="display: none">
@@ -401,5 +423,6 @@
 		<a href="https://josephcrosmanplays532.github.io/caillou.html">Caillou</a>
 	</nav>
 </footer>
+<p id="text" style="display: none">Empty Go pointssssss!</p>
 
 </body></html>

@@ -14,10 +14,10 @@
 <meta name="google-site-verification" content="Vta3YTpj6Kx6u4p-EzeMArY0alNItkyUYYMvNM8seVI">
 
 
-<link rel="stylesheet" href="//goanimateforschools.github.io/fonts/schoolfont.css">
-<link rel="stylesheet" href="https://josephcrosmanplays532.github.io/static/642cd772aad8e952/school/css/common_combined.css.gz.css">
+<link rel="stylesheet" href="/pages/css/modern-normalize.css">
+<link rel="stylesheet" href="/pages/css/global.css">
 
-<link rel="stylesheet" href="https://josephcrosmanplays532.github.io/static/642cd772aad8e952/go/css/importer.css.gz.css">
+<link rel="stylesheet" href="/pages/css/swf.css">
 <link rel="stylesheet" href="https://josephcrosmanplays532.github.io/static/642cd772aad8e952/school/css/studio.css.gz.css">
 
 <script>
@@ -66,61 +66,60 @@ if (self !== top) {
     }
 </script>
 
-<nav class="navbar site-nav" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            <a class="navbar-brand" href="/" title="PHPWrapper">
-                <img alt="GoAnimate for Schools" src="logo.png">
-            </a>
-        </div>
-
-        <ul class="nav site-nav-alert-nav hidden-xs">
-            <li>
-                <a href="/messages" title="Messages"><span class="glyphicon glyphicon-envelope"></span><span class="count"></span></a>
-            </li>
-            <li>
-                <a href="/notifications" title="Notifications"><span class="glyphicon glyphicon-bell"></span><span class="count"></span></a>
-            </li>
-        </ul>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav navbar-right">
-
-                <li class="dropdown">
-                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">Your Account <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/dashobard/videos">Dashboard</a></li>
-                        <li><a href="/pages/html/list.html">Your Videos</a></li>
-                        <li class="divider"></li>
-                        <li><a href="/account">Account Settings</a></li>
-                        <li><a href="/profile/you">Your Profile</a></li>
-                        <li class="divider"></li>
-                        <li><a class="logout-link" href="/logoff">Logout</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">Explore <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/videos/browse.php">Videos</a></li>
-                        <li class="divider"></li>
-                        <li><a href="https://discord.io/goanimate4schools/">Joseph Animate 2021 Discord Server</a></li>
-                        <li><a href="/faq">FAQ</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="hidden-sm hidden-md hidden-lg" href="/create.php">Make a Video</a>
-                    <span class="site-nav-btn hidden-xs"><a class="btn btn-green" href="/create.php">Make a Video</a></span>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<link href="//goanimateforschools.github.io/fonts/schoolfont.css" rel="stylesheet" type="text/css">
+<header id="header">
+		<a href="/">
+			<h1 style="margin:0"><img id="logo" src="/pages/img/list_logo.svg" alt="PHPWrapper"/></h1>
+		</a>
+		<nav id="headbuttons">
+			<div class="dropdown_contain button_small">
+				<div class="dropdown_button upload_button">Upload</div>
+				<nav class="dropdown_menu">
+					<a onclick="document.getElementById('file').click()">Movie</a>
+					<a onclick="document.getElementById('file2').click()">Character</a>
+				</nav>
+			</div>	
+			<div class="dropdown_contain button_small">
+				<div class="dropdown_button">Create a Character</div>
+				<nav class="dropdown_menu">
+					<h2>Comedy World</h2>
+					<a href="/characters/create.php?themeId=family&bs=adam">Guy (Adam)</a>
+					<a href="/characters/create.php?themeId=family&bs=eve">Girl (Eve)</a>
+					<a href="/characters/create.php?themeId=family&bs=bob">Fat (Bob)</a>
+					<a href="/characters/create.php?themeId=family&bs=rocky">Buff (Rocky)</a>
+					<hr />
+					<h2>Anime</h2>
+					<a href="/characters/create.php?themeId=anime&bs=guy">Guy</a>
+					<a href="/characters/create.php?themeId=anime&bs=girl">Girl</a>
+					<a href="/characters/create.php?themeId=ninjaanime&bs=guy">Guy (Ninja)</a>
+					<a href="/characters/create.php?themeId=ninjaanime&bs=girl">Girl (Ninja)</a>
+					<hr />
+					<h2>Peepz</h2>
+					<a href="/characters/create.php?themeId=cc2&bs=default">Lil Peepz</a>
+					<a href="/characters/create.php?themeId=chibi&bs=default">Chibi Peepz</a>
+					<a href="/characters/create.php?themeId=ninja&bs=default">Chibi Ninjas</a>
+				</nav>
+			</div>
+			<div class="dropdown_contain button_small">
+				<div class="dropdown_button">Your Characters</div>
+				<nav class="dropdown_menu">
+					<h2>Comedy World</h2>
+					<a href="/characters/browse.php?themeId=family">Comedy World</a>
+					<hr />
+					<h2>Anime</h2>
+					<a href="/characters/browse.php?themeId=anime">Anime</a>
+					<a href="/characters/browse.php?themeId=ninjaanime">Ninja Anime</a>
+					<hr />
+					<h2>Peepz</h2>
+					<a href="/characters/browse.php?themeId=cc2">Lil' Peepz</a>
+					<a href="/characters/browse.php?themeId=chibi">Chibi Peepz</a>
+					<a href="/characters/browse.php?themeId=ninja">Chibi Ninjas</a>
+				</nav>
+			</div>
+			<a href="/videos/browse.php" class="button_small">Your Videos</a>
+			<a href="/create.php" class="button_big">Create</a>
+		</nav>
+	</header>
+<link href="/pages/css/modern-normalize.css" rel="stylesheet" type="text/css">
 
 
 <div style="position:relative;">

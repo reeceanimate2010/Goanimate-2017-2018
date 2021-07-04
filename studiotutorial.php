@@ -132,9 +132,9 @@ if (self !== top) {
     <div id="previewPlayerContainer" style="display: none;">
         <div class="preview-player" id="previewPlayer">
             <h2>Preview Video</h2>
-            <div id="playerdiv"><object data="https://josephcrosmanplays532.github.io/static/animation/player.swf" type="application/x-shockwave-flash" id="playerdiv">
+            <div id="playerdiv"><object data="https://josephcrosmanplays532.github.io/static/animation/player.swf" type="application/x-shockwave-flash" id="Player" width="640" height="360">
 			<!-- The flashvars are a huge mess, have fun looking at them. :) -->
-			<param name="flashvars" value="apiserver=/&storePath=https://josephcrosmanplays532.github.io/static/store/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://josephcrosmanplays532.github.io/static/<client_theme>&themeId=custom&tlang=en_US&isInitFromExternal=1&goteam_draft_only=1&isWide=1&collab=0&startFrame=previewStartFrame&autostart=1&nextUrl=../pages/html/list.html&tray=custom">
+			<param name="flashvars" value="movieOwner=&amp;movieOwnerId=&amp;movieId=&amp;ut=-1&amp;movieLid=8&amp;movieTitle=&amp;movieDesc=&amp;userId=&amp;username=&amp;uemail=&amp;apiserver=https%3A%2F%2Fvyond2018.herokuapp.com%2F&amp;thumbnailURL=&amp;copyable=0&amp;isPublished=0&amp;ctc=go&amp;tlang=en_US&amp;is_private_shared=0&amp;autostart=1&amp;appCode=go&amp;is_slideshow=0&amp;originalId=0&amp;is_emessage=0&amp;isEmbed=0&amp;refuser=&amp;utm_source=&amp;uid=&amp;isTemplate=1&amp;showButtons=0&amp;chain_mids=&amp;showshare=0&amp;averageRating=&amp;s3base=https%3A%2F%2Fs3.amazonaws.com%2Ffs.goanimate.com%2F%2Chttps%3A%2F%2Fassets.vyond.com%2F&amp;ratingCount=&amp;fb_app_url=https%3A%2F%2Fvyond2018.herokuapp.com%2F&amp;numContact=0&amp;isInitFromExternal=1&amp;storePath=https%3A%2F%2Fjosephcrosmanplays532.github.io%2Fstore%2F3a981f5cb2739137%2F%3Cstore%3E&amp;clientThemePath=https%3A%2F%2Fjosephcrosmanplays532.github.io%2Fstatic%2F55910a7cd204c37c%2F%3Cclient_theme%3E&amp;animationPath=https%3A%2F%2Fjosephcrosmanplays532.github.io%2Fstatic%2Fanimation%2F&amp;startFrame=1"/>
 			<param name="allowScriptAccess" value="always">
 			<param name="allowFullScreen" value="true">
 		</object></div>

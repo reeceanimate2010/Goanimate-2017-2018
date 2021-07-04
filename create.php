@@ -36,7 +36,7 @@
 		}
 		function showCredits() {
 			document.getElementById("credits").style.display="block";
-			document.getElementById("credits_button").style.display="none";
+			document.getElementById("credits_button").style.display="none" //;
 		}
 		/* if Yanny57 wants to make this go empty, this script will be needed.
 		function goEmpty() {

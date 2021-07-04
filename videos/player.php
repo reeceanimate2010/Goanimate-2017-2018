@@ -309,7 +309,7 @@ if (self !== top) {
         </li>
     </ul>
 </li>
-	<a class="btn btn-small" href="./player.php?video=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>&videowidth=<?php if (isset($_GET["videowidth"])) { echo $_GET["videowidth"]; } else { echo "1"; } ?>">Watch your video in the old style</a>
+	<a class="btn btn-small" href="./player.php?video=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>&videowidth=0">Watch your video in the old style</a>
                     <li>
                         <a class="hidden-sm hidden-md hidden-lg" href="/videomaker">Make a Video</a>
                         <span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="/videomaker">Make a Video</a></span>

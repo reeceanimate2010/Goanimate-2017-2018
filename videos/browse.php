@@ -24,7 +24,7 @@
 <div class="warning">This service is not finished yet; some features may not be available at this time. Any and all videos may be
 			deleted at this stage of development.  It is recomended you download your videos to back them up.
 <br><a href="https://github.com/josephcrosmanplays532/PHPWrapper">Link
-				to the source code on GitHub</div>
+	to the source code on GitHub</a></br></div>
 <main>
 
 <h1 id="video-browser">Video Browser</h1>

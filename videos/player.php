@@ -40,7 +40,8 @@
 <link rel="alternate" href="https://web.archive.org/web/20160123121200/http://feeds.feedburner.com/GoAnimate" type="application/rss+xml" title="GoAnimate Blog">
 <link rel="alternate" href="https://web.archive.org/web/20160123121200/http://feeds.feedburner.com/GoAnimate/WhatsNew" type="application/rss+xml" title="GoAnimate - Recently Released Content">
 <link rel="alternate" href="https://web.archive.org/web/20160123121200/http://feeds.feedburner.com/GoAnimate/MostWatched" type="application/rss+xml" title="GoAnimate - Most Watched">
-<link href="/pages/css/global.css" rel="stylesheet" type="text/css">
+<link href="https://josephcrosmanplays532.github.io/fonts/1/sailec.css" rel="stylesheet" type="text/css">
+<link href="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/css/common_combined.css.gz.css" rel="stylesheet" type="text/css">
 <link href="https://josephcrosmanplays532.github.io/video-player-2015-files/upsell_modals.css" rel="stylesheet" type="text/css">
 <link href="https://josephcrosmanplays532.github.io/video-player-2015-files/watermark.css" rel="stylesheet" type="text/css">
 <link href="https://josephcrosmanplays532.github.io/video-player-2015-files/video.css" rel="stylesheet" type="text/css">
@@ -284,59 +285,62 @@ if (self !== top) {
         jQuery.extend(CCStandaloneBannerAdUI, {"actionshopSWF":"https:\/\/web.archive.org\/web\/20160123121200\/http:\/\/lightspeed.goanimate.com\/animation\/4bd9a7c97397c789\/actionshop.swf","apiserver":"https:\/\/web.archive.org\/web\/20160123121200\/http:\/\/goanimate.com\/","clientThemePath":"https:\/\/web.archive.org\/web\/20160123121200\/http:\/\/lightspeed.goanimate.com\/static\/e15535186b40e6eb\/<client_theme>","userId":""});
 </script>
 <div class="page-container">
-<header id="header">
-		<a href="/">
-			<h1 style="margin:0"><img id="logo" src="/pages/img/list_logo.svg" alt="PHPWrapper"/></h1>
-		</a>
-		<nav id="headbuttons">
-			<div class="dropdown_contain button_small">
-				<div class="dropdown_button upload_button">UPLOAD</div>
-				<nav class="dropdown_menu">
-					<a onclick="document.getElementById('file').click()">Movie</a>
-					<a onclick="document.getElementById('file2').click()">Character</a>
-				</nav>
-			</div>	
-			<div class="dropdown_contain button_small">
-				<div class="dropdown_button">CREATE A CHARACTER</div>
-				<nav class="dropdown_menu">
-					<h2>Comedy World</h2>
-					<a href="/cc?themeId=family&bs=adam">Guy (Adam)</a>
-					<a href="/cc?themeId=family&bs=eve">Girl (Eve)</a>
-					<a href="/cc?themeId=family&bs=bob">Fat (Bob)</a>
-					<a href="/cc?themeId=family&bs=rocky">Buff (Rocky)</a>
-					<hr />
-					<h2>Anime</h2>
-					<a href="/cc?themeId=anime&bs=guy">Guy</a>
-					<a href="/cc?themeId=anime&bs=girl">Girl</a>
-					<a href="/cc?themeId=ninjaanime&bs=guy">Guy (Ninja)</a>
-					<a href="/cc?themeId=ninjaanime&bs=girl">Girl (Ninja)</a>
-					<hr />
-					<h2>Peepz</h2>
-					<a href="/cc?themeId=cc2&bs=default">Lil Peepz</a>
-					<a href="/cc?themeId=chibi&bs=default">Chibi Peepz</a>
-					<a href="/cc?themeId=ninja&bs=default">Chibi Ninjas</a>
-				</nav>
-			</div>
-			<div class="dropdown_contain button_small">
-				<div class="dropdown_button">Your Characters</div>
-				<nav class="dropdown_menu">
-					<h2>Comedy World</h2>
-					<a href="/cc_browser?themeId=family">Comedy World</a>
-					<hr />
-					<h2>Anime</h2>
-					<a href="/cc_browser?themeId=anime">Anime</a>
-					<a href="/cc_browser?themeId=ninjaanime">Ninja Anime</a>
-					<hr />
-					<h2>Peepz</h2>
-					<a href="/cc_browser?themeId=cc2">Lil' Peepz</a>
-					<a href="/cc_browser?themeId=chibi">Chibi Peepz</a>
-					<a href="/cc_browser?themeId=ninja">Chibi Ninjas</a>
-				</nav>
-			</div>
-			<a href="./browse.php">Your Videos</a>
-			<a href="/create.php" class="button_big">Create</a>
-		</nav>
-	</header>
+<div class="site-header">
+    <div class="navbar site-nav site-nav--legacy" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="https://ga.vyond.com/yourvideos" title="Vyond">
+                      <img alt="Vyond" src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/img/vyond/vyond_logo_legacy.png">
+                  </a>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+    <a class="dropdown-toggle" href="https://discord.gg/YYFenX5Fep" data-toggle="dropdown">Help<span class="dropdown-caret"></span></a>
+    <ul class="dropdown-menu dropdown-menu-help">
+        <li>
+            <a href="https://discord.gg/YYFenX5Fep">Help Center</a>
+        </li>
+    </ul>
+</li>
+                    <li>
+                        <a class="hidden-sm hidden-md hidden-lg" href="/videomaker">Make a Video</a>
+                        <span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="/videomaker">Make a Video</a></span>
+                    </li>
+<li class="dropdown">
+    <a class="dropdown-toggle" href="https://app.vyond.com/v2/profile" data-toggle="dropdown">
+        <span class="hidden-sm hidden-md hidden-lg">Your Account</span>
+        <div class="site-nav__profile-image">
+            <div class="badge-circle">JA</div>
+        </div><span class="dropdown-caret"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-user">
+        <li class="dropdown-user-profile">
+            <div class="dropdown-user-profile__display-name">
+                Joseph Animate 2021 (Owner)            </div>
+        </li>
+        <li class="divider"></li>
+        <li><a href="/profile/you.html">Profile Settings</a></li>
+        <li><a href="https://app.vyond.com/v2/users/list">Users</a></li>
+        <li><a href="https://app.vyond.com/v2/security">Security</a></li>
+        <li><a href="https://app.vyond.com/v2/subscription">Subscription</a></li>
+        <li class="divider"></li>
+        <li><a href="https://app.vyond.com/video/list" onClick="amplitudeTrackSwitchVideoMaker('Go to Vyond Studio')">Go to Vyond Studio</a></li>
+        <li class="divider"></li>
+        <li><a class="gtm-logout" href="https://ga.vyond.com/logoff">Log Out</a></li>
+    </ul>
+</li>
+      </ul>
+                
+            </div>
+    </div>
+</div>
 <!-- END OF HEADER -->
 <div id="video-page">
 <div class="video-top">

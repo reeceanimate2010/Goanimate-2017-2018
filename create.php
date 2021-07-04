@@ -36,23 +36,11 @@
 		}
 		function showCredits() {
 			document.getElementById("credits").style.display="block";
-			document.getElementById("credits_button").style.display="none" //;
+			document.getElementById("credits_button").style.display="none"
 		}
-		/* if Yanny57 wants to make this go empty, this script will be needed.
-		function goEmpty() {
-			document.getElementById("creation_type").style.display = "none";
-			document.getElementById("character_themes").style.display = "none";
-			document.getElementById("back").style.display = "none";
-			document.getElementById("studio_tutorial").style.display = "none";
-			document.getElementById("studiotutorial").style.display = "none";
-			document.getElementById("wrapperversion").style.display = "none";
-			document.getElementById("text").style.display = "block"
-		}
-		*/
 	</script>
 </head>
 <body>
-
 <header>
 	<a href="/">
 		<h1 style="margin:0"><img id="logo" src="/pages/img/list_logo.svg" alt="PHPWrapper"/></h1>
@@ -63,12 +51,10 @@
 		
 	</nav>
 </header>
-
 <main>
 	
 <div id="creation_type" style="display: unset">
 	<h1 id="what-would-you-like-to-create">What would you like to create?</h1>
-
 	<div id="column1">
 		<div class="theme pick_creation">
 			<div onclick="characterThemes()">
@@ -88,22 +74,10 @@
 				</div>
 			</div>
 		</div>
-		<!-- if Yanny57 wants to make this go empty, this big button will be needed. 
-		<div class="theme pick_creation">
-			<div onclick="goEmpty()">
-				<img src="https://josephcrosmanplays532.github.io/img/empty.png" alt="Go Empty">
-				<div>
-					<p class="pick_creation_type">Go Empty</p>
-					<p class="pick_creation_description">If you click on this, it will make the screen blank! only do this if you want to for fun. after reloading this page, everything will go back to normal.</p>
-				</div>
-			</div>
-		</div>
-	</div>  -->
+	</div>
 </div>
-
 <div id="character_themes" style="display: none">
 	<h1 id="select-a-theme-for-your-character">Select a theme for your character</h1>
-
 	<h2 id="standard-themes">Standard themes</h2>
 	<div id="column1">
 		<div class="theme">
@@ -125,7 +99,6 @@
 			</a>
 		</div>
 	</div><br />
-
 	<div id="column3">
 		<div class="theme">
 			<a href="/characters/browse.php?themeId=ninjaanime">
@@ -146,7 +119,6 @@
 			</a>
 		</div>
 	</div><br />
-
 	<div id="column4">
 		<div class="theme">
 			<a href="/characters/browse.php?themeId=ninja">
@@ -167,7 +139,6 @@
 			</a>
 		</div>
 	</div><br />
-
 	<h2 id="licensed-themes">Licensed themes</h2>
 	<div id="column8">
 		<div class="theme">
@@ -184,7 +155,7 @@
 		</div>
 	</div><br />
 </div>
-
+	
 <div id="movie_themes" style="display: none">
 	<h1 id="select-a-theme-for-your-video">Select a theme for your video</h1>
 	
@@ -209,7 +180,6 @@
 			</a>
 		</div>
 	</div><br />
-
 	<div id="column2">
 		<div class="theme">
 			<a href="/videos/create.php?tray=politic2">
@@ -230,7 +200,6 @@
 			</a>
 		</div>
 	</div><br />
-
 	<div id="column3">
 		<div class="theme">
 			<a href="/videos/create.php?tray=ninjaanime">
@@ -251,7 +220,6 @@
 			</a>
 		</div>
 	</div><br />
-
 	<div id="column4">
 		<div class="theme">
 			<a href="/videos/create.php?tray=ninja">
@@ -272,7 +240,6 @@
 			</a>
 		</div>
 	</div><br />
-
 	<div id="column5">
 		<div class="theme">
 			<a href="/videos/create.php?tray=fullenergy">
@@ -287,7 +254,6 @@
 			</a>
 		</div>
 	</div><br />
-
 	<h2 id="seasonal-themes">Seasonal themes</h2>
 	<div id="column7">
 		<div class="theme">
@@ -303,7 +269,6 @@
 			</a>
 		</div>
 	</div><br />
-
 	<h2 id="licensed-themes">Licensed themes</h2>
 	<div id="column8">
 		<div class="theme">
@@ -325,7 +290,6 @@
 			</a>
 		</div>
 	</div><br />
-
 	<div id="column9">
 		<div class="theme">
 			<a href="/videos/create.php?tray=bunny">
@@ -346,7 +310,6 @@
 			</a>
 		</div>
 	</div><br />
-
 	<div id="column10">
 		<div class="theme">
 			<a href="/videos/create.php?tray=monkeytalk">
@@ -367,7 +330,6 @@
 			</a>
 		</div>
 	</div><br />
-
 	<div id="column11">
 		<div class="theme">
 			<a href="/videos/create.php?tray=toonadv">
@@ -388,7 +350,6 @@
 			</a>
 		</div>
 	</div><br />
-
 	<h2 id="developer-themes">Developer themes</h2>
 	<div class="theme">
 		<a href="/videos/create.php?tray=street">
@@ -403,9 +364,9 @@
 		</a>
 	</div><br />
 </div>
-
+	
 </main>
-
+	
 <footer>
 	<nav id="foot-left">
 		<span title="Wrapper: Offline vWRAPPER_VER, build WRAPPER_BLD" id="wrapperversion" style="display: block">vWRAPPER_VER</span>
@@ -422,7 +383,4 @@
 		<a href="https://josephcrosmanplays532.github.io/caillou.html">Caillou</a>
 	</nav>
 </footer>
-<!-- <!-- if Yanny57 wants to make this go empty, this text will be needed.
-<p id="text" style="display: none">Empty Go pointssssss!</p>
--->
 </body></html>

@@ -17,7 +17,6 @@
 <link rel="stylesheet" href="/pages/css/modern-normalize.css">
 <link rel="stylesheet" href="/pages/css/global.css">
 
-<link rel="stylesheet" href="/pages/css/swf.css">
 <link rel="stylesheet" href="https://josephcrosmanplays532.github.io/static/642cd772aad8e952/school/css/importer.css.gz.css">
 <link rel="stylesheet" href="https://josephcrosmanplays532.github.io/static/642cd772aad8e952/school/css/studio.css.gz.css">
 
@@ -348,49 +347,7 @@ function initPreviewPlayer(dataXmlStr, startFrame) {
         wistiaId: 'fvjsa3jnzc',
     }
 </script>
-
-<script id="importer-file-tmpl" type="text/x-jquery-tmpl">
-    <li class="ga-importer-file clearfix fade">
-        <div class="ga-importer-file-icon"><div class="ga-importer-file-progress-bar"><div class="upload-progress"></div></div></div>
-        <div class="ga-importer-file-body">
-            <div class="filename"></div>
-            <div class="actions clearfix">
-                <span class="menu"></span>
-                <span class="category"></span>
-                <a class="cancel" href="#" data-action="cancel-upload" title="Cancel">&times;</a>
-                <a class="add-to-scene" href="#" data-action="add-to-scene">Add to scene</a>
-                <span class="processing">Processing. Please wait...</span>
-                <span class="error"></span>
-            </div>
-        </div>
-    </li>
-</script>
-
-<script id="importer-select-sound-tmpl" type="text/x-jquery-tmpl">
-    <div class="dropdown">
-        <a class="import-as-btn dropdown-toggle" data-toggle="dropdown" href="#">Import as <span class="caret"></span></a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-            <li><a tabindex="-1" href="#" data-subtype="bgmusic">Music</a></li>
-            <li><a tabindex="-1" href="#" data-subtype="soundeffect">Sound Effect</a></li>
-            <li><a tabindex="-1" href="#" data-subtype="voiceover">Voice-Over</a></li>
-        </ul>
-    </div>
-</script>
-
-<script id="importer-select-prop-tmpl" type="text/x-jquery-tmpl">
-    <div class="dropdown">
-        <a class="import-as-btn dropdown-toggle" data-toggle="dropdown" href="#">Import as <span class="caret"></span></a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-            <li><a tabindex="-1" href="#" data-subtype="prop">Prop</a></li>
-            <li><a tabindex="-1" href="#" data-subtype="bg">Background</a></li>
-        </ul>
-    </div>
-</script>
-<script src="https://josephcrosmanplays532.github.io/static/642cd772aad8e952/school/js/importer.js.gz.js"></script>
-<script>window.searchTermsDataUrl = 'https://josephcrosmanplays532.github.io/store/4e75f501cfbf51e3/common/terms.json';</script>
-<script src="https://josephcrosmanplays532.github.io/static/642cd772aad8e952/go/js/search-suggestion.js.gz.js"></script>
-
-<script>
+	
 ImporterFile.defaults.options.accept_mime = ["image\/png","image\/jpeg","image\/gif","image\/bmp","audio\/mpeg","audio\/wav","audio\/x-wav","audio\/vnd.wave","audio\/wave","audio\/mp3","audio\/mp4","audio\/ogg","audio\/vorbis","audio\/aac","audio\/m4a","audio\/x-m4a","application\/x-shockwave-flash","video\/mp4","video\/mpeg4","video\/x-flv","video\/x-ms-wmv","application\/mp4"];
 ImporterFile.defaults.options.restricted_mime = [];
 </script>
@@ -485,76 +442,7 @@ src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAARAQAABAAQRFNJRw
 </footer>
 
 
-<div id="studio_container" style="width: 960px; height: 717px;"><div class="ga-importer">
-        <div class="ga-importer-header">
-            <form class="ga-importer-base-form" action="/ajax/saveUserProp" method="post">
-                <a class="ga-importer-collapse" href="#" title="Collapse" onclick="hideImporter(); return false;">×</a>
-                <div class="fileinputs">
-                    <div class="importer-button file-trigger" style="width:140px;">SELECT FILES</div>
-                    <input class="ga-importer-file-input" type="file" name="file" multiple="">
-                </div>
-                <span class="hints">
-                    <i class="i-help"></i>
-                    <div class="tooltip in" style="display:none;">
-                        <div class="tooltip-arrow"></div>
-                        <div class="tooltip-inner">
-                            <ul>
-                                <li>Maximum file size: 15MB</li>
-                                <li>Images: JPG, PNG<br>To cover the whole stage in a 1080p video, use an image at least 1920px x 1080px.</li>
-                                <li>Audio: MP3, WAV, M4A</li>
-                                    <li>Video: MP4, SWF.</li>
-                                </ul>
-                        </div>
-                    </div>
-                </span>
-                <input type="hidden" name="subtype" value="">
-            </form>
-        </div>
-        <div class="ga-importer-content" style="height: 666px;">
-            <div class="ga-importer-start">
-                <div class="ga-importer-start-draghere">Drag files here</div>
-                <div class="ga-importer-instruction general">
-                    <ul>
-                        <li><strong>Maximum file size:</strong> 15MB</li>
-                        <li><strong>Images:</strong> JPG, PNG<br>To cover the whole stage in a 1080p video, use an image at least 1920px x 1080px.</li>
-                        <li><strong>Audio:</strong> MP3, WAV, M4A</li>
-                            <li><strong>Video:</strong> MP4, SWF. For more information about uploading SWF files, please click <a href="#" onclick="$('.ga-importer-instruction').toggle(); return false;">here</a>.</li>
-                        </ul>
-                </div>
-                <div class="ga-importer-instruction for-swf" style="display: none;">
-                    <p class="text-center"><b>For a .swf file</b></p>
-                    <ul>
-                        <li><strong>Frame rate:</strong> 24 frames per second</li>
-                        <li><strong>Flash Player version:</strong> 9</li>
-                        <li><strong>Load order:</strong> Bottom up</li>
-                        <li><strong>Action Script version:</strong> 3.0<br>You may use limited frame-navigation functions in ActionScript functions like "gotoAndPause", "pause" or "play". Please note that ActionScript functions may create problems when users watch a video and drag the player timeline manually.</li>
-                        <li><strong>Content positioning:</strong> Place the center of your prop at the origin of your stage (i.e. x=0 and y=0).</li>
-                    </ul>
-                    <div class="text-center"><a href="#" onclick="$('.ga-importer-instruction').toggle(); return false;">Back</a></div>
-                </div>
-            </div>
-            <div class="ga-importer-results">
-                <div class="ga-importer-notice clearfix"><span class="ga-importer-notice-count pull-left">0 file have been added to Your Library.</span> <a class="ga-importer-notice-clear pull-right" href="#">Clear</a></div>
-                <ul class="ga-importer-files"></ul>
-            </div>
-            <div class="ga-importer-queue-message">
-                Assign a category to start importing
-                <span class="hints pull-right">
-                    <i class="i-help"></i>
-                    <div class="tooltip in" style="display:none;">
-                        <div class="tooltip-arrow"></div>
-                        <div class="tooltip-inner">
-                            <p>Imported files are categorized to simplify browsing.</p>
-                            <p>Use the "IMPORT AS" drop down to see the available categories based on the format of the file you import.</p>
-                        </div>
-                    </div>
-                </span>
-            </div>
-            <ul class="ga-importer-queue"></ul>
-        </div>
-        <div class="ga-import-dnd-hint">
-            Release to start uploading        </div>
-    </div>
+<div id="studio_container" style="width: 960px; height: 717px;">
     <div id="studio_holder" style="width: 960px;"><object data="https://josephcrosmanplays532.github.io/static/animation/go_full.swf" type="application/x-shockwave-flash" id="Studio" width="100%" height="100%">
 	<!-- The flashvars are a huge mess, have fun looking at them. :) -->
 	<param name="flashvars" value="apiserver=https://vyond2018.herokuapp.com/&storePath=https://josephcrosmanplays532.github.io/static/store/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://josephcrosmanplays532.github.io/static/<client_theme>&themeId=custom&tlang=en_US&presaveId=<?php include_once("../goapi/function/videoId.php"); if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo $id + 1; } ?><?php if (isset($_GET["video"])) { echo "&movieId={$_GET["video"]}"; } ?>&goteam_draft_only=1&isWide=1&collab=0&nextUrl=./browse.php&tray=custom">

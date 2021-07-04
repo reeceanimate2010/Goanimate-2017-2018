@@ -15,7 +15,7 @@
                 <div class="col-md-6">
                                         <div class="input-group">
                         <span class="input-group-addon">&lt;/&gt;</span>
-                        <input class="form-control gtm-ga-event" type="text" value="<iframe scrolling=&quot;no&quot; allowTransparency=&quot;true&quot; allowfullscreen frameborder=&quot;0&quot; width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://phpwrapper.herokuapp.com/videos/embedvideo.php?video=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>&utm_source=social&amp;utm_medium=tumblr&amp;utm_campaign=usercontent&quot; ></iframe>
+                        <input class="form-control gtm-ga-event" type="text" value="<iframe scrolling=&quot;no&quot; allowTransparency=&quot;true&quot; allowfullscreen frameborder=&quot;0&quot; width=&quot;640&quot; height=&quot;360&quot; src=&quot;https://phpwrapper.herokuapp.com/videos/embedvideo.php?video=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>&utm_source=embed&quot; ></iframe>
 " data-gtmv-action="Embed - Click text field" data-gtmv-category="" data-gtmv-label="10753900 - Guest" onclick="amplitudeTrackShare(AMPLITUDE_EVENT_PROPERTIES.SHARE_EMBED); this.focus();this.select()">
                     </div>
                                     </div>

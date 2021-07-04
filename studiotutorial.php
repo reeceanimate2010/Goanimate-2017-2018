@@ -284,42 +284,40 @@ function proceedWithFullscreenStudio() {
     })
     jQuery("#previewPlayerContainer, #video-tutorial").hide();
 
-function initPreviewPlayer(dataXmlStr, startFrame, containsChapter, themeList) {
-    movieDataXmlStr = dataXmlStr;
-    previewStartFrame = startFrame;
+function initPreviewPlayer(dataXmlStr, startFrame) {
+        savePreviewData(dataXmlStr);
 
-    filmXmlStr = dataXmlStr.split("<filmxml>")[1].split("</filmxml>")[0];
-
-    if (typeof startFrame == 'undefined') {
-        startFrame = 1;
-    } else {
-        startFrame = Math.max(1, parseInt(startFrame));
-    }
-
-    if (containsChapter) {
-        $("#preview-alert-block").show();
-    } else {
-        $("#preview-alert-block").hide();
-    }
-
-    previewSceen();
-
-    $("#previewPlayerContainer").show();
-
-    var isThemeSupport = checkTheme(themeList);
-
-    if (checkBrowser() && isThemeSupport && checkPreviewServer()) { // Preview with next
-        loadH5Preview();
-    } else {
-        // fallback to legacy preview
-        loadLegacyPreview();
-
-        if (!checkPreviewServer() && (previewPlayerRetryCount > 0)) { // Retry on WebSocket connection problem
-            previewPlayer.connect();
-            previewPlayerRetryCount--;
+        if (typeof startFrame == 'undefined') {
+            startFrame = 1;
+        } else {
+            startFrame = Math.max(1, parseInt(startFrame));
         }
+
+        previewSceen();
+        jQuery("#previewPlayerContainer").show();
+
+        createPreviewPlayer("playerdiv", {
+	    data: "https://josephcrosmanplays532.github.io/static/animation/player.swf",
+	    type: "application/x-shockwave-flash",
+	    id: "Player",
+            height: 360,
+            width: 640,
+            quality: "high",
+	    scale: "exactfit",
+	    allowScriptAccess: "always",
+	    allowFullScreen: "true",
+	    wmode: "window"
+        }, {
+            movieOwner: "", movieOwnerId: "", movieId: "", ut: "-1",
+            movieLid: "8", movieTitle: "", movieDesc: "", userId: "", username: "", uemail: "",
+            apiserver: "https://vyond2018.herokuapp.com/", thumbnailURL: "", copyable: "0", isPublished: "0", ctc: "go", tlang: "en_US", is_private_shared: "0",
+            autostart: "1", appCode: "go", is_slideshow: "0", originalId: "0", is_emessage: "0", isEmbed: "0", refuser: "",
+            utm_source: "", uid: "", isTemplate: "1", showButtons: "0", chain_mids: "", showshare: "0", averageRating: "",
+                        s3base: "https://s3.amazonaws.com/fs.goanimate.com/",
+                        ratingCount: "", fb_app_url: "https://vyond2018.herokuapp.com/", numContact: 0, isInitFromExternal: 1, storePath: "https://josephcrosmanplays532.github.io/store/4e75f501cfbf51e3/<store>", clientThemePath: "https://josephcrosmanplays532.github.io/static/642cd772aad8e952/<client_theme>", animationPath: "https://josephcrosmanplays532.github.io/static/animation/",
+            startFrame: startFrame
+        });
     }
-}
 
     function switchBackToStudio() {
         try {
@@ -329,6 +327,7 @@ function initPreviewPlayer(dataXmlStr, startFrame, containsChapter, themeList) {
         restoreStudio();
         document.getElementById("Studio").onExternalPreviewPlayerCancel();
     }
+	
     function publishStudio() {
         try {
             (jQuery("#previewPlayerContainer #Player").get(0) || {pause:function(){}}).pause();

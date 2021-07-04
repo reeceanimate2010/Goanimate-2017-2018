@@ -3,7 +3,8 @@
 	<meta charset="utf-8">
 	<link rel="icon" href="/favicon.png" type="image/png">
 	<title>Video Studio</title>
-  <link rel="stylesheet" href="https://josephcrosmanplays532.github.io/static/642cd772aad8e952/school/css/common_combined.css.gz.css">
+<link rel="stylesheet" href="https://josephcrosmanplays532.github.io/static/642cd772aad8e952/school/css/common_combined.css.gz.css">
+<link rel="stylesheet" href="/pages/css/global.css">
 </head>
 <body>
 

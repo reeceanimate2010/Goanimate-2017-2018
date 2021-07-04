@@ -66,60 +66,6 @@ if (self !== top) {
     }
 </script>
 
-<header id="header">
-		<a href="/">
-			<h1 style="margin:0"><img id="logo" src="/pages/img/list_logo.svg" alt="PHPWrapper"/></h1>
-		</a>
-		<nav id="headbuttons">
-			<div class="dropdown_contain button_small">
-				<div class="dropdown_button upload_button">Upload</div>
-				<nav class="dropdown_menu">
-					<a onclick="document.getElementById('file').click()">Movie</a>
-					<a onclick="document.getElementById('file2').click()">Character</a>
-				</nav>
-			</div>	
-			<div class="dropdown_contain button_small">
-				<div class="dropdown_button">Create a Character</div>
-				<nav class="dropdown_menu">
-					<h2>Comedy World</h2>
-					<a href="/characters/create.php?themeId=family&bs=adam">Guy (Adam)</a>
-					<a href="/characters/create.php?themeId=family&bs=eve">Girl (Eve)</a>
-					<a href="/characters/create.php?themeId=family&bs=bob">Fat (Bob)</a>
-					<a href="/characters/create.php?themeId=family&bs=rocky">Buff (Rocky)</a>
-					<hr />
-					<h2>Anime</h2>
-					<a href="/characters/create.php?themeId=anime&bs=guy">Guy</a>
-					<a href="/characters/create.php?themeId=anime&bs=girl">Girl</a>
-					<a href="/characters/create.php?themeId=ninjaanime&bs=guy">Guy (Ninja)</a>
-					<a href="/characters/create.php?themeId=ninjaanime&bs=girl">Girl (Ninja)</a>
-					<hr />
-					<h2>Peepz</h2>
-					<a href="/characters/create.php?themeId=cc2&bs=default">Lil Peepz</a>
-					<a href="/characters/create.php?themeId=chibi&bs=default">Chibi Peepz</a>
-					<a href="/characters/create.php?themeId=ninja&bs=default">Chibi Ninjas</a>
-				</nav>
-			</div>
-			<div class="dropdown_contain button_small">
-				<div class="dropdown_button">Your Characters</div>
-				<nav class="dropdown_menu">
-					<h2>Comedy World</h2>
-					<a href="/characters/browse.php?themeId=family">Comedy World</a>
-					<hr />
-					<h2>Anime</h2>
-					<a href="/characters/browse.php?themeId=anime">Anime</a>
-					<a href="/characters/browse.php?themeId=ninjaanime">Ninja Anime</a>
-					<hr />
-					<h2>Peepz</h2>
-					<a href="/characters/browse.php?themeId=cc2">Lil' Peepz</a>
-					<a href="/characters/browse.php?themeId=chibi">Chibi Peepz</a>
-					<a href="/characters/browse.php?themeId=ninja">Chibi Ninjas</a>
-				</nav>
-			</div>
-			<a href="/videos/browse.php" class="button_small">Your Videos</a>
-			<a href="/create.php" class="button_big">Create</a>
-		</nav>
-	</header>
-
 <div style="position:relative;">
     <div id="studioBlock" style="height: 0px;"><!-- --></div>
 
@@ -253,9 +199,5 @@ if (self !== top) {
 </script>
 
 </main>
-
-</body></html>
-
-
 
 </body></html>

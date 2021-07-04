@@ -129,18 +129,35 @@ if (self !== top) {
     <div id="playerBlock"></div>
 </div>
 
-    <div id="preview_popup_container" style="display:none">
-	<div id="preview_popup">
-		<h2 id="preview-video">Preview Video</h2>
-		<p class="close-button" onclick="hidePreviewer()">X</p>
-		<object data="https://josephcrosmanplays532.github.io/static/animation/player.swf" type="application/x-shockwave-flash" id="playerdiv">
+    <div id="previewPlayerContainer" style="display: none;">
+        <div class="preview-player" id="previewPlayer">
+            <h2>Preview Video</h2>
+            <div id="playerdiv"><object data="https://josephcrosmanplays532.github.io/static/animation/player.swf" type="application/x-shockwave-flash" id="playerdiv">
 			<!-- The flashvars are a huge mess, have fun looking at them. :) -->
-			<param name="flashvars" value="apiserver=https://vyond2018.herokuapp.com/&storePath=https://josephcrosmanplays532.github.io/static/store/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://josephcrosmanplays532.github.io/static/<client_theme>&themeId=custom&tlang=en_US&isInitFromExternal=1&goteam_draft_only=1&isWide=1&collab=0&startFrame=previewStartFrame&autostart=1&nextUrl=../pages/html/list.html&tray=custom">
+			<param name="flashvars" value="apiserver=/&storePath=https://josephcrosmanplays532.github.io/static/store/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://josephcrosmanplays532.github.io/static/<client_theme>&themeId=custom&tlang=en_US&isInitFromExternal=1&goteam_draft_only=1&isWide=1&collab=0&startFrame=previewStartFrame&autostart=1&nextUrl=../pages/html/list.html&tray=custom">
 			<param name="allowScriptAccess" value="always">
 			<param name="allowFullScreen" value="true">
-		</object>
-	</div>
-</div>
+		</object></div>
+            <div class="buttons clearfix">
+                <button class="preview-button edit" onclick="switchBackToStudio();">Back to editing</button>
+                <button class="preview-button save" onclick="publishStudio();">Save Now</button>            </div>
+
+            <a class="close_btn" href="#" onclick="switchBackToStudio(); return false;">×</a>
+        </div>
+    </div>
+    <div class="video-tutorial" id="video-tutorial" style="display: none;">
+        <div class="video-tutorial-body">
+            <h2>&nbsp;</h2>
+            <div class="video-tutorial-player">
+                <div id="wistia_player" class="wistia_embed" style="width:860px;height:445px">&nbsp;</div>
+            </div>
+            <a class="close_btn" href="#" onclick="return false;">×</a>
+        </div>
+        <div class="video-tutorial-footer clearfix">
+            <button class="tutorial-button" type="button">
+                Close            </button>
+        </div>
+    </div>
 
 <div style="display:none">
     
@@ -267,34 +284,43 @@ function proceedWithFullscreenStudio() {
     })
     jQuery("#previewPlayerContainer, #video-tutorial").hide();
 
-    function initPreviewPlayer(dataXmlStr, startFrame) {
-        savePreviewData(dataXmlStr);
+function initPreviewPlayer(dataXmlStr, startFrame, containsChapter, themeList) {
+    movieDataXmlStr = dataXmlStr;
+    previewStartFrame = startFrame;
 
-        if (typeof startFrame == 'undefined') {
-            startFrame = 1;
-        } else {
-            startFrame = Math.max(1, parseInt(startFrame));
-        }
+    filmXmlStr = dataXmlStr.split("<filmxml>")[1].split("</filmxml>")[0];
 
-        previewSceen();
-        jQuery("#previewPlayerContainer").show();
-
-        createPreviewPlayer("playerdiv", {
-            height: 360,
-            width: 640,
-            player_url: "https://josephcrosmanplays532.github.io/static/animation/player.swf",
-            quality: "medium"
-        }, {
-            movieOwner: "", movieOwnerId: "", movieId: "", ut: "-1",
-            movieLid: "8", movieTitle: "", movieDesc: "", userId: "", username: "", uemail: "",
-            apiserver: "https://goanimate4schools.herokuapp.com/", thumbnailURL: "", copyable: "0", isPublished: "0", ctc: "go", tlang: "en_US", is_private_shared: "0",
-            autostart: "1", appCode: "go", is_slideshow: "0", originalId: "0", is_emessage: "0", isEmbed: "0", refuser: "",
-            utm_source: "", uid: "", isTemplate: "1", showButtons: "0", chain_mids: "", showshare: "0", averageRating: "",
-                        s3base: "https://s3.amazonaws.com/fs.goanimate.com/",
-                        ratingCount: "", fb_app_url: "https://goanimate4schools.herokuapp.com/", numContact: 0, isInitFromExternal: 1, storePath: "https://josephcrosmanplays532.github.io/store/4e75f501cfbf51e3/<store>", clientThemePath: "https://josephcrosmanplays532.github.io/static/642cd772aad8e952/<client_theme>", animationPath: "https://josephcrosmanplays532.github.io/animation/cce25167cb1d3404/",
-            startFrame: startFrame
-        });
+    if (typeof startFrame == 'undefined') {
+        startFrame = 1;
+    } else {
+        startFrame = Math.max(1, parseInt(startFrame));
     }
+
+    if (containsChapter) {
+        $("#preview-alert-block").show();
+    } else {
+        $("#preview-alert-block").hide();
+    }
+
+    previewSceen();
+
+    $("#previewPlayerContainer").show();
+
+    var isThemeSupport = checkTheme(themeList);
+
+    if (checkBrowser() && isThemeSupport && checkPreviewServer()) { // Preview with next
+        loadH5Preview();
+    } else {
+        // fallback to legacy preview
+        loadLegacyPreview();
+
+        if (!checkPreviewServer() && (previewPlayerRetryCount > 0)) { // Retry on WebSocket connection problem
+            previewPlayer.connect();
+            previewPlayerRetryCount--;
+        }
+    }
+}
+
     function switchBackToStudio() {
         try {
             (jQuery("#previewPlayerContainer #Player").get(0) || {pause:function(){}}).pause();

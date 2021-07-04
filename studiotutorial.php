@@ -584,41 +584,35 @@ function loadH5Preview() {
 }
 
 function initPreviewPlayer(dataXmlStr, startFrame, containsChapter, themeList) {
-    movieDataXmlStr = dataXmlStr;
-    previewStartFrame = startFrame;
-
-    filmXmlStr = dataXmlStr.split("<filmxml>")[1].split("</filmxml>")[0];
-
-    if (typeof startFrame == 'undefined') {
-        startFrame = 1;
-    } else {
-        startFrame = Math.max(1, parseInt(startFrame));
-    }
-
-    if (containsChapter) {
-        $("#preview-alert-block").show();
-    } else {
-        $("#preview-alert-block").hide();
-    }
-
-    previewSceen();
-
-    $("#previewPlayerContainer").show();
-
-    var isThemeSupport = checkTheme(themeList);
-
-    if (checkBrowser() && isThemeSupport && checkPreviewServer()) { // Preview with next
-        loadH5Preview();
-    } else {
-        // fallback to legacy preview
-        loadLegacyPreview();
-
-        if (!checkPreviewServer() && (previewPlayerRetryCount > 0)) { // Retry on WebSocket connection problem
-            previewPlayer.connect();
-            previewPlayerRetryCount--;
-        }
-    }
-}
+		// New variable to be used by loadPreviewer()
+		movieDataXmlStr = dataXmlStr;
+		// Movie XML
+		filmXmlStr = dataXmlStr.split("<filmxml>")[1].split("</filmxml>")[0];
+		// Show preview popup
+		document.getElementById("preview_popup_container").style.display = "block";
+		// Load the Video Previewer
+		loadPreviewer();
+	}
+	function loadPreviewer() {
+		// I think this is in case of an error??
+		if (movieDataXmlStr === null) {
+			return;
+		}
+		// I don't know
+		savePreviewData(movieDataXmlStr);
+	}
+	function savePreviewData(a) {
+		// Set temp data variable
+		previewPlayerTempData = a
+	}
+	function retrievePreviewPlayerData() {
+		// Store in separate variable
+		var recentPreviewPlayerTempData = previewPlayerTempData;
+		// Clear original variable
+		previewPlayerTempData = "";
+		// Return recent temp data
+		return recentPreviewPlayerTempData;
+	}
 
 function pauseH5PreviewPlayer() {
     $("#h5-preview-player").get(0).pause();

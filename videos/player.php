@@ -523,15 +523,12 @@ function logAmplitudeEvent(eventName, eventProperties) {
 </form>
 <footer class="site-footer">
     <div class="container">
-	    <div id="foot-left">
 		<a>v1.2.3½</a>
 		<a href="https://josephcrosmanplays532.github.io/faq.html">FAQ</a>
 		<a href="https://discord.gg/yhGAetN">Wrapper Hub</a>
-	    </div>
-	    <div id="foot-right">
+	    |
 		<a href="https://josephcrosmanplays532.github.io">Server Page</a>
 		<a href="https://josephcrosmanplays532.github.io/caillou.html">Caillou</a>
-	    </div>
 	</div>
 </footer>
 <div id="studio_container" style="display: none;">

@@ -139,21 +139,6 @@
 			</a>
 		</div>
 	</div><br />
-	<h2 id="licensed-themes">Licensed themes</h2>
-	<div id="column8">
-		<div class="theme">
-			<a href="/characters/browse.php?theme=botdf">
-				<img src="/pages/img/themelist/botdf.jpg" alt="Blood on the Dance Floor&#8482;">
-				<p>Blood on the Dance Floor&#8482;</p>
-			</a>
-		</div>
-		<div class="theme">
-			<a href="/characters/browse.php?theme=cctoonadv">
-				<img src="/pages/img/themelist/Toon_Adventure.png" alt="Toon Adventure&#8482;">
-				<p>Toon Adventure&#8482;</p>
-			</a>
-		</div>
-	</div><br />
 </div>
 	
 <div id="movie_themes" style="display: none">
@@ -253,115 +238,6 @@
 				<p>Politics & Celebrity</p>
 			</a>
 		</div>
-	</div><br />
-	<h2 id="seasonal-themes">Seasonal themes</h2>
-	<div id="column7">
-		<div class="theme">
-			<a href="/videos/create.php?tray=christmas">
-				<img src="/pages/img/themelist/Holiday_and_Seasonal.png" alt="Holiday & Seasonal">
-				<p>Holiday & Seasonal</p>
-			</a>
-		</div>
-		<div class="theme">
-			<a href="/videos/create.php?tray=monstermsh">
-				<img src="/pages/img/themelist/Monsters_Mayhem.png" alt="Monsters Mayhem">
-				<p>Monsters Mayhem</p>
-			</a>
-		</div>
-	</div><br />
-	<h2 id="licensed-themes">Licensed themes</h2>
-	<div id="column8">
-		<div class="theme">
-			<a href="/videos/create.php?tray=akon">
-				<img src="/pages/img/themelist/Akon.jpg" alt="AKON&#8482;">
-				<p>AKON&#8482;</p>
-			</a>
-		</div>
-		<div class="theme">
-			<a href="/videos/create.php?tray=ben10">
-				<img src="/pages/img/themelist/Ben_10.png" alt="Ben 10&#8482;">
-				<p>Ben 10&#8482;</p>
-			</a>
-		</div>
-		<div class="theme">
-			<a href="/videos/create.php?tray=botdf">
-				<img src="/pages/img/themelist/botdf.jpg" alt="Blood on the Dance Floor&#8482;">
-				<p>Blood on the Dance Floor&#8482;</p>
-			</a>
-		</div>
-	</div><br />
-	<div id="column9">
-		<div class="theme">
-			<a href="/videos/create.php?tray=bunny">
-				<img src="/pages/img/themelist/Happy_Bunny.png" alt="It's Happy Bunny&#8482;">
-				<p>It's Happy Bunny&#8482;</p>
-			</a>
-		</div>
-		<div class="theme">
-			<a href="/videos/create.php?tray=chowder">
-				<img src="/pages/img/themelist/Chowder.png" alt="Chowder&#8482;">
-				<p>Chowder&#8482;</p>
-			</a>
-		</div>
-		<div class="theme">
-			<a href="/videos/create.php?tray=domo">
-				<img src="/pages/img/themelist/Domo.png" alt="Domo&#8482;">
-				<p>Domo&#8482;</p>
-			</a>
-		</div>
-	</div><br />
-	<div id="column10">
-		<div class="theme">
-			<a href="/videos/create.php?tray=monkeytalk">
-				<img src="/pages/img/themelist/SuperRica_&_Rashy.png" alt="SuperRica & Rashy&#8482;">
-				<p>SuperRica & Rashy&#8482;</p>
-			</a>
-		</div>
-		<div class="theme">
-			<a href="/videos/create.php?tray=sf">
-				<img src="/pages/img/themelist/Street_Fighter.png" alt="Street Fighter&#8482;">
-				<p>Street Fighter&#8482;</p>
-			</a>
-		</div>
-		<div class="theme">
-			<a href="/videos/create.php?tray=startrek">
-				<img src="/pages/img/themelist/Star_Trek_Quags.JPG" alt="Star Trek&#8482; Quogs">
-				<p>Star Trek&#8482; Quogs</p>
-			</a>
-		</div>
-	</div><br />
-	<div id="column11">
-		<div class="theme">
-			<a href="/videos/create.php?tray=toonadv">
-				<img src="/pages/img/themelist/Toon_Adventure.png" alt="Toon Adventure&#8482;">
-				<p>Toon Adventure&#8482;</p>
-			</a>
-		</div>
-		<div class="theme">
-			<a href="/videos/create.php?tray=underdog">
-				<img src="/pages/img/themelist/UnderDog.png" alt="Underdog&#8482;">
-				<p>Underdog&#8482;</p>
-			</a>
-		</div>
-		<div class="theme">
-			<a href="/videos/create.php?tray=willie">
-				<img src="/pages/img/themelist/Willie_Nelson.jpg" alt="Willie Nelson&#8482;">
-				<p>Willie Nelson&#8482;</p>
-			</a>
-		</div>
-	</div><br />
-	<h2 id="developer-themes">Developer themes</h2>
-	<div class="theme">
-		<a href="/videos/create.php?tray=street">
-			<img src="/pages/img/themelist/Street.png" alt="Street">
-			<p>Street</p>
-		</a>
-	</div>
-	<div class="theme">
-		<a href="/videos/create.php?tray=yme">
-			<img src="/pages/img/themelist/yme.png" alt="yme babe theme">
-			<p>yme</p>
-		</a>
 	</div><br />
 </div>
 	

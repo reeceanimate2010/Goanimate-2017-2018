@@ -70,13 +70,13 @@
 	<h2 id="standard-themes">Standard themes</h2>
 	<div id="column1">
 		<div class="theme">
-			<a href="http://localhost:4343/cc_browser?themeId=custom">
+			<a href="/characters/browse.php?theme=family">
 				<img src="/pages/img/themelist/Comedy_World.jpg" alt="Comedy World">
 				<p>Comedy World</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/cc_browser?themeId=cc2">
+			<a href="/characters/browse.php?theme=cc2">
 				<img src="/pages/img/themelist/lil_Peepz.jpg" alt="Lil' Peepz">
 				<p>Lil' Peepz</p>
 			</a>
@@ -89,19 +89,19 @@
 	<h2 id="standard-themes">Standard themes</h2>
 	<div id="column1">
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=custom">
+			<a href="/videos/create.php?tray=custom">
 				<img src="/pages/img/themelist/Comedy_World.jpg" alt="Comedy World">
 				<p>Comedy World</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=action">
+			<a href="/videos/create.php?tray=action">
 				<img src="/pages/img/themelist/lil_Peepz.jpg" alt="Lil' Peepz">
 				<p>Lil' Peepz</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="http://localhost:4343/go_full?tray=retro">
+			<a href="/videos/create.php?tray=retro">
 				<img src="/pages/img/themelist/Cartoon_Classics.jpg" alt="Cartoon Classics">
 				<p>Cartoon Classics</p>
 			</a>

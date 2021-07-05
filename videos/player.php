@@ -465,7 +465,7 @@ $('.video-actions').toggle($('.video-actions').find('.btn').length > 0);
             <div class="tab-content">
                 <div class="tab-pane active" id="video-info">
                     <p class="inside">Published on: 16 Nov 2012</p>
-                    <p></p>
+                    <p><a data-remote="/ajax/watchMovie/PHPWrapperDemo" data-action="video-share">Watch The Demo</a></p>
                 </div>
             </div>
         </div>
@@ -475,10 +475,6 @@ $('.video-actions').toggle($('.video-actions').find('.btn').length > 0);
     </div>
 </div>
 </div>
-<div class="intro-banner">
-        <div>Welcome to PHPWrapper! Create Cartoons excatly the way you want!</div>
-        <div><a data-remote="/ajax/watchMovie/PHPWrapperDemo" class="btn-sm btn-dark play-btn home-video-play"><span class="glyph-pro glyph-play-button"></span> Demo</a></div>
-    </div>
 <!-- modals -->
 <script>
 // Twitter

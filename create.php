@@ -113,7 +113,6 @@
 
 <footer>
 	<nav id="foot-left">
-		<span title="Wrapper: Offline vWRAPPER_VER, build WRAPPER_BLD" id="wrapperversion" style="display: block">vWRAPPER_VER</span>
 		<a href="/videomaker/full/tutorial?">Studio Tutorial</a>
 	</nav>
         

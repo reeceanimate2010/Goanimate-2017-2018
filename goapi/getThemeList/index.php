@@ -14,7 +14,7 @@
 	///
 	if ($createZip == true) {
 		// Add themelist to zip file
-		$themeListZip->addFile("../asset/themes/themelist.xml", "themelist.xml");
+		$themeListZip->addFile("/ajax/themelist.xml", "themelist.xml");
 		// Close zip
 		$themeListZip->close();
 		// Read zip to LVM

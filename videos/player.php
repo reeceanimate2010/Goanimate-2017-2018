@@ -475,6 +475,10 @@ $('.video-actions').toggle($('.video-actions').find('.btn').length > 0);
     </div>
 </div>
 </div>
+<div class="intro-banner">
+        <div>Welcome to PHPWrapper! Create Cartoons excatly the way you want!</div>
+        <div><a data-remote="/ajax/watchMovie/PHPWrapperDemo" class="btn-sm btn-dark play-btn home-video-play"><span class="glyph-pro glyph-play-button"></span> Demo</a></div>
+    </div>
 <!-- modals -->
 <script>
 // Twitter

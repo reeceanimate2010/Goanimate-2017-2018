@@ -6,7 +6,6 @@
 	<title>Video Studio</title>
 </head>
 <body>
-<link rel="stylesheet" href="/pages/css/global.css">
 <!-- Asset Importer -->
 <div id="import_popup_container" style="display:none">
 	<div id="import_popup">

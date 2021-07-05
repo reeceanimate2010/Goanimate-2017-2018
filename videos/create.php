@@ -13,7 +13,7 @@
 		<p class="close-button" onclick="hideImporter()">X</p>
 		<!-- Import form -->
 		<div id="import_image">
-			<form id="uploadbanner" enctype="multipart/form-data" method="post" action="/goapi/uploadAsset" target="dummy">
+			<form id="uploadbanner" enctype="multipart/form-data" method="post" action="/ajax/saveUserProp" target="dummy">
 				<input id="fileupload" name="import" type="file" accept=".mp3,.wav,.png,.jpg">
 				<h3 id="import-as">Import As:</h3>
 				<input type="radio" value="prop" name="subtype"> Prop</input>
@@ -31,9 +31,9 @@
 	<div id="preview_popup">
 		<h2 id="preview-video">Preview Video</h2>
 		<p class="close-button" onclick="hidePreviewer()">X</p>
-		<object data="https://josephcrosmanplays532.github.io/static/animation/player.swf" type="application/x-shockwave-flash" id="playerdiv">
+		<object data="https://phpwrapper.herokuapp.com/goapi/asset/animation/player.swf" type="application/x-shockwave-flash" id="playerdiv">
 			<!-- The flashvars are a huge mess, have fun looking at them. :) -->
-			<param name="flashvars" value="apiserver=/&storePath=https://josephcrosmanplays532.github.io/static/store/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://josephcrosmanplays532.github.io/static/<client_theme>&themeId=custom&tlang=en_US&isInitFromExternal=1&goteam_draft_only=1&isWide=1&collab=0&startFrame=previewStartFrame&autostart=1&nextUrl=../pages/html/list.html&tray=<?php if (isset($_GET["tray"])) { echo $_GET["tray"]; } else { echo "custom"; } ?>">
+			<param name="flashvars" value="apiserver=/&storePath=https://phpwrapper.herokuapp.com/goapi/asset/themes/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://phpwrapper.herokuapp.com/goapi/asset/static/<client_theme>&themeId=custom&tlang=en_US&isInitFromExternal=1&goteam_draft_only=1&isWide=1&collab=0&startFrame=previewStartFrame&autostart=1&nextUrl=../pages/html/list.html&tray=<?php if (isset($_GET["tray"])) { echo $_GET["tray"]; } else { echo "custom"; } ?>">
 			<param name="allowScriptAccess" value="always">
 			<param name="allowFullScreen" value="true">
 		</object>
@@ -43,9 +43,9 @@
 <!-- Video Studio -->
 <main>
 
-<object data="https://josephcrosmanplays532.github.io/static/animation/go_full.swf" type="application/x-shockwave-flash" id="Studio" width="100%" height="100%">
+<object data="https://phpwrapper.herokuapp.com/goapi/asset/animation/go_full.swf" type="application/x-shockwave-flash" id="Studio" width="100%" height="100%">
 	<!-- The flashvars are a huge mess, have fun looking at them. :) -->
-	<param name="flashvars" value="apiserver=/&storePath=https://josephcrosmanplays532.github.io/static/store/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://josephcrosmanplays532.github.io/static/<client_theme>&themeId=custom&tlang=en_US&presaveId=<?php include_once("../goapi/function/videoId.php"); if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo $id + 1; } ?><?php if (isset($_GET["video"])) { echo "&movieId={$_GET["video"]}"; } ?>&goteam_draft_only=1&isWide=1&collab=0&nextUrl=./browse.php&tray=<?php if (isset($_GET["tray"])) { echo $_GET["tray"]; } else { echo "custom"; } ?>">
+	<param name="flashvars" value="apiserver=/&storePath=https://phpwrapper.herokuapp.com/goapi/asset/themes/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://phpwrapper.herokuapp.com/goapi/asset/static/<client_theme>&themeId=custom&tlang=en_US&presaveId=<?php include_once("../goapi/function/videoId.php"); if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo $id + 1; } ?><?php if (isset($_GET["video"])) { echo "&movieId={$_GET["video"]}"; } ?>&goteam_draft_only=1&isWide=1&collab=0&nextUrl=./browse.php&tray=<?php if (isset($_GET["tray"])) { echo $_GET["tray"]; } else { echo "custom"; } ?>">
 	<param name="allowScriptAccess" value="always">
 	<param name="allowFullScreen" value="true">
 </object>

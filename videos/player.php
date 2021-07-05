@@ -403,7 +403,7 @@ function playerLoaded() {
 };
 jQuery('#playerdiv').flash({
     id: "Player",
-    swf: "https://josephcrosmanplays532.github.io/static/animation/player.swf",
+    swf: "https://phpwrapper.herokuapp.com/goapi/asset/animation/player.swf",
     height: 349,
     width: 620,
     bgcolor: "#000000",
@@ -412,7 +412,7 @@ jQuery('#playerdiv').flash({
     allowFullScreen: "true",
     wmode: "opaque",
     hasVersion: "10.3",
-    flashvars: {"apiserver":"/","storePath":"https://josephcrosmanplays532.github.io/store/3a981f5cb2739137/<store>","ut":60,"autostart":1,"isWide":"<?php if (isset($_GET["videowidth"])) { echo $_GET["videowidth"]; } else { echo "1"; } ?>","clientThemePath":"https://josephcrosmanplays532.github.io/static/ad44370a650793d9/<client_theme>","movieId":"<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>","utm_source":"<?php if (isset($_GET["utm_source"])) { echo $_GET["utm_source"]; } else { echo "null"; } ?>","utm_medium":"<?php if (isset($_GET["utm_medium"])) { echo $_GET["utm_medium"]; } else { echo "null"; } ?>","utm_campaign":"<?php if (isset($_GET["utm_campaign"])) { echo $_GET["utm_campaign"]; } else { echo "null"; } ?>"}});
+    flashvars: {"apiserver":"/","storePath":"https://phpwrapper.herokuapp.com/goapi/asset/themes/<store>","ut":60,"autostart":1,"isWide":"<?php if (isset($_GET["videowidth"])) { echo $_GET["videowidth"]; } else { echo "1"; } ?>","clientThemePath":"https://phpwrapper.herokuapp.com/goapi/asset/animation/<client_theme>","movieId":"<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>","utm_source":"<?php if (isset($_GET["utm_source"])) { echo $_GET["utm_source"]; } else { echo "null"; } ?>","utm_medium":"<?php if (isset($_GET["utm_medium"])) { echo $_GET["utm_medium"]; } else { echo "null"; } ?>","utm_campaign":"<?php if (isset($_GET["utm_campaign"])) { echo $_GET["utm_campaign"]; } else { echo "null"; } ?>"}});
 jQuery('#player-overlay-dismiss').click(function() {
     jQuery('#player-overlay').hide();
 });

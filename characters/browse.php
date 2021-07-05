@@ -82,37 +82,37 @@ if (self !== top) {
 				<div class="dropdown_button">Create a Character</div>
 				<nav class="dropdown_menu">
 					<h2>Comedy World</h2>
-					<a href="/characters/create.php?themeId=family&bs=adam">Guy (Adam)</a>
-					<a href="/characters/create.php?themeId=family&bs=eve">Girl (Eve)</a>
-					<a href="/characters/create.php?themeId=family&bs=bob">Fat (Bob)</a>
-					<a href="/characters/create.php?themeId=family&bs=rocky">Buff (Rocky)</a>
+					<a href="/characters/create.php?theme=family&type=adam">Guy (Adam)</a>
+					<a href="/characters/create.php?theme=family&type=eve">Girl (Eve)</a>
+					<a href="/characters/create.php?theme=family&type=bob">Fat (Bob)</a>
+					<a href="/characters/create.php?theme=family&type=rocky">Buff (Rocky)</a>
 					<hr />
 					<h2>Anime</h2>
-					<a href="/characters/create.php?themeId=anime&bs=guy">Guy</a>
-					<a href="/characters/create.php?themeId=anime&bs=girl">Girl</a>
-					<a href="/characters/create.php?themeId=ninjaanime&bs=guy">Guy (Ninja)</a>
-					<a href="/characters/create.php?themeId=ninjaanime&bs=girl">Girl (Ninja)</a>
+					<a href="/characters/create.php?theme=anime&type=guy">Guy</a>
+					<a href="/characters/create.php?theme=anime&type=girl">Girl</a>
+					<a href="/characters/create.php?theme=ninjaanime&type=guy">Guy (Ninja)</a>
+					<a href="/characters/create.php?theme=ninjaanime&type=girl">Girl (Ninja)</a>
 					<hr />
 					<h2>Peepz</h2>
-					<a href="/characters/create.php?themeId=cc2&bs=default">Lil Peepz</a>
-					<a href="/characters/create.php?themeId=chibi&bs=default">Chibi Peepz</a>
-					<a href="/characters/create.php?themeId=ninja&bs=default">Chibi Ninjas</a>
+					<a href="/characters/create.php?theme=cc2&type=default">Lil Peepz</a>
+					<a href="/characters/create.php?theme=chibi&type=default">Chibi Peepz</a>
+					<a href="/characters/create.php?theme=ninja&type=default">Chibi Ninjas</a>
 				</nav>
 			</div>
 			<div class="dropdown_contain button_small">
 				<div class="dropdown_button">Your Characters</div>
 				<nav class="dropdown_menu">
 					<h2>Comedy World</h2>
-					<a href="/characters/browse.php?themeId=family">Comedy World</a>
+					<a href="/characters/browse.php?theme=family">Comedy World</a>
 					<hr />
 					<h2>Anime</h2>
-					<a href="/characters/browse.php?themeId=anime">Anime</a>
-					<a href="/characters/browse.php?themeId=ninjaanime">Ninja Anime</a>
+					<a href="/characters/browse.php?theme=anime">Anime</a>
+					<a href="/characters/browse.php?theme=ninjaanime">Ninja Anime</a>
 					<hr />
 					<h2>Peepz</h2>
-					<a href="/characters/browse.php?themeId=cc2">Lil' Peepz</a>
-					<a href="/characters/browse.php?themeId=chibi">Chibi Peepz</a>
-					<a href="/characters/browse.php?themeId=ninja">Chibi Ninjas</a>
+					<a href="/characters/browse.php?theme=cc2">Lil' Peepz</a>
+					<a href="/characters/browse.php?theme=chibi">Chibi Peepz</a>
+					<a href="/characters/browse.php?theme=ninja">Chibi Ninjas</a>
 				</nav>
 			</div>
 			<a href="/videos/browse.php" class="button_small">Your Videos</a>
@@ -124,9 +124,9 @@ if (self !== top) {
 	<a href="/create.php">Make a video</a>  >  <a class="active">Your Characters</a>
         </ul>
         <p>Browse characters already available in that theme and use them as a starting point to create new custom characters.</p>
-<div id="ccbrowser-container" align="center"><object data="https://josephcrosmanplays532.github.io/animation/414827163ad4eb60phpwrapper/cc_browser.swf" type="application/x-shockwave-flash" id="ccbrowser" width="960" height="1200">
+<div id="ccbrowser-container" align="center"><object data="https://phpwrapper.herokuapp.com/goapi/asset/animation/cc_browser.swf" type="application/x-shockwave-flash" id="ccbrowser" width="960" height="1200">
 	<!-- The flashvars are a huge mess, have fun looking at them. :) -->
-	<param name="flashvars" value="apiserver=/&storePath=https://josephcrosmanplays532.github.io/static/store/<store>&clientThemePath=https://josephcrosmanplays532.github.io/static/<client_theme>&themeId=<?php if (isset($_GET["theme"])) { echo $_GET["theme"]; } else { echo "family"; } ?>&bs=<?php if (isset($_GET["type"])) { echo $_GET["type"]; } else { echo "adam"; } ?>&ut=60&presaveId=<?php include_once("../goapi/function/characterId.php"); if (isset($_GET["characterId"])) { echo $_GET["characterId"]; } else { echo $id + 1; } ?>&appCode=go&page=&siteId=go&m_mode=school&isLogin=Y&isEmbed=1&ctc=go&tlang=en_US&nextUrl=%2Fbrowse.php">
+	<param name="flashvars" value="apiserver=/&storePath=https://phpwrapper.herokuapp.com/goapi/asset/themes/<store>&clientThemePath=https://phpwrapper.herokuapp.com/goapi/asset/static/<client_theme>&themeId=<?php if (isset($_GET["theme"])) { echo $_GET["theme"]; } else { echo "family"; } ?>&bs=<?php if (isset($_GET["type"])) { echo $_GET["type"]; } else { echo "adam"; } ?>&ut=60&presaveId=<?php include_once("../goapi/function/characterId.php"); if (isset($_GET["characterId"])) { echo $_GET["characterId"]; } else { echo $id + 1; } ?>&appCode=go&page=&siteId=go&m_mode=school&isLogin=Y&isEmbed=1&ctc=go&tlang=en_US&nextUrl=%2Fbrowse.php">
 	<param name="allowScriptAccess" value="always">
 </object></div>
 </div>

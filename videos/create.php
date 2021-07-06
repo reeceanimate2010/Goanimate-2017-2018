@@ -7,7 +7,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
 <title>Video Studio | PHPWrapper</title>
+<link href="/pages/css/modern-normalize.css" rel="stylesheet" type="text/css">
 <link href="/pages/css/global.css" rel="stylesheet" type="text/css">
+<link href="/pages/css/swf.css" rel="stylesheet" type="text/css">
 <meta name="title" content="test"/>
 <meta name="description" content="Make a Video"/>
 

@@ -62,6 +62,7 @@ so.addVariable("goteam_draft_only", "<?php if (isset($_GET["draftonly"])) { echo
 so.addVariable("isWide", "<?php if (isset($_GET["studiowidth"])) { echo $_GET["studiowidth"]; } else { echo "1"; } ?>");
 so.addVariable("collab", "<?php if (isset($_GET["collab"])) { echo $_GET["collab"]; } else { echo "0"; } ?>");
 so.addVariable("nextUrl", "<?php if (isset($_GET["nextlink"])) { echo $_GET["nextlink"]; } else { echo "./browse.php"; } ?>");
+so.addVariable("tray", "<?php if (isset($_GET["tray"])) { echo $_GET["tray"]; } else { echo "custom"; } ?>");
 
 
 

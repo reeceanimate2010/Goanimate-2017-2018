@@ -5,15 +5,13 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
-<title>Video Studio | PHPWrapper</title>
-<meta name="title" content="Video Studio"/>
-<meta name="description" content="Ment for making videos."/>
+<title>Video Player | PHPWrapper</title>
+<meta name="title" content="test"/>
+<meta name="description" content="testing this old embed ga4s player"/>
 
 <meta name="robots" content="noindex, nofollow"/>
 <meta name="google-site-verification" content="Vta3YTpj6Kx6u4p-EzeMArY0alNItkyUYYMvNM8seVI"/>
 
-<link rel="stylesheet" type="text/css" href="/pages/css/global.css">
-	
 <style>
 html, body, #player-container {margin:0;padding:0;width:100%;height:100%;overflow:hidden;}
 </style>
@@ -21,53 +19,12 @@ html, body, #player-container {margin:0;padding:0;width:100%;height:100%;overflo
 <script src="https://phpwrapper.herokuapp.com/static/go/js/swfobject.js"></script>
 </head>
 <body>
-<!-- Asset Importer -->
-<div id="import_popup_container" style="display:none">
-	<div id="import_popup">
-		<h2 id="import-an-asset">Import an Asset</h2>
-		<p class="close-button" onclick="hideImporter()">X</p>
-		<!-- Import form -->
-		<div id="import_image">
-			<form id="uploadbanner" enctype="multipart/form-data" method="post" action="/ajax/saveUserProp" target="dummy">
-				<input id="fileupload" name="import" type="file" accept=".mp3,.wav,.png,.jpg">
-				<h3 id="import-as">Import As:</h3>
-				<input type="radio" value="prop" name="subtype"> Prop</input>
-				<br />
-				<input type="radio" value="background" name="subtype"> Background</input>
-				<br />
-				<input type="submit" value="Import" onclick='document.getElementById("video_maker").importerUploadComplete("importerUploadComplete"); document.getElementById("import_popup_container").style.display = "none";' id="submit" class="button_import" />
-			</form>
-		</div>
-	</div>
+<div id="player-container">
+	This content requires the Adobe Flash Player 18.0. <a href="https://get.adobe.com/flashplayer/">Get Flash</a>
 </div>
-
-<!-- Video Previewer -->
-<div id="preview_popup_container" style="display:none">
-	<div id="preview_popup">
-		<h2 id="preview-video">Preview Video</h2>
-		<p class="close-button" onclick="hidePreviewer()">X</p>
-		<object data="https://phpwrapper.herokuapp.com/goapi/asset/animation/player.swf" type="application/x-shockwave-flash" id="playerdiv">
-			<!-- The flashvars are a huge mess, have fun looking at them. :) -->
-			<param name="flashvars" value="apiserver=/&storePath=https://phpwrapper.herokuapp.com/goapi/asset/themes/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://phpwrapper.herokuapp.com/goapi/asset/static/<client_theme>&themeId=custom&tlang=en_US&isInitFromExternal=1&goteam_draft_only=1&isWide=1&collab=0&startFrame=previewStartFrame&autostart=1&nextUrl=../pages/html/list.html&tray=<?php if (isset($_GET["tray"])) { echo $_GET["tray"]; } else { echo "custom"; } ?>">
-			<param name="allowScriptAccess" value="always">
-			<param name="allowFullScreen" value="true">
-		</object>
-	</div>
-</div>
-
-<!-- Video Studio -->
-<main>
-
-<object data="https://josephcrosmanplays532.github.io/static/animation/go_full.swf" type="application/x-shockwave-flash" id="Studio" width="100%" height="100%">
-	<!-- The flashvars are a huge mess, have fun looking at them. :) -->
-	<param name="flashvars" value="apiserver=/&storePath=https://josephcrosmanplays532.github.io/static/store/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://josephcrosmanplays532.github.io/static/<client_theme>&themeId=custom&tlang=en_US&presaveId=<?php include_once("../goapi/function/videoId.php"); if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo $id + 1; } ?><?php if (isset($_GET["video"])) { echo "&movieId={$_GET["video"]}"; } ?>&goteam_draft_only=1&isWide=1&collab=0&nextUrl=./browse.php&tray=<?php if (isset($_GET["tray"])) { echo $_GET["tray"]; } else { echo "custom"; } ?>">
-	<param name="allowScriptAccess" value="always">
-	<param name="allowFullScreen" value="true">
-</object>
-
-</main>
-
-<!-- Keeps the page from reloading on form submission -->
+<script>
+flashvars={"apiserver":"/","storePath":"https://josephcrosmanplays532.github.io/static/store/<store>","isEmbed":"1","ctc":"go","ut":"60","bs":"default","appCode":"go","page":"","siteId":"go","lid":"13","isLogin":"Y","retut":"1","clientThemePath":"https://josephcrosmanplays532.github.io/static/<client_theme>","themeId":"custom","tlang":"en_US","presaveId":"3","goteam_draft_only":"1","isWide":"1","nextUrl":"./browse.php","collab":"0","tray":"custom"}
+</script>
 <iframe style="display:none" name="dummy"></iframe>
 
 <script>
@@ -146,7 +103,5 @@ html, body, #player-container {margin:0;padding:0;width:100%;height:100%;overflo
 		document.getElementById("import_popup_container").style.display = "none";
 	}
 </script>
-
-</main>
-
-</body></html>
+</body>
+</html>

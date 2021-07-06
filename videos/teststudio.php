@@ -68,8 +68,6 @@ so.addVariable("tray", "<?php if (isset($_GET["tray"])) { echo $_GET["tray"]; } 
 
 so.write("player-container");
 </script>
-<iframe style="display:none" name="dummy"></iframe>
-
 <script>
 	////
 	//// This JS contains important Video Studio stuff

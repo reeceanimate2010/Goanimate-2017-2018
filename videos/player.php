@@ -19,7 +19,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="election">
 <meta property="og:description" content="">
-<meta property="og:url" content="https://localhost:4343/player?movieId=m-16">
+<meta property="og:url" content="https://phpwrapper.herokuapp.com/videos/player.php?video=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>">
 <meta property="og:image" content="https://s3.amazonaws.com/fs.goanimate.com/files/thumbnails/movie/876/5682876/13801618L.jpg">
 <meta property="og:video" content="https://josephcrosmanplays532.github.io/player/swf/m-16">
 <meta property="og:video:height" content="354">

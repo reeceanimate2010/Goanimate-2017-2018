@@ -21,8 +21,7 @@
 		<a class="button_big" id="videomaker" href="/create.php">Create</a>
 	</nav>
 </header>
-<div class="warning">This service is not finished yet; some features may not be available at this time. Any and all videos may be
-			deleted at this stage of development.  It is recomended you download your videos to back them up.
+<div class="warning">Good news! i am 8 hours closer to having PHPWrapper Complete! the sharing and the embeding functions are working perfectly and the window of watching the demo is also working perfectly! for updates, <a href="https://discord.io/goanimate4schools">Join My Discord Server.</a>
 <br><a href="https://github.com/josephcrosmanplays532/PHPWrapper">Link
 	to the source code on GitHub</a></br></div>
 <main>

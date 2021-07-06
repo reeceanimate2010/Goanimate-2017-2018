@@ -68,6 +68,8 @@ so.addVariable("tray", "<?php if (isset($_GET["tray"])) { echo $_GET["tray"]; } 
 
 so.write("player-container");
 	
+	}
+	
 	///
 	/// Variables
 	///

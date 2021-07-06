@@ -67,11 +67,6 @@ so.addVariable("tray", "<?php if (isset($_GET["tray"])) { echo $_GET["tray"]; } 
 
 
 so.write("player-container");
-</script>
-<script>
-	////
-	//// This JS contains important Video Studio stuff
-	////
 	
 	///
 	/// Variables

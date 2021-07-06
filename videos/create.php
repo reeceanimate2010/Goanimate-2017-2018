@@ -13,6 +13,9 @@
 <meta name="robots" content="noindex, nofollow"/>
 <meta name="google-site-verification" content="Vta3YTpj6Kx6u4p-EzeMArY0alNItkyUYYMvNM8seVI"/>
 
+<style>
+html, body, #player-container {margin:0;padding:0;width:100%;height:100%;overflow:hidden;}
+</style>
 
 <script src="https://phpwrapper.herokuapp.com/static/go/js/swfobject.js"></script>
 </head>
@@ -29,7 +32,7 @@
 	</noscript>
 </div>
 <script>
-var so = new SWFObject("/goapi/asset/animation/go_full.swf", "Studio", "100%", "100%", "10.0.12", "#464646");
+var so = new SWFObject("/goapi/asset/animation/go_full.swf", "Studio", "100%", "100%", "10.0.12");
 so.useExpressInstall('/static/libs/expressInstall.swf');
 so.addParam("AllowScriptAccess", "always");
 so.addParam("wmode", "transparent");

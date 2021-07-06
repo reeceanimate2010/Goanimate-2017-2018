@@ -113,6 +113,7 @@
 
 <footer>
 	<nav id="foot-left">
+		<a>v1.2.3½</a>
 		<a href="/videomaker/full/tutorial?">Studio Tutorial</a>
 	</nav>
         
@@ -125,6 +126,7 @@
 		<a href="https://josephcrosmanplays532.github.io">Server Page</a>
 		<a href="https://josephcrosmanplays532.github.io/caillou.html">Caillou</a>
 	</nav>
+	<p>PHPWrapper © <?php echo date("Y");?></p>
 </footer>
 
 

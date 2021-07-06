@@ -1,3 +1,4 @@
+<!-- this php html file requires all of the stuff and api at once to get this to work. -->
 <!doctype html>
 <html>
 <head>

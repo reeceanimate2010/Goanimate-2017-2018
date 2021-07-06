@@ -31,8 +31,8 @@ $log = function($line) use ($ferr) {
 };
 
 if (empty($argv[1]) || empty($argv[2])) {
-    $log("Usage: " . basename(__FILE__) . " https://phpwrapper.herokuapp.com/go/character_creator/(isset($_GET["theme"])) { echo $_GET["theme"]; } else { echo "family"; }/new_char?type=if (isset($_GET["type"])) { echo $_GET["type"]; } else { echo "adam"; } https://phpwrapper.herokuapp.com/characters/create.php?theme=if (isset($_GET["theme"])) { echo $_GET["theme"]; } else { echo "family"; }&type=if (isset($_GET["type"])) { echo $_GET["type"]; } else { echo "adam"; } < database.orig.sql > database.new.sql\n");
-    $log("    or " . basename(__FILE__) . " database.orig.sql https://phpwrapper.herokuapp.com/characters/create.php?theme=if (isset($_GET["theme"])) { echo $_GET["theme"]; } else { echo "family"; }&type=if (isset($_GET["type"])) { echo $_GET["type"]; } else { echo "adam"; } > database.new.sql\n");
+    $log("Usage: " . basename(__FILE__) . " https://phpwrapper.herokuapp.com/go/character_creator/<?php if (isset($_GET["theme"])) { echo $_GET["theme"]; } else { echo "family"; } ?>/new_char?type=<?php if (isset($_GET["type"])) { echo $_GET["type"]; } else { echo "adam"; } ?>https://phpwrapper.herokuapp.com/characters/create.php?theme=if (isset($_GET["theme"])) { echo $_GET["theme"]; } else { echo "family"; }&type=if (isset($_GET["type"])) { echo $_GET["type"]; } else { echo "adam"; } < database.orig.sql > database.new.sql\n");
+    $log("    or " . basename(__FILE__) . " database.orig.sql https://phpwrapper.herokuapp.com/characters/create.php?theme=<?php if (isset($_GET["theme"])) { echo $_GET["theme"]; } else { echo "family"; }&type=if (isset($_GET["type"])) { echo $_GET["type"]; } else { echo "adam"; } ?> > database.new.sql\n");
     exit(1);
 }
 

@@ -42,7 +42,7 @@ so.addParam("wmode", "transparent");
 so.addParam("scale", "exactfit");
 so.addParam("allowFullScreen","true");
 
-so.addVariable("apiserver", "<?php if (isset($_GET["goapi"])) { echo $_GET["goapi"]; } else { echo "/"; } ?>");
+so.addVariable("apiserver", "/");
 so.addVariable("storePath", "https://phpwrapper.herokuapp.com/goapi/asset/themes/<store>");
 so.addVariable("isEmbed", "<?php if (isset($_GET["isEmbed"])) { echo $_GET["isEmbed"]; } else { echo "1"; } ?>");
 so.addVariable("ctc", "<?php if (isset($_GET["ctc"])) { echo $_GET["ctc"]; } else { echo "go"; } ?>");
@@ -57,6 +57,7 @@ so.addVariable("retut", "<?php if (isset($_GET["retut"])) { echo $_GET["retut"];
 so.addVariable("clientThemePath", "https://phpwrapper.herokuapp.com/goapi/asset/static/<client_theme>");
 so.addVariable("themeId", "<?php if (isset($_GET["theme"])) { echo $_GET["theme"]; } else { echo "custom"; } ?>");
 so.addVariable("presaveId", "<?php include_once("../goapi/function/videoId.php"); if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo $id + 1; } ?><?php if (isset($_GET["video"])) { echo "&movieId={$_GET["video"]}"; } ?>");
+so.addVariable("movieId", "<?php if (isset($_GET["video"])) { echo $_GET["video"]; } ?>");
 so.addVariable("goteam_draft_only", "<?php if (isset($_GET["draftonly"])) { echo $_GET["draftonly"]; } else { echo "1"; } ?>");
 so.addVariable("isWide", "<?php if (isset($_GET["studiowidth"])) { echo $_GET["studiowidth"]; } else { echo "1"; } ?>");
 so.addVariable("collab", "<?php if (isset($_GET["collab"])) { echo $_GET["collab"]; } else { echo "0"; } ?>");

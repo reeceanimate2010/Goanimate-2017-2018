@@ -80,26 +80,4 @@ so.addVariable("s3base", "https://josephcrosmanplays532.github.io/s3base");
 so.write("player-container");
 </script>
 </body>
-</html><!--
-     FILE ARCHIVED ON 14:58:05 Jun 03, 2014 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 13:08:32 Jul 06, 2021.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
--->
-<!--
-playback timings (ms):
-  esindex: 0.015
-  LoadShardBlock: 189.688 (3)
-  exclusion.robots.policy: 382.861
-  load_resource: 375.207
-  captures_list: 604.488
-  exclusion.robots: 382.874
-  CDXLines.iter: 19.108 (3)
-  PetaboxLoader3.resolve: 172.829 (2)
-  PetaboxLoader3.datanode: 245.599 (4)
-  cdx.remote: 0.123
-  xauthn.chkprivs: 57.271
-  xauthn.identify: 325.118
--->
+</html>

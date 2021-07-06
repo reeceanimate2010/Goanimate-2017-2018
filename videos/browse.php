@@ -68,6 +68,7 @@
 
 <footer>
 	<nav id="foot-left">
+		<a>v1.2.3½</a>
 		<a href="https://localhost:4664/faq.html">FAQ</a>
 		<a href="https://discord.gg/2SUpuZnxRq">PHPWrapper Discord</a>
 	</nav>
@@ -76,6 +77,7 @@
 		<a href="https://localhost:4664">Server Page</a>
 		<a href="https://localhost:4664/caillou.html">Caillou</a>
 	</nav>
+	<p>PHPWrapper © <?php echo date("Y");?></p>
 </footer>
 
 

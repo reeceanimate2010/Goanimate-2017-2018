@@ -1,9 +1,24 @@
 <!-- DOCTYPE html breaks it for some reason -->
-<html lang="en">
+<html>
 <head>
-	<meta charset="utf-8">
-	<link rel="icon" href="/favicon.png" type="image/png">
-	<title>Video Studio</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+<title>Video Studio | PHPWrapper</title>
+<meta name="title" content="Video Studio"/>
+<meta name="description" content="Ment for making videos."/>
+
+<meta name="robots" content="noindex, nofollow"/>
+<meta name="google-site-verification" content="Vta3YTpj6Kx6u4p-EzeMArY0alNItkyUYYMvNM8seVI"/>
+
+<link rel="stylesheet" type="text/css" href="/pages/css/global.css">
+	
+<style>
+html, body, #player-container {margin:0;padding:0;width:100%;height:100%;overflow:hidden;}
+</style>
+
+<script src="https://phpwrapper.herokuapp.com/static/go/js/swfobject.js"></script>
 </head>
 <body>
 <!-- Asset Importer -->

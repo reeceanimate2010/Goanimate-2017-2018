@@ -4,5 +4,5 @@
 	////
 
 	// Redirect to Character Creator
-	header("Location: /characters/create.php?theme=family&type={$type}");
+	header("Location: /characters/create.php?theme=family&type=$type");
 ?>

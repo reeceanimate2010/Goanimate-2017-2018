@@ -146,6 +146,7 @@ if (self !== top) {
 		<a href="https://josephcrosmanplays532.github.io">Server Page</a>
 		<a href="https://josephcrosmanplays532.github.io/caillou.html">Caillou</a>
 	</nav>
+	<p>PHPWrapper © <?php echo date("Y");?></p>
 </footer>
 <div id="studio_container" style="display: none;">
     <div id="studio_holder"><!-- Full Screen Studio -->

@@ -31,7 +31,7 @@ html, body, #player-container {margin:0;padding:0;width:100%;height:100%;overflo
 	</noscript>
 </div>
 <script>
-var so = new SWFObject("/player/swf/07sjbY77NC6w?autostart=0", "Player", "100%", "100%", "10.0.12", "#464646");
+var so = new SWFObject("/goapi/asset/animation/go_full.swf", "Studio", "100%", "100%", "10.0.12", "#464646");
 so.useExpressInstall('/static/libs/expressInstall.swf');
 so.addParam("AllowScriptAccess", "always");
 so.addParam("wmode", "transparent");

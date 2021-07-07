@@ -110,27 +110,79 @@ html, body, #studio-container {margin:0;padding:0;width:100%;height:100%;overflo
         </object>
 </div>
 <div id="import_popup_container" style="display:none">
-	<div id="import_popup">
-		<h2 id="import-an-asset">Import an Asset</h2>
-		<p class="close-button" onclick="hideImporter()">X</p>
-		<div id="import_image">
-			<form id="uploadbanner" enctype="multipart/form-data" method="post" action="/ajax/saveUserProp/" target="dummy">
-				<input id="fileupload" name="import" type="file" accept=".mp3,.wav,.png,.jpg">
-				<h3 id="import-as">Import As:</h3>
-				<input type="radio" value="prop" name="subtype"> Prop</input>
-				<br />
-				<input type="radio" value="background" name="subtype"> Background</input>
-				<br />
-				<input type="submit" value="Import" onclick='document.getElementById("video_maker").importerUploadComplete("importerUploadComplete"); document.getElementById("import_popup_container").style.display = "none";' id="submit" class="button_import" />
-			</form>
-		</div>
-	</div>
+	<div class="ga-importer-header">
+        <form class="ga-importer-base-form" action="/ajax/saveUserProp" method="post">
+            <a class="ga-importer-collapse" href="#" title="Collapse" onclick="hideImporter(); return false;">×</a>
+
+            <div class="fileinputs">
+                <div class="importer-button file-trigger">SELECT FILES</div>
+                <input class="ga-importer-file-input" type="file" name="file" multiple="">
+            </div>
+
+            <span class="hints">
+                <i class="glyph-pro glyph-circle-question_mark"></i>
+                <div class="tooltip in" style="display:none;">
+                    <div class="tooltip-arrow"></div>
+                    <div class="tooltip-inner">
+                        <ul>
+                            <li>Maximum file size: 15MB</li>
+                            <li>Images: JPG, PNG<br>To cover the whole stage in a 1080p video, use an image at least 1920px x 1080px.</li>
+                            <li>Audio: MP3, WAV, M4A</li>
+                            <li>Video: MP4.</li>
+                            <li>Fonts: TTF, OTF (Professional only)</li>
+                        </ul>
+                    </div>
+                </div>
+            </span>
+
+            <input type="hidden" name="subtype" value="">
+        </form>
+    </div>
+    <div class="ga-importer-content" style="height: 1536px;">
+        <div class="ga-importer-start">
+            <div class="ga-importer-start-draghere">Drag files here</div>
+
+            <div class="ga-importer-instruction general">
+                <ul>
+                    <li><strong>Maximum file size:</strong> 15MB</li>
+                    <li><strong>Images:</strong> JPG, PNG<br>To cover the whole stage in a 1080p video, use an image at least 1920px x 1080px.</li>
+                    <li><strong>Audio:</strong> MP3, WAV, M4A</li>
+                    <li><strong>Video:</strong> MP4.</li>
+                    <li><strong>Fonts:</strong> TTF, OTF (Professional only)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="ga-importer-results">
+            <div class="ga-importer-notice clearfix">
+                <div class="ga-importer-notice-count">
+                    Files added. <a class="open-your-library">View Library</a>
+                </div>
+            </div>
+            <ul class="ga-importer-files"></ul>
+        </div>
+        <div class="ga-importer-queue-message">
+            Assign a category to start importing
+            <span class="hints pull-right">
+                <i class="i-help"></i>
+                <div class="tooltip in" style="display:none;">
+                    <div class="tooltip-arrow"></div>
+                    <div class="tooltip-inner">
+                        <p>Imported files are categorized to simplify browsing.</p>
+                        <p>Use the "IMPORT AS" drop down to see the available categories based on the format of the file you import.</p>
+                    </div>
+                </div>
+            </span>
+        </div>
+        <ul class="ga-importer-queue"></ul>
+    </div>
+    <div class="ga-import-dnd-hint">
+        Release to start uploading    </div>
 </div>
 <div id="preview_popup_container" style="display:none">
 	<div id="preview_popup">
 		<h2 id="preview-video">Preview Video</h2>
 		<p class="close-button" onclick="hidePreviewer()">X</p>
-		<object data="https://phpwrapper.herokuapp.com/goapi/asset/animation/player.swf" type="application/x-shockwave-flash" id="preview_player" width="640" height="360">
+		<object data="https://phpwrapper.herokuapp.com/goapi/asset/animation/player.swf" type="application/x-shockwave-flash" id="preview_player" width="540" height="360">
 			<!-- The flashvars are a huge mess, have fun looking at them. :) -->
 			<param name="flashvars" value="apiserver=/&storePath=https://phpwrapper.herokuapp.com/goapi/asset/themes/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://phpwrapper.herokuapp.com/goapi/asset/static/<client_theme>&themeId=custom&tlang=en_US&isInitFromExternal=1&goteam_draft_only=1&isWide=1&collab=0&startFrame=previewStartFrame&autostart=1&nextUrl=../pages/html/list.html&tray=custom">
 			<param name="allowScriptAccess" value="always">

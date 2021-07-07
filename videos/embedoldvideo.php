@@ -26,7 +26,7 @@ html, body, #player-container {margin:0;padding:0;width:100%;height:100%;overflo
 	</noscript>
 </div>
 <script>
-var so = new SWFObject("/player/swf/07sjbY77NC6w?autostart=0", "Player", "100%", "100%", "10.0.12", "#464646");
+var so = new SWFObject("./player/swf/?video=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>&autostart=0", "Player", "100%", "100%", "10.0.12", "#464646");
 so.useExpressInstall('/static/libs/expressInstall.swf');
 so.addParam("AllowScriptAccess", "always");
 so.addParam("wmode", "transparent");
@@ -75,7 +75,7 @@ so.addVariable("ad", "<?php if (isset($_GET["ad"])) { echo $_GET["ad"]; } else {
 so.addVariable("endStyle", "<?php if (isset($_GET["endStyle"])) { echo $_GET["endStyle"]; } else { echo "0"; } ?>");
 so.addVariable("isWide", "<?php if (isset($_GET["videowidth"])) { echo $_GET["videowidth"]; } else { echo "0"; } ?>");
 so.addVariable("pwm", "<?php if (isset($_GET["pwm"])) { echo $_GET["pwm"]; } else { echo "1"; } ?>");
-so.addVariable("s3base", "https://josephcrosmanplays532.github.io/s3base");
+so.addVariable("s3base", "<?php if (isset($_GET["s3base"])) { echo $_GET["s3base"]; } else { echo "https://josephcrosmanplays532.github.io/s3base"; } ?>");
 
 so.write("player-container");
 </script>

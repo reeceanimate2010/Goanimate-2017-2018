@@ -1,5 +1,6 @@
 :: Starts up PHPWrapper
 :: Author: octanuary#6596
+:: Recreation Author: joseph the animator#2292
 :: License: GPLv3
 set PWRAP_VER=0.1.1
 title PHPWrapper v%PWRAP_VER%
@@ -15,7 +16,7 @@ if not exist ungoogled-chromium ( goto starting_error )
 if not exist notinstalled ( goto starting_error )
 goto no_start_error
 :starting_error
-echo It doesn't seem like this script is in the main PHPWrapper.
+echo It doesn't seem like this script is in the PHPWrapper lvm.
 goto end
 :no_start_error
 
@@ -55,7 +56,7 @@ pushd phpwrapper
 echo:
 echo Starting PHPWrapper...
 echo:
-call ..\dependencies\php\php.exe -S 127.0.0.1:6596
+call \php.exe -S 127.0.0.1:6596
 echo:
 popd
 echo PHP has been closed.

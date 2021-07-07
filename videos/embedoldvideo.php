@@ -22,11 +22,11 @@ html, body, #player-container {margin:0;padding:0;width:100%;height:100%;overflo
 <div id="player-container">
 	This content requires the Adobe Flash Player 10.3. <a href="https://get.adobe.com/flashplayer/">Get Flash</a>
 	<noscript>
-	<object width="100%" height="100%"><param name="movie" value="./player/swf/?video=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>&autostart=0"></param><param name="bgcolor" value="#000000"><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="./player/swf/?video=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>&autostart=0" " type="application/x-shockwave-flash" width="100%" height="100%" bgcolor="#ffffff" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+	<object width="100%" height="100%"><param name="movie" value="https://josephcrosmanplays532.github.io/animation/877/player.swf?movieId=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>&autostart=0"></param><param name="bgcolor" value="#000000"><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://josephcrosmanplays532.github.io/animation/877/player.swf?movieId=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>&autostart=0" " type="application/x-shockwave-flash" width="100%" height="100%" bgcolor="#ffffff" allowscriptaccess="always" allowfullscreen="true"></embed></object>
 	</noscript>
 </div>
 <script>
-var so = new SWFObject("./player/swf/?video=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>&autostart=0", "Player", "100%", "100%", "10.0.12", "#464646");
+var so = new SWFObject("https://josephcrosmanplays532.github.io/animation/877/player.swf?movieId=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>&autostart=0", "Player", "100%", "100%", "10.0.12", "#464646");
 so.useExpressInstall('/static/libs/expressInstall.swf');
 so.addParam("AllowScriptAccess", "always");
 so.addParam("wmode", "transparent");

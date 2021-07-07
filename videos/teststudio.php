@@ -100,7 +100,7 @@ html, body, #player-container {margin:0;padding:0;width:100%;height:100%;overflo
 		document.getElementById("import_popup_container").style.display = "none";
 	}
 </script>
-<div id="player-container">
+<div id="studio-container">
 	This content requires the Adobe Flash Player 10.3. <a href="https://get.adobe.com/flashplayer/">Get Flash</a>
 	<noscript>
 	<object data="https://phpwrapper.herokuapp.com/goapi/asset/animation/go_full.swf" type="application/x-shockwave-flash" id="Studio" width="100%" height="100%">
@@ -144,7 +144,7 @@ so.addVariable("tray", "<?php if (isset($_GET["tray"])) { echo $_GET["tray"]; } 
 
 
 
-so.write("player-container");
+so.write("studio-container");
 </script>
 </body>
 </html>

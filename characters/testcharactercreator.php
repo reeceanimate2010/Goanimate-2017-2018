@@ -138,7 +138,7 @@ function goSubscribe()
 function characterSaved()
 {
     SetCookie('cc_saved', '1', 1, '/');
-    window.location = 'https://phpwrapper.herokuapp.com/videos/browse.php';
+    window.location = 'https://phpwrapper.herokuapp.com/characters/browse.php?theme=<?php if (isset($_GET["theme"])) { echo $_GET["theme"]; } else { echo "family"; } ?>';
 }
 </script>
     </div>

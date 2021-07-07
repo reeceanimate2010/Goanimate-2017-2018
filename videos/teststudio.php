@@ -149,7 +149,8 @@ html, body, #studio-container {margin:0;padding:0;width:100%;height:100%;overflo
 		</object>
 		<div class="buttons clearfix">
 
-            <a class="close_btn" href="#" onclick="hidePreviewer()">Back to editing</a>
+            <a class="button_big" href="#" onclick="hidePreviewer()">Back to editing</a>
+	    <a class="button_big" href="#" onclick="publishStudio()">Save now</a>
                  </div>
 	</div>
 </div>

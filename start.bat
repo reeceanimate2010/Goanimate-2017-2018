@@ -45,6 +45,7 @@ title PHPWrapper v!PWRAP_VER! [Starting...]
 echo:
 echo PHPWrapper v!PWRAP_VER! is starting...
 echo A project from Octanuary
+echo this project was adapted by Joseph Animate 2021.
 echo:
 echo Launching ungoogled-chromium...
 pushd dependencies\ungoogled-chromium
@@ -76,7 +77,7 @@ start chromium.exe --user-data-dir=the_profile --app=http://localhost:6596 --all
 popd
 
 :: Launch PHPWrapper in separate window
-pushd dependencies
+pushd extras
 start /MIN launch.bat
 popd
 

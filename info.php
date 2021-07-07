@@ -1,9 +1,10 @@
 <?php
-{
-	"GET": {
+echo "GET": {
 		"/go/character_creator/": {
-
-		header("Location: /characters/create.php");
-	}
-}
+			"headers": {
+				"Location": "/characters/create.php"
+			},
+			"statusCode": 302,
+			"content": ""
+		},
 ?>

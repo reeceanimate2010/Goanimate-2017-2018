@@ -306,6 +306,7 @@ if (self !== top) {
     <ul class="dropdown-menu dropdown-menu-help">
         <li>
             <a href="https://discord.gg/YYFenX5Fep">Help Center</a>
+	    <a data-remote="/ajax/watchMovie/JosephAnimateAwsomeDomainDemo" data-action="video-share">Joseph Animate Awesome Domain Demo</a>
         </li>
     </ul>
 </li>

@@ -20,7 +20,7 @@ html, body, #player-container {margin:0;padding:0;width:100%;height:100%;overflo
 </head>
 <body>
 <div id="player-container">
-	You must have reloaded this page way too fast that it broke randomly. you can wait for a few seconds and then you can reload this page.
+	You must have reloaded this page way too fast that it broke randomly. you can wait for a few seconds and then you can reload this page. or you can just exit this tab and then reopen it.
 	<noscript>
 	<object width="100%" height="100%"><param name="movie" value="https://josephcrosmanplays532.github.io/animation/877/player.swf?movieId=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>&autostart=0"></param><param name="bgcolor" value="#000000"><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://josephcrosmanplays532.github.io/animation/877/player.swf?movieId=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "null"; } ?>&autostart=0" " type="application/x-shockwave-flash" width="100%" height="100%" bgcolor="#ffffff" allowscriptaccess="always" allowfullscreen="true"></embed></object>
 	</noscript>

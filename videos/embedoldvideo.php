@@ -47,7 +47,7 @@ so.addVariable("numContact", "<?php if (isset($_GET["numContact"])) { echo $_GET
 so.addVariable("apiserver", "<?php if (isset($_GET["goapi"])) { echo $_GET["goapi"]; } else { echo "/"; } ?>");
 so.addVariable("duration", "<?php if (isset($_GET["duration"])) { echo $_GET["duration"]; } else { echo "154"; } ?>");
 so.addVariable("playcount", "<?php if (isset($_GET["count"])) { echo $_GET["count"]; } else { echo "0"; } ?>");
-so.addVariable("thumbnailURL", "<?php if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo "https://josephcrosmanplays532.github.io/s3base/files/thumbnails/movie/1662/379662/567892L.jpg"; } ?>");
+so.addVariable("thumbnailURL", "<?php if (isset($_GET["videothumburl"])) { echo $_GET["videothumburl"]; } else { echo "https://josephcrosmanplays532.github.io/s3base/files/thumbnails/movie/1662/379662/567892L.jpg"; } ?>");
 so.addVariable("copyable", "<?php if (isset($_GET["copy"])) { echo $_GET["copy"]; } else { echo "0"; } ?>");
 so.addVariable("isPublished", "<?php if (isset($_GET["published"])) { echo $_GET["published"]; } else { echo "0"; } ?>");
 so.addVariable("ctc", "<?php if (isset($_GET["ctc"])) { echo $_GET["ctc"]; } else { echo "go"; } ?>");

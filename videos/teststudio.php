@@ -99,16 +99,6 @@ html, body, #studio-container {margin:0;padding:0;width:100%;height:100%;overflo
 	function hideImporter() {
 		document.getElementById("import_popup_container").style.display = "none";
 	}
-	// Takes you to the save video popup after previewing your video
-        function publishStudio() {
-    try {
-        ($("preview_popup_container").get(0) || {pause:function(){}}).pause();
-    } catch (err) {};
-
-    $("preview_popup_container").hide();
-    restoreStudio();
-    document.getElementById("Studio").onExternalPreviewPlayerPublish();
-}
 </script>
 <!-- Video Studio -->
 <div id="studio-container">
@@ -147,11 +137,7 @@ html, body, #studio-container {margin:0;padding:0;width:100%;height:100%;overflo
 			<param name="allowScriptAccess" value="always">
 			<param name="allowFullScreen" value="true">
 		</object>
-		<div class="buttons clearfix">
-
-            <a class="button_big" href="#" onclick="hidePreviewer()">Back to editing</a>
-	    <a class="button_big" href="#" onclick="publishStudio();">Save now</a>
-                 </div>
+                <a class="button_big" href="#" onclick="hidePreviewer()">Back to editing</a>
 	</div>
 </div>
 <script>

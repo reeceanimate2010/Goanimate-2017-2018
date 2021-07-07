@@ -16,7 +16,7 @@
 <meta name="google-site-verification" content="Vta3YTpj6Kx6u4p-EzeMArY0alNItkyUYYMvNM8seVI"/>
 
 <style>
-html, body, #player-container {margin:0;padding:0;width:100%;height:100%;overflow:hidden;}
+html, body, #studio-container {margin:0;padding:0;width:100%;height:100%;overflow:hidden;}
 </style>
 
 <script src="https://phpwrapper.herokuapp.com/static/go/js/swfobject.js"></script>
@@ -100,6 +100,40 @@ html, body, #player-container {margin:0;padding:0;width:100%;height:100%;overflo
 		document.getElementById("import_popup_container").style.display = "none";
 	}
 </script>
+<div id="import_popup_container" style="display:none">
+	<div id="import_popup">
+		<h2 id="import-an-asset">Import an Asset</h2>
+		<p class="close-button" onclick="hideImporter()">X</p>
+		<!-- Import form -->
+		<div id="import_image">
+			<form id="uploadbanner" enctype="multipart/form-data" method="post" action="/goapi/uploadAsset" target="dummy">
+				<input id="fileupload" name="import" type="file" accept=".mp3,.wav,.png,.jpg">
+				<h3 id="import-as">Import As:</h3>
+				<input type="radio" value="prop" name="subtype"> Prop</input>
+				<br />
+				<input type="radio" value="background" name="subtype"> Background</input>
+				<br />
+				<input type="submit" value="Import" onclick='document.getElementById("video_maker").importerUploadComplete("importerUploadComplete"); document.getElementById("import_popup_container").style.display = "none";' id="submit" class="button_import" />
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Video Previewer -->
+<div id="preview_popup_container" style="display:none">
+	<div id="preview_popup">
+		<h2 id="preview-video">Preview Video</h2>
+		<p class="close-button" onclick="hidePreviewer()">X</p>
+		<object data="http://localhost:6596/goapi/asset/animation/player.swf" type="application/x-shockwave-flash" id="preview_player">
+			<!-- The flashvars are a huge mess, have fun looking at them. :) -->
+			<param name="flashvars" value="apiserver=/&storePath=http://localhost:6596/goapi/asset/themes/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=http://localhost:6596/goapi/asset/static/<client_theme>&themeId=custom&tlang=en_US&isInitFromExternal=1&goteam_draft_only=1&isWide=1&collab=0&startFrame=previewStartFrame&autostart=1&nextUrl=../pages/html/list.html&tray=custom">
+			<param name="allowScriptAccess" value="always">
+			<param name="allowFullScreen" value="true">
+		</object>
+	</div>
+</div>
+
+<!-- Video Studio -->
 <div id="studio-container">
 	This content requires the Adobe Flash Player 10.3. <a href="https://get.adobe.com/flashplayer/">Get Flash</a>
 	<noscript>

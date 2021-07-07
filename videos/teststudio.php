@@ -114,7 +114,7 @@ html, body, #studio-container {margin:0;padding:0;width:100%;height:100%;overflo
 		<h2 id="import-an-asset">Import an Asset</h2>
 		<p class="close-button" onclick="hideImporter()">X</p>
 		<div id="import_image">
-			<form id="uploadbanner" enctype="multipart/form-data" method="post" action="/goapi/uploadAsset" target="dummy">
+			<form id="uploadbanner" enctype="multipart/form-data" method="post" action="/ajax/saveUserProp" target="dummy">
 				<input id="fileupload" name="import" type="file" accept=".mp3,.wav,.png,.jpg">
 				<h3 id="import-as">Import As:</h3>
 				<input type="radio" value="prop" name="subtype"> Prop</input>
@@ -139,7 +139,7 @@ html, body, #studio-container {margin:0;padding:0;width:100%;height:100%;overflo
 	</div>
 </div>
 <script>
-var so = new SWFObject("https://phpwrapper.herokuapp.com/goapi/asset/animation/go_full.swf", "Studio", "100%", "100%", "10.0.12");
+var so = new SWFObject("/goapi/asset/animation/go_full.swf", "Studio", "100%", "100%", "10.0.12");
 so.useExpressInstall('/static/libs/expressInstall.swf');
 so.addParam("AllowScriptAccess", "always");
 so.addParam("wmode", "transparent");

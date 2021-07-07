@@ -100,11 +100,20 @@ html, body, #studio-container {margin:0;padding:0;width:100%;height:100%;overflo
 		document.getElementById("import_popup_container").style.display = "none";
 	}
 </script>
+<!-- Video Studio -->
+<div id="studio-container">
+	This content requires the Adobe Flash Player 10.3. <a href="https://get.adobe.com/flashplayer/">Get Flash</a>
+	<object data="https://phpwrapper.herokuapp.com/goapi/asset/animation/go_full.swf" type="application/x-shockwave-flash" id="Studio" width="100%" height="100%">
+	<!-- The flashvars are a huge mess, have fun looking at them. :) -->
+	<param name="flashvars" value="apiserver=/&movieId=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } ?>&storePathhttps://phpwrapper.herokuapp.com/goapi/asset/themes/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://phpwrapper.herokuapp.com/goapi/asset/static/<client_theme>&themeId=custom&tlang=en_US&presaveId=<?php include_once("../goapi/function/videoId.php"); if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo $id + 1; } ?><?php if (isset($_GET["video"])) { echo "&movieId={$_GET["video"]}"; } ?>&goteam_draft_only=1&isWide=1&collab=0&nextUrl=./browse.php&tray=custom">
+	<param name="allowScriptAccess" value="always">
+	<param name="allowFullScreen" value="true">
+        </object>
+</div>
 <div id="import_popup_container" style="display:none">
 	<div id="import_popup">
 		<h2 id="import-an-asset">Import an Asset</h2>
 		<p class="close-button" onclick="hideImporter()">X</p>
-		<!-- Import form -->
 		<div id="import_image">
 			<form id="uploadbanner" enctype="multipart/form-data" method="post" action="/goapi/uploadAsset" target="dummy">
 				<input id="fileupload" name="import" type="file" accept=".mp3,.wav,.png,.jpg">
@@ -118,32 +127,17 @@ html, body, #studio-container {margin:0;padding:0;width:100%;height:100%;overflo
 		</div>
 	</div>
 </div>
-
-<!-- Video Previewer -->
 <div id="preview_popup_container" style="display:none">
 	<div id="preview_popup">
 		<h2 id="preview-video">Preview Video</h2>
 		<p class="close-button" onclick="hidePreviewer()">X</p>
-		<object data="http://localhost:6596/goapi/asset/animation/player.swf" type="application/x-shockwave-flash" id="preview_player">
+		<object data="https://phpwrapper.herokuapp.com/goapi/asset/animation/player.swf" type="application/x-shockwave-flash" id="preview_player" width="640" height="360">
 			<!-- The flashvars are a huge mess, have fun looking at them. :) -->
-			<param name="flashvars" value="apiserver=/&storePath=http://localhost:6596/goapi/asset/themes/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=http://localhost:6596/goapi/asset/static/<client_theme>&themeId=custom&tlang=en_US&isInitFromExternal=1&goteam_draft_only=1&isWide=1&collab=0&startFrame=previewStartFrame&autostart=1&nextUrl=../pages/html/list.html&tray=custom">
+			<param name="flashvars" value="apiserver=/&storePath=https://phpwrapper.herokuapp.com/goapi/asset/themes/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://phpwrapper.herokuapp.com/goapi/asset/static/<client_theme>&themeId=custom&tlang=en_US&isInitFromExternal=1&goteam_draft_only=1&isWide=1&collab=0&startFrame=previewStartFrame&autostart=1&nextUrl=../pages/html/list.html&tray=custom">
 			<param name="allowScriptAccess" value="always">
 			<param name="allowFullScreen" value="true">
 		</object>
 	</div>
-</div>
-
-<!-- Video Studio -->
-<div id="studio-container">
-	This content requires the Adobe Flash Player 10.3. <a href="https://get.adobe.com/flashplayer/">Get Flash</a>
-	<noscript>
-	<object data="https://phpwrapper.herokuapp.com/goapi/asset/animation/go_full.swf" type="application/x-shockwave-flash" id="Studio" width="100%" height="100%">
-	<!-- The flashvars are a huge mess, have fun looking at them. :) -->
-	<param name="flashvars" value="apiserver=/&movieId=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } ?>&storePathhttps://phpwrapper.herokuapp.com/goapi/asset/themes/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://phpwrapper.herokuapp.com/goapi/asset/static/<client_theme>&themeId=custom&tlang=en_US&presaveId=<?php include_once("../goapi/function/videoId.php"); if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo $id + 1; } ?><?php if (isset($_GET["video"])) { echo "&movieId={$_GET["video"]}"; } ?>&goteam_draft_only=1&isWide=1&collab=0&nextUrl=./browse.php&tray=custom">
-	<param name="allowScriptAccess" value="always">
-	<param name="allowFullScreen" value="true">
-        </object>
-	</noscript>
 </div>
 <script>
 var so = new SWFObject("/goapi/asset/animation/go_full.swf", "Studio", "100%", "100%", "10.0.12");

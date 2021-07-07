@@ -11,7 +11,7 @@ chcp 65001 >nul
 
 :: Move to base folder, and make sure it worked
 pushd "%~dp0"
-if not exist dependencies ( goto starting_error )
+if not exist ungoogled-chromium ( goto starting_error )
 if not exist notinstalled ( goto starting_error )
 goto no_start_error
 :starting_error

@@ -18,7 +18,7 @@
 
 
 <link href="https://josephcrosmanplays532.github.io/fonts/1/sailec.css" rel="stylesheet" type="text/css">
-<link href="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/css/common_combined.css" rel="stylesheet" type="text/css">
+<link href="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/css/common_combined.css.gz.css" rel="stylesheet" type="text/css">
 
 <link href="/pages/css/list-light.css" rel="stylesheet" type="text/css">
 	
@@ -524,5 +524,185 @@ var folderCounts = 0;
 
 </script>
 
+<style>
+.warning {
+			font-size: 14px;
+			padding: 10px 0;
+			background-color: #fd7;
+			text-align: center;
+		}
+
+		.warning::before {
+			font-family: 'GlyphiconsRegular';
+			padding-right: 4px;
+			content: '\E079';
+			font-size: 12px;
+		}
+
+		.warning>a {
+			color: #5596e6;
+		}
+    table {
+			width: 100%;
+			max-width: 100%;
+			margin-bottom: 0px;
+			margin-right: auto;
+			margin-left: auto;
+			margin-top: 0px;
+			background-color: transparent;
+			border-collapse: collapse;
+			border-spacing: 0;
+			font-size: 14px;
+		}
+
+		@media(min-width: 880px) {
+			table {
+				width: 588px;
+			}
+		}
+
+		@media(min-width: 992px) {
+			table {
+				width: 450px;
+			}
+		}
+
+		@media(min-width: 400px) {
+			table {
+				width: 588px;
+			}
+		}
+
+		thead {
+			font-weight: 200;
+		}
+
+		td {
+			padding: 8px;
+			vertical-align: middle;
+			line-height: 1.42857143;
+		}
+
+		thead {
+			border-bottom: 2px solid #ddd;
+			border-top: 1px solid #ddd;
+		}
+
+		tbody>tr {
+			border-top: 0;
+			border-bottom: 1px solid #ddd;
+		}
+
+		tbody>tr:hover {
+			background-color: #f5f5f5;
+		}
+
+		tr>:nth-child(1) {
+			width: 64px;
+		}
+
+		tr>:nth-child(1)>img {
+			height: 36px;
+		}
+
+		tr>:nth-child(1) {
+			word-break: break-word;
+		}
+
+		tr>:nth-child(2) {
+			color: #999;
+		}
+
+		tr>:nth-child(3) {
+			width: 250px;
+		}
+
+		tr>:nth-child(3)>* {
+			display: inline-block;
+			text-align: center;
+			font-size: 12px;
+			width: 8.5px;
+		}
+
+		tr>:nth-child(4) {
+			font-family: 'GlyphiconsRegular';
+			text-decoration: none;
+			padding-top: 5px;
+			font-size: 14px;
+			width: 80px;
+		}
+
+		tr>:nth-child(4)>a {
+			display: inline-block;
+			text-decoration: none;
+			padding-right: 10px;
+			color: #474747;
+		}
+
+		tr>:nth-child(4)>a:hover {
+			color: #2d9e88;
+		}
+
+		tr>:nth-child(4)>:nth-child(1)::before {
+			content: '\E174';
+		}
+
+		tr>:nth-child(4)>:nth-child(2)::before {
+			content: '\E235';
+		}
+
+		tr>:nth-child(4)>:nth-child(3)::before {
+			content: '\E182';
+		}
+
+		tfoot>tr>td {
+			text-align: center;
+			border: none;
+		}
+
+		tfoot>tr>td>a {
+			text-decoration: none;
+			color: #474747;
+			font-size: 14px;
+		}
+		@font-face {
+			font-family: 'Sailec';
+			font-weight: 100;
+			src: url('/html/Sailec-Thin.woff') format('woff');
+		}
+
+		@font-face {
+			font-family: 'Sailec';
+			font-weight: 200;
+			src: url('/html/Sailec-Light.woff') format('woff');
+		}
+
+		@font-face {
+			font-family: 'Sailec';
+			font-weight: 400;
+			src: url('/html/Sailec-Regular.woff') format('woff');
+		}
+
+		@font-face {
+			font-family: 'Sailec';
+			font-weight: 500;
+			src: url('/html/Sailec-Medium.woff') format('woff');
+		}
+
+		/* font weight 500 and font weight 700 (bold) are the same for better integration support */
+		@font-face {
+			font-family: 'Sailec';
+			font-weight: 700;
+			src: url('/html/Sailec-Medium.woff') format('woff');
+		}
+
+		@font-face {
+			font-family: 'GlyphiconsRegular';
+			src: url('/html/glyphicons-regular.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+</style>
 </body>
 </html>

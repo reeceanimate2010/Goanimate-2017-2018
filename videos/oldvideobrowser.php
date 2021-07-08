@@ -399,7 +399,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </tr>
             </table>
     </div>
-    <div class="modal-footer">
+    <div class="modal-footer" style="display:none">
         <button class="btn btn-default" data-dismiss="modal">Close</button>
     </div>
     </div>

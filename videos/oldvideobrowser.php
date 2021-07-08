@@ -292,19 +292,6 @@ _wq.push({ id: 'n7326kf0b9', onReady: function(video) {
 <div id="video-share" class="modal" role="dialog" aria-hidden="true">
   <div class="modal-dialog"><div class="modal-content"></div></div>
 </div>
-<!-- FOOTER -->
-
-<footer class="site-footer">
-    <div class="container">
-	        PHPWrapper is a trademark of © <?php echo date("Y");?> GoAnimate Wrapper Inc |
-		<a>v1.2.3½</a>
-		<a href="https://josephcrosmanplays532.github.io/faq.html">FAQ</a>
-		<a href="https://discord.gg/yhGAetN">Wrapper Hub</a>
-	    |
-		<a href="https://josephcrosmanplays532.github.io">Server Page</a>
-		<a href="https://josephcrosmanplays532.github.io/caillou.html">Caillou</a>
-	</div>
-</footer>
 
 
 <div id="studio_container" style="display: none;">

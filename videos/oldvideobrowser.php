@@ -1,4 +1,3 @@
-<!-- your videos from the normal or light retro video maker are getting sinked here. so you can edit them using this cool dark retro video maker if you want. -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -223,7 +222,7 @@ _wq.push({ id: 'n7326kf0b9', onReady: function(video) {
                         <span class="caret"></span>
                     </span>
                     <span class="title folder-name">Your Videos</span>
-                    (<span class="video-count count-all"></span>)
+                    (<span class="video-count count-all"><?php include_once("../goapi/function/videoId.php"); if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo $id + 0; } ?></span>)
                 </div>
 
                 <div id="videos-folders-nav" class="list-group-item sub-folder-list">
@@ -236,7 +235,7 @@ _wq.push({ id: 'n7326kf0b9', onReady: function(video) {
 
                 <div class="list-group-item folder-item" data-category="trash" data-sort-by="lastmod">
                     <span class="title folder-name">Trash</span>
-                    (<span class="video-count count-trash"><?php include_once("../goapi/function/videoId.php"); if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo $id + 1; } ?></span>)
+                    (<span class="video-count count-trash">0</span>)
                 </div>
             </div>
         </div>

@@ -330,7 +330,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <button class="modal-back" title="Back" data-dismiss="modal" aria-hidden="true">&lt;</button>
         <h3 class="modal-title">Video formats comparison</h3>
     </div>
-    <div class="modal-body">
+    <div class="modal-body" style="display:none">
 
             <table id="video-comparison-table">
                 <tr>

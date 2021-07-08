@@ -322,13 +322,85 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <!-- modals -->
-<div class="modal" id="export-details" role="dialog" aria-hidden="true" style="z-index:1050;" style="display:none">
+<div class="modal" id="export-details" role="dialog" aria-hidden="true" style="z-index:1050;">
     <div class="modal-dialog">
     <div class="modal-content">
     <div class="modal-header has-back">
         <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
         <button class="modal-back" title="Back" data-dismiss="modal" aria-hidden="true">&lt;</button>
         <h3 class="modal-title">Video formats comparison</h3>
+    </div>
+    <div class="modal-body">
+
+            <table id="video-comparison-table" style="display:none">
+                <tr>
+                    <td style="width:50px;"></td>
+                    <td style="width:70px;"></td>
+                    <td style="width:140px;"><div class="head">360p</div></td>
+                    <td style="width:140px;"><div class="head">HD 720p</div></td>
+                    <td style="width:140px;"><div class="head">Full HD 1080p</div></td>
+                </tr>
+                <tr>
+                    <td rowspan="4" style="border-right:1px solid #ccc"><h5>Video</h5></td>
+                    <td style="text-align:left;"><strong>Resolution</strong></td>
+                    <td><strong>640 x 360</strong></td>
+                    <td><strong>1280 x 720</strong></td>
+                    <td><strong>1920 x 1080</strong></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left;">Encoding</td>
+                    <td>H.264</td>
+                    <td>H.264</td>
+                    <td>H.264</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left;">Bit rate</td>
+                    <td>3,200 kbps</td>
+                    <td>3,200 kbps</td>
+                    <td>3,200 kbps</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left;">Frame rate</td>
+                    <td>24 frames / sec</td>
+                    <td>24 frames / sec</td>
+                    <td>24 frames / sec</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td rowspan="4" style="border-right:1px solid #ccc"><h5>Audio</h5></td>
+                    <td style="text-align:left;">Encoding</td>
+                    <td>AAC</td>
+                    <td>AAC</td>
+                    <td>AAC</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left;">Sampling rate</td>
+                    <td>44.1 kHz</td>
+                    <td>44.1 kHz</td>
+                    <td>44.1 kHz</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left;"><strong>Bit rate</strong></td>
+                    <td><strong>192 kbps</strong></td>
+                    <td><strong>192 kbps</strong></td>
+                    <td><strong>192 kbps</strong></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left;">Channels</td>
+                    <td>Stereo</td>
+                    <td>Stereo</td>
+                    <td>Stereo</td>
+                </tr>
+            </table>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-default" data-dismiss="modal">Close</button>
     </div>
     </div>
     </div>

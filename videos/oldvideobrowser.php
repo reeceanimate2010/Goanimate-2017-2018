@@ -274,22 +274,15 @@ _wq.push({ id: 'n7326kf0b9', onReady: function(video) {
 			// Loop video div with decreasing ID until it reaches the first ID
 			for ($videoId = $id; $videoId >= 1; $videoId-=1) {
 				echo "
-	<thead>
-			<tr>
-				<td></td>
-				<td>Video Title</td>
-				<td>Last Modified</td>
-				<td></td>
-			</tr>
-		</thead>
-		<tbody><tr><td><img src=\"/_user-files/videos/video-thumb-{$videoId}.png\" alt=\Video thumbnail #{$videoId}\"></td><td><div>Video #{$videoId}</div><td><span>2</span><span>0</span><span>2</span><span>1</span><span>-</span><span>0</span><span>5</span><span>-</span><span>0</span><span>1</span><span> </span><span>0</span><span>4</span><span>:</span><span>1</span><span>8</span><span>:</span><span>3</span><span>2</span><span>.</span><span>7</span><span>7</span><span>8</span><span>Z</span></td><td><a href=\"./player.php?video={$videoId}\"></a><a href=\"./create.php?video={$videoId}\"></a><a href=\"../_user-files/videos/video-xml-{$videoId}.zip\" download=\"Video #{$videoId}.xml\"></a></td></tr></tbody>
-		<tfoot>
-			<tr>
-				<td colspan=\"127\"><a id=\"load_more\" href=\"javascript:;\">Load more of your videos...</a></td>
-			</tr>
-		</tfoot>
-	
-        </table>
+	                                 <div class=\"theme pick_creation\">
+						<div>
+							<img src=\"/_user-files/videos/video-thumb-{$videoId}.png\" alt=\Video thumbnail #{$videoId}\" style=\"height:90px\" />
+							<p><a href=\"./create.php?video={$videoId}\">Edit</a><br />
+								<a href=\"./player.php?video={$videoId}\">Play</a><p>
+						</div>
+						<p class=\"pick_creation_type\">Video #{$videoId}</p>
+						<p class=\"pick_creation_description\">Description placeholder.</p>
+					</div>
 				";
 			}
 		}

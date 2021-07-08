@@ -276,9 +276,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			// Loop video div with decreasing ID until it reaches the first ID
 			for ($videoId = $id; $videoId >= 1; $videoId-=1) {
 				echo "
-	                                 <div class=\"theme pick_creation\" id=\"videos-folders-nav\">
+	                                 <div class=\"theme pick_creation\" id=\"video-listing-grid\">
 						<div>
-							<img src=\"/_user-files/videos/video-thumb-{$videoId}.png\" alt=\Video thumbnail #{$videoId}\" style=\"height:90px\" />
+							<img src=\"/_user-files/videos/video-thumb-{$videoId}.png\" alt=\"Video thumbnail #{$videoId}\" style=\"height:90px\" />
 							<p><a href=\"./create.php?video={$videoId}\">Edit</a><br />
 								<a href=\"./player.php?video={$videoId}\">Play</a><p>
 						</div>

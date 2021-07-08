@@ -211,7 +211,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="page-header">
         <h1 class="h2">
             <ol class="breadcrumb video-breadcrumb">
-                <li class="base" data-folder-id="" data-category="all" data-page="1" data-sort-by="lastmod" data-status="" data-keyword="" data-folder-name="">Your Videos</li>
+                <li class="base" data-folder-id="yourvideos" data-category="all" data-page="1" data-sort-by="lastmod" data-status="good" data-keyword="" data-folder-name="yourvideos">Your Videos</li>
             </ol>
         </h1>
     </div>
@@ -219,7 +219,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="row" id="video-listing">
         <div class="col-md-4 col-md-push-8">
             <div id="videos-nav" class="list-group folder-list ">
-                <div class="list-group-item folder-item active droppable" data-folder-id="" data-category="all" data-page="1" data-sort-by="lastmod" data-status="" data-keyword="" data-folder-name="">
+                <div class="list-group-item folder-item active droppable" data-folder-id="yourvideos" data-category="all" data-page="1" data-sort-by="lastmod" data-status="good" data-keyword="" data-folder-name="yourvideos">
                     <span class="caret-container">
                         <span class="caret"></span>
                     </span>
@@ -276,7 +276,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			// Loop video div with decreasing ID until it reaches the first ID
 			for ($videoId = $id; $videoId >= 1; $videoId-=1) {
 				echo "
-	                                 <div class=\"theme pick_creation\" id=\"videos\">
+	                                 <div class=\"theme pick_creation\" id=\"yourvideos\">
 						<div>
 							<img src=\"/_user-files/videos/video-thumb-{$videoId}.png\" alt=\Video thumbnail #{$videoId}\" style=\"height:90px\" />
 							<p><a href=\"./create.php?video={$videoId}\">Edit</a><br />

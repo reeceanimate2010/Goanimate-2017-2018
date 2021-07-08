@@ -280,11 +280,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<div>
 							<img src=\"/_user-files/videos/video-thumb-{$videoId}.png\" alt=\Video thumbnail #{$videoId}\" style=\"height:90px\" />
 							<p><a href=\"./create.php?video={$videoId}\">Edit</a><br />
-							<p><a href=\"/_user-files/videos/video-xml-{$videoId}.zip\">Download</a><br />
 								<a href=\"./player.php?video={$videoId}\">Play</a><p>
 						</div>
 						<p class=\"pick_creation_type\">Video #{$videoId}</p>
 						<p class=\"pick_creation_description\">Description placeholder.</p>
+						<p><a href=\"/_user-files/videos/video-xml-{$videoId}.zip\">Download</a></p>
 					</div>
 				";
 			}

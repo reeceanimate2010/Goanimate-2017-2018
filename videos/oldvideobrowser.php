@@ -258,7 +258,7 @@ _wq.push({ id: 'n7326kf0b9', onReady: function(video) {
 		// If the user has created no videos,
 		if ($id == 0) {
 			echo "
-				<tfoot>
+	<tfoot>
                 <tr>
                     <td colspan=\"4\">
                         <div class=\"emptystate\">
@@ -274,112 +274,26 @@ _wq.push({ id: 'n7326kf0b9', onReady: function(video) {
 			// Loop video div with decreasing ID until it reaches the first ID
 			for ($videoId = $id; $videoId >= 1; $videoId-=1) {
 				echo "
-					<div class=\"theme pick_creation\">
-						<div>
-							<img src=\"/_user-files/videos/video-thumb-{$videoId}.png\" alt=\Video thumbnail #{$videoId}\" style=\"height:90px\" />
-							<p><a href=\"./create.php?video={$videoId}\">Edit</a><br />
-								<a href=\"./player.php?video={$videoId}\">Play</a><p>
-						</div>
-						<p class=\"pick_creation_type\">Video #{$videoId}</p>
-						<p class=\"pick_creation_description\">Description placeholder.</p>
-					</div>
+	<thead>
+			<tr>
+				<td></td>
+				<td>Video Title</td>
+				<td>Last Modified</td>
+				<td></td>
+			</tr>
+		</thead>
+		<tbody><tr><td><img src=\"/_user-files/videos/video-thumb-{$videoId}.png\" alt=\Video thumbnail #{$videoId}\"></td><td><div>Video #{$videoId}</div><td><span>2</span><span>0</span><span>2</span><span>1</span><span>-</span><span>0</span><span>5</span><span>-</span><span>0</span><span>1</span><span> </span><span>0</span><span>4</span><span>:</span><span>1</span><span>8</span><span>:</span><span>3</span><span>2</span><span>.</span><span>7</span><span>7</span><span>8</span><span>Z</span></td><td><a href=\"./player.php?video={$videoId}\"></a><a href=\"./create.php?video={$videoId}\"></a><a href=\"../_user-files/videos/video-xml-{$videoId}.zip\" download=\"Video #{$videoId}.xml\"></a></td></tr></tbody>
+		<tfoot>
+			<tr>
+				<td colspan=\"127\"><a id=\"load_more\" href=\"javascript:;\">Load more of your videos...</a></td>
+			</tr>
+		</tfoot>
+	
+        </table>
 				";
 			}
 		}
 	?>
-</div>
-
-
-</div>
-</div>
-<script>
-var videoCounts = {"all":"<?php include_once("../goapi/function/videoId.php"); if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo $id + 1; } ?>","trash":"0"};
-
-// Folder counts. To be updated by the php script
-var folderCounts = 0;
-
-</script>
-
-<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/video.js.gz.js"></script>
-<script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/myvideos.js.gz.js"></script>
-
-<div id="trial-unlock-overlay" class="modal" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3 class="modal-title">Subscribe to unlock more features</h3>
-            </div>
-
-            <div class="modal-body text-center">
-                <div class="trial-upsell trial-upsell-unlock">
-                    <h2><img src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/img/trial/lock.png" alt=""> Unlock these features now</h2>
-
-                    <p class="text-feature">
-                        Remove the full screen watermark<br>
-                        Download up to 1080P (Full HD)<br>
-                        One-click publish                    </p>
-
-                    <div class="text-muted">
-                        <div>Publish to <img class="logo" src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/img/trial/logo_ga.png" alt=""> or export to</div>
-                        <div>
-                            <img class="logo-partner" src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/img/trial/logo_youtube20.png" alt="">
-                            <img class="logo-partner" src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/img/trial/logo_wistia20.png" alt="">
-                            <img class="logo-partner" src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/img/trial/logo_vidyard20.png" alt="">
-                        </div>
-                        <div>... and many more!</div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="modal-footer">
-                <a class="btn btn-orange" href="https://ga.vyond.com/business/videoplans?hook=preview.site">View Plans & Pricing</a>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="trial-expired-overlay" class="modal" id="normal-modal" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" style="left: auto;margin-right: auto;margin-left: auto;">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h3 class="modal-title">
-                    Your free trial has ended!                </h3>
-            </div>
-            <div class="modal-body text-center">
-                <img style="width: 100%;" src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/img/trial/expired.png" alt="">
-            </div>
-            <div class="modal-footer">
-                <a class="btn btn-orange" href="https://www.vyond.com/pricing">View Plans & Pricing</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="modal-alpha-vm5" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h3 class="modal-title">Before You Head To Vyond Studio</h3>
-            </div>
-            <div class="modal-body">
-                <img class="center-block img-responsive"
-                    src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/img/vm5_alpha/video_copy.png"
-                    srcset="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/img/vm5_alpha/video_copy.png 1x, https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/img/vm5_alpha/video_copy_2x.png 2x"
-                ><br>
-                <p>
-                    There may be content in this video that is not compatible with Vyond Studio (e.g. imported videos, PPT files, retired content, retired music).                </p>
-                <p>
-                    Your original video will not be impacted by making this copy to Vyond Studio. Videos created and edited in Vyond Studio cannot be copied to Legacy Video Maker.                </p>
-            </div>
-            <div class="modal-footer">
-                <a class="btn btn-default text-uppercase" href="#" data-dismiss="modal">Cancel</a>
-                <a class="btn btn-orange text-uppercase proceed-migration" href="#" target="_blank">Proceed</a>
-            </div>
-        </div>
-    </div>
 </div>
 
 <div id="video-share" class="modal" role="dialog" aria-hidden="true">

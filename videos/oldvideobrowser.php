@@ -248,8 +248,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="grid video-listing-grid hide-folders" id="video-listing-grid">
 
     <div class="grid-viewport video-listing" id="videos">
-        <table class="table table-hover table-generic">
-            <div>
 	<?php
 		////
 		//// This PHP loads all the videos
@@ -260,7 +258,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 		// If the user has created no videos,
 		if ($id == 0) {
-			echo "
+		echo "
+<table class=\"table table-hover table-generic\">	
 	<tfoot>
                 <tr>
                     <td colspan=\"4\">
@@ -290,7 +289,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			}
 		}
 	?>
-</div>
+</div>	   
 		
 </div>
 

@@ -47,7 +47,7 @@ echo PHPWrapper v!PWRAP_VER! is starting...
 echo A project from Octanuary
 echo this project was adapted by Joseph Animate 2021.
 echo Launching ungoogled-chromium...
-pushd dependencies\ungoogled-chromium
+pushd ungoogled-chromium
 start chromium.exe --user-data-dir=the_profile --app=http://localhost:6596 --allow-outdated-plugins
 popd
 
@@ -56,7 +56,7 @@ pushd phpwrapper
 echo:
 echo Starting PHPWrapper...
 echo:
-call \php\php.exe -S 127.0.0.1:6596
+call php\php.exe -S 127.0.0.1:6596
 echo:
 popd
 echo PHP has been closed.
@@ -71,7 +71,7 @@ echo PHPWrapper v!PWRAP_VER! is starting...
 echo A project from Octanuary
 echo this project was adapted by Joseph Animate 2021.
 echo Launching ungoogled-chromium...
-pushd dependencies\ungoogled-chromium
+pushd ungoogled-chromium
 start chromium.exe --user-data-dir=the_profile --app=http://localhost:6596 --allow-outdated-plugins
 popd
 

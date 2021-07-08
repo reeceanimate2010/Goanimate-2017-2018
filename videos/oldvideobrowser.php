@@ -265,7 +265,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <tr>
                     <td colspan=\"4\">
                         <div class=\"emptystate\">
-                            <img class=\"emptystate-image\" src=\"https://d3v4eglovri8yt.cloudfront.net/static/204877ced07e5539/go/img/myvideos/chair_empty.png\">
+                            <img src=\"https://d3v4eglovri8yt.cloudfront.net/static/204877ced07e5539/go/img/myvideos/chair_empty.png\">
                             <p>No videos</p>
                         </div>
                     </td>

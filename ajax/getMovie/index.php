@@ -1,7 +1,7 @@
 0{}<meta name="medium" content="video" />
 <div style="position:relative">
     <div id="playerdiv_preview" align="center" style="width:550px;height:384px;">
-        You can't use PHPWrapper because Flash might be disabled. <a href="https://get.adobe.com/flashplayer/">Enable Flash</a>.
+        You can't use PHPWrapper because Flash might be disabled. <a href="https://josephcrosmanplays532.github.io/go/getflash/">Enable Flash</a>.
     </div>
     </div>
 <script type="text/javascript">

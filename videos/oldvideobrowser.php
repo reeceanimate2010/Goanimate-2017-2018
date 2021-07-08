@@ -153,7 +153,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="dropdown-toggle" href="https://app.vyond.com/v2/profile" data-toggle="dropdown">
         <span class="hidden-sm hidden-md hidden-lg">Your Account</span>
         <div class="site-nav__profile-image">
-            <div class="badge-circle">JC</div>
+            <div class="badge-circle">JA</div>
         </div><span class="dropdown-caret"></span>
     </a>
     <ul class="dropdown-menu dropdown-menu-user">

@@ -60,9 +60,9 @@ jQuery.extend(Drupal.settings,{"basePath":"/","fivestar":{"titleUser":"Your rati
   
   <code class="flashvars">
   
-    <input type="hidden" name="apiurl" value="https://phpwrapper.herokuapp.com/themes/zimmertwins/movie/assets/api.xml"/>
-    <input type="hidden" name="asseturl" value="https://phpwrapper.herokuapp.com/themes/zimmertwins/movie/assets"/>
-    <input type="hidden" name="baseurl" value="https://phpwrapper.herokuapp.com"/>
+    <input type="hidden" name="apiurl" value="https://josephcrosmanplays532.github.io/Old-ZimmerTwins-Assets/sites/zimmertwins.com/movie/assets/api.xml"/>
+    <input type="hidden" name="asseturl" value="https://josephcrosmanplays532.github.io/Old-ZimmerTwins-Assets/sites/zimmertwins.com/movie/assets"/>
+    <input type="hidden" name="baseurl" value="https://josephcrosmanplays532.github.io/Old-ZimmerTwins-Assets"/>
     <input type="hidden" name="lang" value="en-local"/>
     <input type="hidden" name="userid" value=""/>
     <input type="hidden" name="movieid" value=""/>

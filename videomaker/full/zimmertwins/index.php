@@ -8,7 +8,7 @@
     <meta name="copyright" content="©<?php echo date("Y");?> PHPWrapper Zimmer Twins Theme"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="shortcut icon" href="/themes/zimmertwins/images/favicon.ico" type="image/x-icon"/>
-    <link type="text/css" rel="stylesheet" media="all" href="https://josephcrosmanplays532.github.io/Old-ZimmerTwins-Assets/sites/zimmertwins.com/css/A.all,,_modules,,_contrib,,_cck,,_theme,,_content-module.css,,qu+all,,_modules,,_contrib,,_date,,_date.css,,qu+all,,_modules,,_contrib,,_og,,_theme,,_og.css,,qu+all,,_modules,,_contrib,,_pollfield,,_pollfield.css,,qu+all,,_modules,,_contrib,,_ubercart,,_uc_order,,_uc_order.css,,qu+all,,_modules,,_contrib,,_ubercart,,_uc_product,,_uc_product.css,,qu+all,,_modules,,_contrib,,_ubercart,,_uc_roles,,_uc_roles.css,,qu+all,,_modules,,_contrib,,_ubercart,,_uc_store,,_uc_store.css,,qu+all,,_modules,,_contrib,,_cck,,_modules,,_fieldgroup,,_fieldgroup.css,,qu+all,,_modules,,_contrib,,_views,,_css,,_views.css,,qu+zimmertwins.com,,_themes,,_zimmertwins,,_style.css,,qu,Mcc.ZqA5kNg5Py.css.pagespeed.cf.NDzs0fZpXb.css"/>
+    <link type="text/css" rel="stylesheet" media="all" href="https://josephcrosmanplays532.github.io/Old-ZimmerTwins-Assets/sites/zimmertwins.com/css/1.css">
 
 
 
@@ -19,10 +19,7 @@
 
 
 
-    <!--[if IE]>
-      <link type="text/css" rel="stylesheet" media="all" href="/themes/zimmertwins/css/ie.css" />
-    <![endif]-->
-    <script src="https://josephcrosmanplays532.github.io/Old-ZimmerTwins-Assets/sites/zimmertwins.com/js/misc,_jquery.js,qu+misc,_drupal.js,qu+sites,_all,_modules,_contrib,_fivestar,_js,_fivestar.js,qu+sites,_all,_modules,_contrib,_google_analytics,_googleanalytics.js,qu+sites,_all,_modules,_contrib,_og,_og.js,qu+sites,_all,_modules,_contrib,_ubercart,_uc_roles,_uc_roles.js,qu+sites,_zimmertwins.com,_themes,_zimmertwins,_jquery.flash.js,qu+sites,_zimmertwins.com,_themes,_zimmertwins,_jquery.livequery.js,qu+sites,_zimmertwins.com,_themes,_zimmertwins,_scripts.js,qu.pagespeed.jc.ISNOxQFg5D.js"></script><script>eval(mod_pagespeed_lY3PXsDeiT);</script>
+<script src="https://josephcrosmanplays532.github.io/Old-ZimmerTwins-Assets/sites/zimmertwins.com/js/1.js"></script><script>eval(mod_pagespeed_lY3PXsDeiT);</script>
 <script>eval(mod_pagespeed_Aq8kdrmCeT);</script>
 <script>eval(mod_pagespeed_m_VrBtb9AX);</script>
 <script>eval(mod_pagespeed_8mSAI53C15);</script>
@@ -34,7 +31,6 @@
 <script type="text/javascript">//<![CDATA[
 jQuery.extend(Drupal.settings,{"basePath":"/","fivestar":{"titleUser":"Your rating: ","titleAverage":"Average: ","feedbackSavingVote":"Saving vote...\r\n","feedbackVoteSaved":"Rating saved.","feedbackDeletingVote":"Removing vote...","feedbackVoteDeleted":"Rating removed."},"googleanalytics":{"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"}});
 //]]></script>
-  </head>
   <body>
       
     <div id="wrapper" class="clear-block">

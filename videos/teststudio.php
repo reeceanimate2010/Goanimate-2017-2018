@@ -121,7 +121,7 @@ html, body, #studio-container {margin:0;padding:0;width:100%;height:100%;overflo
 				<br />
 				<input type="radio" value="background" name="subtype"> Background</input>
 				<br />
-				<input type="submit" value="Import" onclick='document.getElementById("video_maker").importerUploadComplete("importerUploadComplete"); document.getElementById("import_popup_container").style.display = "none";' id="submit" class="button_import" />
+				<input type="submit" value="Import" onclick='document.getElementById("Studio").importerUploadComplete("importerUploadComplete"); document.getElementById("import_popup_container").style.display = "none";' id="submit" class="button_import" />
 			</form>
 		</div>
 	</div>

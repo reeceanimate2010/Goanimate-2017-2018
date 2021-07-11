@@ -7,7 +7,7 @@
 	/// Variables
 	///
 	$themeXMLZip = new ZipArchive;
-	$createZip = $themeXMLZip->open("../../_user-files/cache/theme.zip", ZipArchive::CREATE);
+	$createZip = $themeXMLZip->open("../../_themes/{$_POST["themeId"]}.zip", ZipArchive::CREATE);
 
 	///
 	/// Zip creation
@@ -18,9 +18,9 @@
 		// Close zip
 		$themeXMLZip->close();
 		// Read zip
-		readfile("../../_user-files/cache/theme.zip");
+		readfile("../../_themes/{$_POST["themeId"]}.zip");
 		// Delete zip for future theme loading
-		unlink("../../_user-files/cache/theme.zip");
+		unlink("../../_themes/{$_POST["themeId"]}.zip");
 	}
 	// If, for some reason creating the zip fails, send the user a message explaining what went wrong.
 	else {

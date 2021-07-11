@@ -30,7 +30,7 @@
 
 		// Loop string with decreasing ID until it reaches the first ID
 		for ($charId = $id; $charId >= 1; $charId-=1) {
-			echo "<char id=\"{$charId}\" name=\"Character {$charId}\" cc_theme_id=\"{$char_theme}\" thumbnail_url=\"/characters/character-thumb-{$charId}.png\" copyable=\"Y\"><tags/></char>";
+			echo "<char id=\"{$charId}\" name=\"Character {$charId}\" cc_theme_id=\"{$char_theme}\" thumbnail_url=\"../../_user-files/characters/character-thumb-{$charId}.png\" copyable=\"Y\"><tags/></char>";
 		}
 	}
 	echo "</ugc>";

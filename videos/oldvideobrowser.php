@@ -211,7 +211,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="page-header">
         <h1 class="h2">
             <ol class="breadcrumb video-breadcrumb">
-                <li class="base" data-folder-id="" data-category="all" data-page="1" data-sort-by="lastmod" data-status="" data-keyword="" data-folder-name="">Your Videos</li>
+                <li class="base" data-folder-id="yourvideos" data-category="all" data-page="1" data-sort-by="lastmod" data-status="good" data-keyword="" data-folder-name="yourvideos">Your Videos</li>
             </ol>
         </h1>
     </div>
@@ -219,7 +219,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="row" id="video-listing">
         <div class="col-md-4 col-md-push-8">
             <div id="videos-nav" class="list-group folder-list ">
-                <div class="list-group-item folder-item active droppable" data-folder-id="" data-category="all" data-page="1" data-sort-by="lastmod" data-status="" data-keyword="" data-folder-name="">
+                <div class="list-group-item folder-item active droppable" data-folder-id="yourvideos" data-category="all" data-page="1" data-sort-by="lastmod" data-status="good" data-keyword="" data-folder-name="yourvideos">
                     <span class="caret-container">
                         <span class="caret"></span>
                     </span>
@@ -278,12 +278,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				echo "
 	                                 <div class=\"theme pick_creation\">
 						<div>
-							<img src=\"/_user-files/videos/video-thumb-{$videoId}.png\" alt=\Video thumbnail #{$videoId}\" style=\"height:90px\" />
+							<img src=\"/_user-files/videos/video-thumb-{$videoId}.png\" alt=\"Video thumbnail #{$videoId}\" style=\"height:90px\" />
 							<p><a href=\"./create.php?video={$videoId}\">Edit</a><br />
 								<a href=\"./player.php?video={$videoId}\">Play</a><p>
 						</div>
 						<p class=\"pick_creation_type\">Video #{$videoId}</p>
 						<p class=\"pick_creation_description\">Description placeholder.</p>
+						<p><a href=\"/_user-files/videos/video-xml-{$videoId}.zip\">Download</a></p>
 					</div>
 				";
 			}

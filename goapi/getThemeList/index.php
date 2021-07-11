@@ -7,7 +7,7 @@
 	/// Variables
 	///
 	$themeListZip = new ZipArchive;
-	$createZip = $themeListZip->open("../../_user-files/cache/themeList.zip", ZipArchive::CREATE);
+	$createZip = $themeListZip->open("../../_user-files/cache/themelist.zip", ZipArchive::CREATE);
 	
 	///
 	/// Zip creation
@@ -18,9 +18,9 @@
 		// Close zip
 		$themeListZip->close();
 		// Read zip to LVM
-		readfile("../../_user-files/cache/themeList.zip");
+		readfile("../../_user-files/cache/themelist.zip");
 		// Delete zip for future themelist loading
-		unlink("../../_user-files/cache/themeList.zip");
+		unlink("../../_user-files/cache/themelist.zip");
 	}
 	// If, for some reason creating the zip fails, send the user a message explaining what went wrong.
 	else {

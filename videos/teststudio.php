@@ -94,6 +94,11 @@ html, body, #studio-container {margin:0;padding:0;width:100%;height:100%;overflo
 	function hidePreviewer() {
 		document.getElementById("preview_popup_container").style.display = "none";
 	}
+	// Save your video with the preview window
+        function saveVideo() {
+		document.getElementById("preview_popup_container").style.display = "none";
+		document.getElementById("Studio").onExternalPreviewPlayerPublish();
+	}
 	// Hide Asset Importer popup
 	function hideImporter() {
 		document.getElementById("import_popup_container").style.display = "none";
@@ -137,6 +142,7 @@ html, body, #studio-container {margin:0;padding:0;width:100%;height:100%;overflo
 			<param name="allowFullScreen" value="true">
 		</object>
                 <a class="button_big" href="#" onclick="hidePreviewer()">Back to editing</a>
+		<a class="button_big" href="#" onclick="saveVideo()">Save now</a>
 	</div>
 </div>
 <script>

@@ -8,22 +8,4 @@
 	///
 	$themeXMLZip = new ZipArchive;
 	$createZip = $themeXMLZip->open("../../_themes/{$_POST["themeId"]}.zip", ZipArchive::CREATE);
-
-	///
-	/// Zip creation
-	///
-	if ($createZip == true) {
-		// Add theme XML to zip file
-		$themeXMLZip->addFile("../asset/themes/{$_POST["themeId"]}/theme.xml", "theme.xml");
-		// Close zip
-		$themeXMLZip->close();
-		// Read zip
-		readfile("../../_themes/{$_POST["themeId"]}.zip");
-		// Delete zip for future theme loading
-		unlink("../../_themes/{$_POST["themeId"]}.zip");
-	}
-	// If, for some reason creating the zip fails, send the user a message explaining what went wrong.
-	else {
-		echo "ERROR: Could not create theme XML zip.";
-	}
 ?>

@@ -141,8 +141,8 @@ html, body, #studio-container {margin:0;padding:0;width:100%;height:100%;overflo
 			<param name="allowScriptAccess" value="always">
 			<param name="allowFullScreen" value="true">
 		</object>
-                <a class="button_big" href="#" onclick="hidePreviewer()">Back to editing</a>
-		<a class="button_big" href="#" onclick="saveVideo()">Save now</a>
+                <a class="button_big text-uppercase" href="#" onclick="hidePreviewer()">Back to editing</a>
+		<a class="button_big text-uppercase" href="#" onclick="saveVideo()">Save now</a>
 	</div>
 </div>
 <script>

@@ -1,18 +1,12 @@
+:: opens phpwraper in a standalone batch so that i can use a tool that silently runs batch files
+:: this is stupid
+:: please help
 @echo off
-title PHPWrapper Launcher
-set PORT=6596
+pushd "%~dp0"
+title PHP Wrapper Launcher.
+pushd \phpwrapper
+echo Starting PHP server for PHPWrapper...
 echo:
-echo Welcome to the PHPWrapper launcher.
+..\..\utilities\php\php.exe -S 127.0.0.1:8080
 echo:
-echo Would you like to host this on a different port?
-echo:
-echo If so, enter in your desired port number.
-echo Otherwise, press Enter.
-echo:
-set /p PORT= Port: 
-echo Running php.exe...
-PING -n 3 127.0.0.1>nul
-echo:
-cd phpwrapper
-start "\ungoogled-chromium\chromium.exe" "http://localhost:%PORT%/videos/browse.php"
-call ..\php\php.exe -S localhost:%PORT%
+pause & exit

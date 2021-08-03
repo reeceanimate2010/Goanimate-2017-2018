@@ -1,6 +1,6 @@
 <?php
 	////
-	//// This PHP loads video watermarks
+	//// This PHP allows you to preview watermarks
 	////
 
 	///

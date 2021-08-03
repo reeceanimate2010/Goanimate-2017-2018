@@ -86,7 +86,7 @@ html, body, #studio-container {margin:0;padding:0;width:100%;height:100%;overflo
 	}
 	// Hide interactive tutorial
 	interactiveTutorial = {
-		neverDisplay: function() {
+		<?php if (isset($_GET["interactiveTutorial"])) { echo $_GET["interactiveTutorial"]; } else { echo "neverDisplay"; } ?>: function() {
 			return true
 		}
 	};
@@ -108,7 +108,7 @@ html, body, #studio-container {margin:0;padding:0;width:100%;height:100%;overflo
 <div id="studio-container">
 	<object data="https://phpwrapper.herokuapp.com/goapi/asset/animation/go_full.swf" type="application/x-shockwave-flash" id="Studio" width="100%" height="100%">
 	<!-- The flashvars are a huge mess, have fun looking at them. :) -->
-	<param name="flashvars" value="apiserver=/&movieId=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } ?>&storePath=https://phpwrapper.herokuapp.com/goapi/asset/themes/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://phpwrapper.herokuapp.com/goapi/asset/static/<client_theme>&themeId=custom&tlang=en_US&presaveId=<?php include_once("../goapi/function/videoId.php"); if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo $id + 1; } ?><?php if (isset($_GET["video"])) { echo "&movieId={$_GET["video"]}"; } ?>&goteam_draft_only=1&isWide=1&collab=0&nextUrl=./browse.php&tray=custom">
+	<param name="flashvars" value="apiserver=/&movieId=<?php if (isset($_GET["video"])) { echo $_GET["video"]; } ?>&storePathhttps://phpwrapper.herokuapp.com/goapi/asset/themes/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://phpwrapper.herokuapp.com/goapi/asset/static/<client_theme>&themeId=custom&tlang=en_US&presaveId=<?php include_once("../goapi/function/videoId.php"); if (isset($_GET["video"])) { echo $_GET["video"]; } else { echo $id + 1; } ?><?php if (isset($_GET["video"])) { echo "&movieId={$_GET["video"]}"; } ?>&goteam_draft_only=1&isWide=1&collab=0&nextUrl=./browse.php&tray=custom">
 	<param name="allowScriptAccess" value="always">
 	<param name="allowFullScreen" value="true">
         </object>
@@ -141,8 +141,8 @@ html, body, #studio-container {margin:0;padding:0;width:100%;height:100%;overflo
 			<param name="allowScriptAccess" value="always">
 			<param name="allowFullScreen" value="true">
 		</object>
-                <a class="button_big" href="#" onclick="hidePreviewer()">Back to editing</a>
-		<a class="button_big" href="#" onclick="saveVideo()">Save now</a>
+                <a class="button_big text-uppercase" href="#" onclick="hidePreviewer()">Back to editing</a>
+		<a class="button_big text-uppercase" href="#" onclick="saveVideo()">Save now</a>
 	</div>
 </div>
 <script>

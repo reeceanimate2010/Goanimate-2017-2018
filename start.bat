@@ -4,9 +4,9 @@
 @echo off
 pushd "%~dp0"
 title PHP Wrapper Launcher.
-pushd \phpwrapper
+pushd .\
 echo Starting PHP server for PHPWrapper...
 echo:
-\php\php.exe -S 127.0.0.1:8080
+.\php\php.exe -S 127.0.0.1:6596
 echo:
 pause & exit

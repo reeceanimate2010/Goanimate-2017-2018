@@ -86,7 +86,7 @@ html, body, #studio-container {margin:0;padding:0;width:100%;height:100%;overflo
 	}
 	// Hide interactive tutorial
 	interactiveTutorial = {
-		neverDisplay: function() {
+		<?php if (isset($_GET["interactiveTutorial"])) { echo $_GET["interactiveTutorial"]; } else { echo "neverDisplay"; } ?>: function() {
 			return true
 		}
 	};

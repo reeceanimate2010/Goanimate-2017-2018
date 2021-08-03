@@ -115,6 +115,7 @@
 	<nav id="foot-left">
 		<a>v1.2.3½</a>
 		<a href="/videomaker/full/tutorial?">Studio Tutorial</a>
+		<a href="/videos/teststudio.php">Test the new & fixed video studio</a>
 	</nav>
         
 	<nav id="foot-middle">

@@ -6,25 +6,17 @@
 	///
 	/// Read file
 	///
-	echo "{
-	"GET": {
-		"/index.html": {
+	echo "GET": {
+		"/go/character_creator": {
 			"headers": {
-				"Location": "/yourvideos"
+				"Location": "/characters/create.php"
 			},
 			"statusCode": 302,
 			"content": ""
 		},
-		"/dashboard/videos": {
+		"/videomaker/full": {
 			"headers": {
-				"Location": "/yourvideos"
-			},
-			"statusCode": 302,
-			"content": ""
-		},
-		"/$": {
-			"headers": {
-				"Location": "/yourvideos"
+				"Location": "/videos/create.php?interactiveTutorial=Display"
 			},
 			"statusCode": 302,
 			"content": ""

@@ -7,14 +7,14 @@
 	/// Read file
 	///
 	echo "GET": {
-		"/go/character_creator": {
+		"/go/character_creator/": {
 			"headers": {
 				"Location": "/characters/create.php"
 			},
 			"statusCode": 302,
 			"content": ""
 		},
-		"/videomaker/full": {
+		"/videomaker/full/": {
 			"headers": {
 				"Location": "/videos/create.php?interactiveTutorial=Display"
 			},

@@ -62,6 +62,7 @@
 			},
 			"statusCode": 302,
 			"content": ""
-		},
+		}
+}
 				
     ?>

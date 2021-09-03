@@ -1,6 +1,6 @@
 <?php
 	////
-	//// This PHP zips a theme XML and reads it to the Video Studio
+	//// This PHP reads a theme XML to the Video Studio
 	////
 
 	///
@@ -10,20 +10,14 @@
 	$createZip = $themeXMLZip->open("../../_themes/{$_POST["themeId"]}/theme.zip", ZipArchive::CREATE);
 
 	///
-	/// Zip creation
+	/// Read Zip
 	///
 	if ($createZip == true) {
 		// Add theme XML to zip file
-		$themeXMLZip->addFile("../asset/themes/{$_POST["themeId"]}/theme.xml", "theme.xml");
-		// Close zip
-		$themeXMLZip->close();
-		// Read zip
-		readfile("../../_themes/{$_POST["themeId"]}/theme.zip");
-		// Delete zip for future theme loading
-		unlink("../../_themes/{$_POST["themeId"]}/theme.zip");
+		$themeXMLZip->readfile("../asset/themes/{$_POST["themeId"]}/theme.xml", "theme.xml");
 	}
 	// If, for some reason creating the zip fails, send the user a message explaining what went wrong.
 	else {
-		echo "ERROR: Could not create or read theme XML zip. please dm me on joseph the animator#2292 if this problem contuiues.";
+		echo "ERROR: Could not read theme XML zip. please dm me on joseph the animator#2292 if this problem contuiues.";
 	}
 ?>

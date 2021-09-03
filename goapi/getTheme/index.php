@@ -13,7 +13,7 @@
 	/// Read Zip
 	///
 	if ($createZip == true) {
-		// Add theme XML to zip file
+		// Read theme XML
 		$themeXMLZip->readfile("../asset/themes/{$_POST["themeId"]}/theme.xml", "theme.xml");
 	}
 	// If, for some reason creating the zip fails, send the user a message explaining what went wrong.
